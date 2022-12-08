@@ -153,4 +153,3 @@ cython_debug/
 **/tempdb.*
 **/test.db
 **/duckdb
-dbt
