@@ -79,7 +79,6 @@ docs/_build/
 
 # PyBuilder
 .pybuilder/
-target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -153,3 +152,14 @@ cython_debug/
 **/tempdb.*
 **/test.db
 **/duckdb
+
+data/dbt/target/models
+data/dbt/target/run
+data/dbt/target/compiled
+data/dbt/target/catalog.json
+data/dbt/target/graph.*
+data/dbt/target/*.msgpack
+data/dbt/target/run_results.*
+data/dbt/target/index.html
+
+
