@@ -1,0 +1,25 @@
+ jobs:
+    - name: "CSV to DuckDB"
+      source:
+        type: "file"
+        spec:
+          path: "source.csv"
+      target: 
+        type: "duckdb"
+        spec:
+          table: "test"
+          chunksize: 3
+          database: "{{env_var('INBOUND_DATA_PATH')}}/duckdb"
+    - name: "DuckDB to Parquet in GCS"
+      source:
+        type: "duckdb"
+        spec:
+          query: "select * from test"
+          database: "{{env_var('INBOUND_DATA_PATH')}}/duckdb"
+      target: 
+        type: "gcs"
+        spec:
+          bucket: "sync-service"
+          blob: "test" 
+
+          

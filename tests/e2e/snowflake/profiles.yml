@@ -1,0 +1,15 @@
+test-snowflake-db:
+  target: "dev"
+  outputs:
+    dev:
+      type: "snowflake"
+      account: "{{env_var('SNOWFLAKE_DATAPRODUCT_ACCOUNT')}}.{{env_var('SNOWFLAKE_DATAPRODUCT_REGION')}}"
+      user: "{{env_var('SNOWFLAKE_DATAPRODUCT_USER')}}" 
+      password: "{{env_var('SNOWFLAKE_DATAPRODUCT_PASSWORD')}}"
+      role: "vdl_dataproduct_role"
+      database: "test_db"
+      warehouse: "vdl_dataproduct_warehouse"
+      schema:  "test_schema"
+      threads: 1
+      client_session_keep_alive: False
+      query_tag: "testing snowflake connector"

@@ -1,0 +1,25 @@
+kind: "inbound"
+version: "0.0.1"
+
+metadata:
+  name: "inbound"
+
+dbt:
+  profiles_dir: "./dbt"
+  profile: "snowflake"
+  target: "dev"
+
+logging: 
+  local_path: "./logs"
+  upload: True
+  profile: "snowflake" 
+
+spec:
+  secrets_path: "/var/run/secrets/nais.io/vault"
+  gcp:
+    project_id: "virksomhetsdatalaget-dev-30e3"
+    secrets:
+      - name: "snowflake-account"
+        version: "latest"
+    syncbucket: "sync-service"
+    metadatabucket: "sync-service"

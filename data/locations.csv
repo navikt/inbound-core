@@ -1,0 +1,3028 @@
+|id|state|city|location|value
+0|0|District of Columbia|Washington|20020|832
+1|1|District of Columbia|Washington|20001|801
+2|2|District of Columbia|Washington|20011|290
+3|3|District of Columbia|Washington|20016|443
+4|4|District of Columbia|Washington|20003|343
+5|5|District of Columbia|Washington|20012|490
+6|6|District of Columbia|Washington|20003|695
+7|7|District of Columbia|Washington|20002|460
+8|8|District of Columbia|Washington|20001|248
+9|9|District of Columbia|Washington|20011|138
+10|10|District of Columbia|Washington|20007|400
+11|11|District of Columbia|Washington|20011|803
+12|12|District of Columbia|Washington|20032|411
+13|13|District of Columbia|Washington|20001|255
+14|14|District of Columbia|Washington|20003|155
+15|15|District of Columbia|Washington|20037|970
+16|16|District of Columbia|Washington|20008|147
+17|17|District of Columbia|Washington|20010|339
+18|18|District of Columbia|Washington|20018|412
+19|19|District of Columbia|Washington|20009|201
+20|20|District of Columbia|Washington|20011|787
+21|21|District of Columbia|Washington|20011|213
+22|22|District of Columbia|Washington|20002|504
+23|23|District of Columbia|Washington|20017|281
+24|24|District of Columbia|Washington|20001|340
+25|25|District of Columbia|Washington|20017|249
+26|26|District of Columbia|Washington|20001|420
+27|27|District of Columbia|Washington|20019|764
+28|28|District of Columbia|Washington|20015|454
+29|29|District of Columbia|Washington|20007|494
+30|30|District of Columbia|Washington|20001|480
+31|31|District of Columbia|Washington|20002|507
+32|32|District of Columbia|Washington|20011|173
+33|33|District of Columbia|Washington|20011|736
+34|34|District of Columbia|Washington|20003|317
+35|35|District of Columbia|Washington|20020|667
+36|36|District of Columbia|Washington|20020|242
+37|37|District of Columbia|Washington|20012|813
+38|38|District of Columbia|Washington|20007|112
+39|39|District of Columbia|Washington|20032|315
+40|40|District of Columbia|Washington|20020|371
+41|41|District of Columbia|Washington|20002|786
+42|42|District of Columbia|Washington|20002|434
+43|43|District of Columbia|Washington|20009|372
+44|44|District of Columbia|Washington|20002|563
+45|45|District of Columbia|Washington|20006|285
+46|46|District of Columbia|Washington|20019|841
+47|47|District of Columbia|Washington|20002|208
+48|48|District of Columbia|Washington|20002|831
+49|49|District of Columbia|Washington|20032|638
+50|50|District of Columbia|Washington|20002|106
+51|51|District of Columbia|Washington|20018|322
+52|52|District of Columbia|Washington|20007|206
+53|53|District of Columbia|Washington|20020|425
+54|54|District of Columbia|Washington|20001|427
+55|55|District of Columbia|Washington|20010|179
+56|56|District of Columbia|Washington|20017|315
+57|57|District of Columbia|Washington|20007|703
+58|58|District of Columbia|Washington|20024|648
+59|59|District of Columbia|Washington|20011|257
+60|60|District of Columbia|Washington|20032|599
+61|61|District of Columbia|Washington|20017|129
+62|62|District of Columbia|Washington|20011|141
+63|63|District of Columbia|Washington|20019|693
+64|64|District of Columbia|Washington|20016|413
+65|65|District of Columbia|Washington|20018|368
+66|66|District of Columbia|Washington|20001|535
+67|67|District of Columbia|Washington|20017|667
+68|68|District of Columbia|Washington|20011|668
+69|69|District of Columbia|Washington|20018|637
+70|70|District of Columbia|Washington|20001|445
+71|71|District of Columbia|Washington|20024|100
+72|72|District of Columbia|Washington|20020|392
+73|73|District of Columbia|Washington|20011|305
+74|74|District of Columbia|Washington|20010|998
+75|75|District of Columbia|Washington|20017|648
+76|76|District of Columbia|Washington|20005|877
+77|77|District of Columbia|Washington|20002|534
+78|78|District of Columbia|Washington|20008|378
+79|79|District of Columbia|Washington|20373|921
+80|80|District of Columbia|Washington|20002|699
+81|81|District of Columbia|Washington|20016|227
+82|82|District of Columbia|Washington|20002|499
+83|83|District of Columbia|Washington|20019|175
+84|84|District of Columbia|Washington|20017|415
+85|85|District of Columbia|Washington|20009|383
+86|86|District of Columbia|Washington|20007|629
+87|87|District of Columbia|Washington|20016|905
+88|88|District of Columbia|Washington|20002|639
+89|89|District of Columbia|Washington|20017|641
+90|90|District of Columbia|Washington|20003|802
+91|91|District of Columbia|Washington|20007|285
+92|92|District of Columbia|Washington|20019|532
+93|93|District of Columbia|Washington|20011|683
+94|94|District of Columbia|Washington|20011|772
+95|95|District of Columbia|Washington|20002|889
+96|96|District of Columbia|Washington|20012|107
+97|97|District of Columbia|Washington|20020|129
+98|98|District of Columbia|Washington|20037|241
+99|99|District of Columbia|Washington|20001|962
+100|100|District of Columbia|Washington|20012|540
+101|101|District of Columbia|Washington|20019|824
+102|102|District of Columbia|Washington|20020|211
+103|103|District of Columbia|Washington|20373|742
+104|104|District of Columbia|Washington|20011|798
+105|105|District of Columbia|Washington|20009|933
+106|106|District of Columbia|Washington|20012|535
+107|107|District of Columbia|Washington|20003|588
+108|108|District of Columbia|Washington|20018|137
+109|109|District of Columbia|Washington|20001|227
+110|110|District of Columbia|Washington|20010|590
+111|111|District of Columbia|Washington|20005|668
+112|112|District of Columbia|Washington|20019|514
+113|113|District of Columbia|Washington|20002|933
+114|114|District of Columbia|Washington|20020|361
+115|115|District of Columbia|Washington|20020|472
+116|116|District of Columbia|Washington|20003|564
+117|117|District of Columbia|Washington|20019|244
+118|118|District of Columbia|Washington|20018|545
+119|119|District of Columbia|Washington|20009|988
+120|120|District of Columbia|Washington|20020|202
+121|121|District of Columbia|Washington|20012|560
+122|122|District of Columbia|Washington|20002|964
+123|123|District of Columbia|Washington|20012|226
+124|124|District of Columbia|Washington|20012|979
+125|125|District of Columbia|Washington|20019|511
+126|126|District of Columbia|Washington|20019|678
+127|127|District of Columbia|Washington|20015|863
+128|128|District of Columbia|Washington|20008|752
+129|129|District of Columbia|Washington|20015|993
+130|130|District of Columbia|Washington|20002|293
+131|131|District of Columbia|Washington|20008|117
+132|132|District of Columbia|Washington|20003|671
+133|133|District of Columbia|Washington|20011|781
+134|134|District of Columbia|Washington|20011|687
+135|135|District of Columbia|Washington|20016|559
+136|136|District of Columbia|Washington|20020|102
+137|137|District of Columbia|Washington|20011|986
+138|138|District of Columbia|Washington|20003|315
+139|139|District of Columbia|Washington|20001|263
+140|140|District of Columbia|Washington|20008|783
+141|141|District of Columbia|Washington|20015|722
+142|142|District of Columbia|Washington|20002|491
+143|143|District of Columbia|Washington|20019|685
+144|144|District of Columbia|Washington|20011|604
+145|145|District of Columbia|Washington|20007|939
+146|146|District of Columbia|Washington|20010|868
+147|147|District of Columbia|Washington|20018|559
+148|148|District of Columbia|Washington|20017|835
+149|149|District of Columbia|Washington|20007|889
+150|150|District of Columbia|Washington|20018|544
+151|151|District of Columbia|Washington|20017|814
+152|152|District of Columbia|Washington|20017|382
+153|153|District of Columbia|Washington|20003|176
+154|154|District of Columbia|Washington|20002|515
+155|155|District of Columbia|Washington|20009|532
+156|156|District of Columbia|Washington|20001|547
+157|157|District of Columbia|Washington|20012|468
+158|158|District of Columbia|Washington|20019|992
+159|159|District of Columbia|Washington|20011|308
+160|160|District of Columbia|Washington|20011|835
+161|161|District of Columbia|Washington|20020|741
+162|162|District of Columbia|Washington|20011|854
+163|163|District of Columbia|Washington|20003|310
+164|164|District of Columbia|Washington|20010|465
+165|165|District of Columbia|Washington|20011|767
+166|166|District of Columbia|Washington|20016|276
+167|167|District of Columbia|Washington|20019|505
+168|168|District of Columbia|Washington|20011|317
+169|169|District of Columbia|Washington|20002|657
+170|170|District of Columbia|Washington|20011|129
+171|171|District of Columbia|Washington|20036|458
+172|172|District of Columbia|Washington|20001|501
+173|173|District of Columbia|Washington|20011|137
+174|174|District of Columbia|Washington|20005|992
+175|175|District of Columbia|Washington|20018|773
+176|176|District of Columbia|Washington|20011|913
+177|177|District of Columbia|Washington|20001|450
+178|178|District of Columbia|Washington|20018|498
+179|179|District of Columbia|Washington|20001|914
+180|180|District of Columbia|Washington|20019|373
+181|181|District of Columbia|Washington|20003|816
+182|182|District of Columbia|Washington|20020|820
+183|183|District of Columbia|Washington|20003|644
+184|184|District of Columbia|Washington|20001|673
+185|185|District of Columbia|Washington|20002|334
+186|186|District of Columbia|Washington|20011|913
+187|187|District of Columbia|Washington|20016|397
+188|188|District of Columbia|Washington|20011|458
+189|189|District of Columbia|Washington|20002|540
+190|190|District of Columbia|Washington|20019|863
+191|191|District of Columbia|Washington|20005|271
+192|192|District of Columbia|Washington|20020|230
+193|193|District of Columbia|Washington|20015|153
+194|194|District of Columbia|Washington|20003|354
+195|195|District of Columbia|Washington|20018|852
+196|196|Kentucky|Louisville|40219|377
+197|197|Kentucky|Louisville|40206|439
+198|198|Kentucky|Louisville|40208|975
+199|199|Kentucky|Louisville|40214|978
+200|200|Kentucky|Louisville|40258|972
+201|201|Kentucky|Louisville|40218|551
+202|202|Kentucky|Louisville|40216|336
+203|203|Kentucky|Louisville|40203|503
+204|204|Kentucky|Louisville|40202|946
+205|205|Kentucky|Louisville|40220|741
+206|206|Kentucky|Louisville|40223|270
+207|207|Kentucky|Louisville|40245|432
+208|208|Kentucky|Louisville|40223|843
+209|209|Kentucky|Louisville|40223|699
+210|210|Kentucky|Louisville|40245|523
+211|211|Kentucky|Louisville|40242|743
+212|212|Kentucky|Louisville|40291|961
+213|213|Kentucky|Louisville|40204|255
+214|214|Kentucky|Louisville|40291|148
+215|215|Kentucky|Lyndon|40222|842
+216|216|Kentucky|Hurstbourne Acres|40220|396
+217|217|Kentucky|Louisville|40207|914
+218|218|Kentucky|Northfield|40222|298
+219|219|Kentucky|Louisville|40210|386
+220|220|Kentucky|Louisville|40206|451
+221|221|Kentucky|Louisville|40211|868
+222|222|Kentucky|Louisville|40222|979
+223|223|Kentucky|Plantation|40242|844
+224|224|Kentucky|Louisville|40211|400
+225|225|Kentucky|Louisville|40220|263
+226|226|Kentucky|Louisville|40291|140
+227|227|Kentucky|Louisville|40272|896
+228|228|Kentucky|Louisville|40203|583
+229|229|Kentucky|Louisville|40118|297
+230|230|Kentucky|Louisville|40209|817
+231|231|Kentucky|Louisville|40207|348
+232|232|Kentucky|Jeffersontown|40299|380
+233|233|Kentucky|Louisville|40208|691
+234|234|Kentucky|Louisville|40211|401
+235|235|Kentucky|Louisville|40205|664
+236|236|Kentucky|Louisville|40204|335
+237|237|Kentucky|Louisville|40206|500
+238|238|Kentucky|Louisville|40245|717
+239|239|Kentucky|Louisville|40291|637
+240|240|Kentucky|Louisville|40208|114
+241|241|Kentucky|Louisville|40210|715
+242|242|Kentucky|Louisville|40211|605
+243|243|Kentucky|Louisville|40219|955
+244|244|Kentucky|Louisville|40241|927
+245|245|Kentucky|Louisville|40219|286
+246|246|Kentucky|Louisville|40211|638
+247|247|Kentucky|Louisville|40202|724
+248|248|Kentucky|Louisville|40118|132
+249|249|Kentucky|Louisville|40299|298
+250|250|Kentucky|Jeffersontown|40299|708
+251|251|Kentucky|Louisville|40203|712
+252|252|Kentucky|Louisville|40213|454
+253|253|Kentucky|Louisville|40220|789
+254|254|Kentucky|Louisville|40241|255
+255|255|Kentucky|Louisville|40211|552
+256|256|Kentucky|Louisville|40241|240
+257|257|Kentucky|Louisville|40218|513
+258|258|Kentucky|Louisville|40214|152
+259|259|Kentucky|Louisville|40245|327
+260|260|Kentucky|Prospect|40059|839
+261|261|Kentucky|Louisville|40245|712
+262|262|Kentucky|Louisville|40243|859
+263|263|Kentucky|Louisville|40291|313
+264|264|Kentucky|Louisville|40299|511
+265|265|Kentucky|Louisville|40223|968
+266|266|Kentucky|Louisville|40118|949
+267|267|Kentucky|Louisville|40241|266
+268|268|Kentucky|Prospect|40059|454
+269|269|Kentucky|Louisville|40204|791
+270|270|Kentucky|Louisville|40229|541
+271|271|Kentucky|Louisville|40228|913
+272|272|Kentucky|Louisville|40242|815
+273|273|Kentucky|Louisville|40213|494
+274|274|Kentucky|Saint Matthews|40207|209
+275|275|Kentucky|Lyndon|40242|441
+276|276|Kentucky|Louisville|40272|941
+277|277|Kentucky|Louisville|40118|811
+278|278|Kentucky|Louisville|40203|603
+279|279|Kentucky|Louisville|40220|816
+280|280|Kentucky|Louisville|40299|462
+281|281|Kentucky|Louisville|40272|348
+282|282|Kentucky|Louisville|40204|361
+283|283|Kentucky|Louisville|40208|475
+284|284|Kentucky|Louisville|40245|183
+285|285|Kentucky|Louisville|40213|731
+286|286|Kentucky|Louisville|40211|892
+287|287|Kentucky|Louisville|40299|473
+288|288|Kentucky|Louisville|40272|878
+289|289|Kentucky|Louisville|40207|977
+290|290|Kentucky|Louisville|40216|245
+291|291|Kentucky|Louisville|40212|787
+292|292|Kentucky|Louisville|40272|166
+293|293|Kentucky|Louisville|40205|377
+294|294|Kentucky|Louisville|40219|725
+295|295|Kentucky|Louisville|40214|884
+296|296|Kentucky|Louisville|40202|371
+297|297|Kentucky|Louisville|40208|775
+298|298|Kentucky|Louisville|40245|925
+299|299|Kentucky|Louisville|40243|770
+300|300|Kentucky|Louisville|40210|170
+301|301|Kentucky|Louisville|40299|881
+302|302|Kentucky|Louisville|40245|188
+303|303|Kentucky|Louisville|40216|628
+304|304|Kentucky|Louisville|40218|384
+305|305|Kentucky|Lyndon|40222|120
+306|306|Kentucky|Louisville|40272|469
+307|307|Kentucky|Louisville|40241|820
+308|308|Kentucky|Louisville|40210|955
+309|309|Kentucky|Louisville|40219|489
+310|310|Kentucky|Louisville|40272|897
+311|311|Kentucky|Prospect|40059|572
+312|312|Kentucky|Louisville|40258|126
+313|313|Kentucky|Louisville|40212|973
+314|314|Kentucky|Louisville|40229|829
+315|315|Kentucky|Louisville|40204|648
+316|316|Kentucky|Louisville|40204|275
+317|317|Kentucky|Louisville|40222|748
+318|318|Kentucky|Louisville|40222|722
+319|319|Kentucky|Louisville|40207|205
+320|320|Kentucky|Louisville|40203|657
+321|321|Kentucky|Louisville|40203|495
+322|322|Kentucky|Louisville|40210|518
+323|323|Kentucky|Louisville|40216|998
+324|324|Kentucky|Louisville|40212|350
+325|325|Kentucky|Louisville|40205|342
+326|326|Kentucky|Louisville|40291|656
+327|327|Kentucky|Louisville|40272|219
+328|328|Kentucky|Louisville|40202|437
+329|329|Kentucky|Louisville|40272|501
+330|330|Kentucky|Louisville|40203|890
+331|331|Kentucky|Louisville|40213|462
+332|332|Kentucky|Louisville|40211|640
+333|333|Kentucky|Louisville|40241|836
+334|334|Kentucky|Louisville|40214|737
+335|335|Kentucky|Louisville|40203|952
+336|336|Kentucky|Louisville|40291|906
+337|337|Kentucky|Louisville|40118|508
+338|338|Kentucky|Louisville|40207|187
+339|339|Kentucky|Louisville|40245|911
+340|340|Kentucky|Louisville|40219|233
+341|341|Kentucky|Louisville|40243|635
+342|342|Kentucky|Louisville|40212|325
+343|343|Kentucky|Louisville|40258|324
+344|344|Kentucky|Louisville|40211|382
+345|345|Kentucky|Louisville|40207|530
+346|346|Kentucky|Louisville|40207|465
+347|347|Kentucky|Louisville|40229|982
+348|348|Kentucky|Louisville|40228|974
+349|349|Kentucky|Louisville|40272|515
+350|350|Kentucky|Louisville|40299|750
+351|351|Kentucky|Louisville|40299|406
+352|352|Kentucky|Louisville|40223|992
+353|353|Kentucky|Louisville|40204|702
+354|354|Kentucky|Louisville|40217|631
+355|355|Kentucky|Jeffersontown|40299|585
+356|356|Kentucky|Louisville|40291|783
+357|357|Kentucky|Louisville|40217|836
+358|358|Kentucky|Louisville|40272|166
+359|359|Kentucky|Louisville|40118|670
+360|360|Kentucky|Louisville|40223|466
+361|361|Kentucky|Louisville|40223|864
+362|362|Kentucky|Louisville|40241|469
+363|363|Kentucky|Louisville|40299|200
+364|364|Kentucky|Louisville|40206|689
+365|365|Kentucky|Louisville|40204|180
+366|366|Kentucky|Louisville|40210|520
+367|367|Kentucky|Louisville|40205|358
+368|368|Kentucky|Louisville|40272|153
+369|369|Kentucky|Saint Matthews|40207|917
+370|370|Kentucky|Louisville|40206|394
+371|371|Kentucky|Louisville|40216|959
+372|372|Kentucky|Louisville|40204|633
+373|373|Kentucky|Louisville|40219|760
+374|374|Kentucky|Louisville|40243|576
+375|375|Kentucky|Louisville|40291|519
+376|376|Kentucky|Louisville|40299|174
+377|377|Kentucky|Louisville|40208|676
+378|378|Kentucky|Louisville|40222|504
+379|379|Kentucky|Louisville|40204|697
+380|380|Kentucky|Louisville|40215|583
+381|381|Kentucky|Louisville|40291|747
+382|382|Kentucky|Louisville|40202|300
+383|383|Kentucky|Louisville|40299|901
+384|384|Kentucky|Prospect|40059|351
+385|385|Kentucky|Louisville|40206|340
+386|386|California|Grass Valley|95945|199
+387|387|California|Vallejo|94591|256
+388|388|California|Salinas|93908|654
+389|389|California|O'Neals|93645|854
+390|390|California|Foresthill|95631|623
+391|391|California|Santa Cruz|95060|114
+392|392|California|Union City|94587|725
+393|393|California|Bakersfield|93311|800
+394|394|California|Castro Valley|94546|833
+395|395|California|Carson|90810|296
+396|396|California|Castro Valley|94546|448
+397|397|California|Fremont|94536|168
+398|398|California|Rancho Cordova|95670|410
+399|399|California|Salinas|93906|212
+400|400|California|Oakland|94601|919
+401|401|California|Berkeley|94709|178
+402|402|California|Hayward|94544|750
+403|403|California|Livermore|94551|966
+404|404|California|Fremont|94555|695
+405|405|California|Baldwin Park|91706|249
+406|406|California|Davis|95616|383
+407|407|California|Woodland|95776|941
+408|408|California|Fremont|94536|406
+409|409|California|Fremont|94536|330
+410|410|California|Pleasanton|94588|849
+411|411|California|Hesperia|92344|357
+412|412|California|San Lorenzo|94580|824
+413|413|California|Orange|92869|601
+414|414|California|Oakland|94608|223
+415|415|California|Oakland|94621|191
+416|416|California|Fremont|94555|662
+417|417|California|Olivehurst|95961|289
+418|418|California|Oakland|94605|557
+419|419|California|Aptos|95003|817
+420|420|California|Oakland|94605|186
+421|421|California|San Leandro|94577|438
+422|422|California|Castro Valley|94546|583
+423|423|California|Concord|94519|369
+424|424|California|Oakland|94605|569
+425|425|California|Oakland|94621|317
+426|426|California|Cupertino|95014|530
+427|427|California|Livermore|94550|882
+428|428|California|Mountain View|94043|335
+429|429|California|Chico|95928|973
+430|430|California|Bakersfield|93305|555
+431|431|California|Fremont|94538|823
+432|432|California|Hayward|94541|483
+433|433|California|San Diego|92103|314
+434|434|California|Oakland|94621|165
+435|435|California|Pleasanton|94588|690
+436|436|California|Mountain View|94043|823
+437|437|California|Hayward|94541|124
+438|438|California|West Sacramento|95605|683
+439|439|California|Hayward|94541|903
+440|440|California|Oakland|94601|486
+441|441|California|Mammoth Lakes|93546|910
+442|442|California|Hayward|94545|911
+443|443|California|San Leandro|94578|333
+444|444|California|Twentynine Palms|92277|577
+445|445|California|Hayward|94545|119
+446|446|California|Hayward|94541|358
+447|447|California|Oakland|94601|731
+448|448|California|Sacramento|95824|969
+449|449|California|Fremont|94536|959
+450|450|California|Hayward|94544|506
+451|451|California|Grass Valley|95949|117
+452|452|California|Blue Lake|95525|563
+453|453|California|Berkeley|94710|270
+454|454|California|Fremont|94555|619
+455|455|California|Berkeley|94708|116
+456|456|California|Oakland|94610|574
+457|457|California|Fremont|94536|844
+458|458|California|Oakland|94605|280
+459|459|California|Livermore|94551|756
+460|460|California|Castro Valley|94552|872
+461|461|California|Castro Valley|94546|881
+462|462|California|Oakland|94609|278
+463|463|California|Cupertino|95014|851
+464|464|California|Redlands|92373|785
+465|465|California|Carson|90810|923
+466|466|California|Hayward|94544|212
+467|467|California|San Leandro|94577|878
+468|468|California|Hayward|94544|649
+469|469|California|Union City|94587|272
+470|470|California|San Lorenzo|94580|604
+471|471|California|Santa Rosa|95409|336
+472|472|California|Berkeley|94704|139
+473|473|California|Santa Cruz|95062|592
+474|474|California|Mountain View|94040|542
+475|475|California|Orange|92868|934
+476|476|California|Castro Valley|94552|357
+477|477|California|Escondido|92027|481
+478|478|California|Carlsbad|92008|213
+479|479|California|Hayward|94541|957
+480|480|California|Union City|94587|415
+481|481|California|Concord|94521|739
+482|482|California|Hayward|94542|747
+483|483|California|Pleasanton|94588|796
+484|484|California|Hayward|94542|343
+485|485|California|Madera|93638|932
+486|486|California|Hayward|94541|652
+487|487|California|Bakersfield|93313|941
+488|488|California|Fresno|93722|466
+489|489|California|Berkeley|94702|391
+490|490|California|El Cerrito|94530|816
+491|491|California|Oakland|94618|408
+492|492|California|Union City|94587|598
+493|493|California|Sacramento|95815|901
+494|494|California|Fremont|94536|650
+495|495|California|Rancho Palos Verdes|90275|630
+496|496|California|Fremont|94536|198
+497|497|California|Carson|90746|128
+498|498|California|Livermore|94550|910
+499|499|California|Fremont|94539|926
+500|500|California|Livermore|94550|740
+501|501|California|Oakland|94610|452
+502|502|California|Hayward|94544|715
+503|503|California|Eureka|95501|175
+504|504|California|Newark|94560|914
+505|505|California|Castro Valley|94546|626
+506|506|California|Livermore|94550|962
+507|507|California|Hayward|94541|451
+508|508|California|Pleasanton|94566|999
+509|509|California|McKinleyville|95519|665
+510|510|California|Berkeley|94707|268
+511|511|California|Sacramento|95820|707
+512|512|California|San Leandro|94577|543
+513|513|California|Piedmont|94610|768
+514|514|California|Magalia|95954|717
+515|515|California|Berkeley|94704|805
+516|516|California|Pleasanton|94566|446
+517|517|California|Selma|93662|873
+518|518|California|Pleasanton|94566|457
+519|519|California|Newark|94560|420
+520|520|California|Morro Bay|93442|957
+521|521|California|Berkeley|94709|449
+522|522|California|Mountain View|94040|469
+523|523|California|Fremont|94538|664
+524|524|California|Dublin|94568|800
+525|525|California|Fremont|94538|107
+526|526|California|Alameda|94501|476
+527|527|California|Mountain View|94043|746
+528|528|California|Cupertino|95014|558
+529|529|California|Elk Grove|95757|260
+530|530|California|Piedmont|94611|199
+531|531|California|Tahoe City|96145|464
+532|532|California|Berkeley|94708|452
+533|533|California|Mountain View|94043|191
+534|534|California|Vacaville|95688|333
+535|535|California|Hayward|94541|750
+536|536|California|Fremont|94536|125
+537|537|California|Jackson|95642|565
+538|538|California|Oroville|95966|732
+539|539|California|Roseville|95678|838
+540|540|California|San Leandro|94577|903
+541|541|California|Mammoth Lakes|93546|166
+542|542|California|Castro Valley|94546|690
+543|543|California|Oakland|94611|395
+544|544|California|Fremont|94536|447
+545|545|California|Alameda|94501|830
+546|546|California|Fortuna|95540|995
+547|547|California|Livermore|94551|891
+548|548|California|Oakland|94611|698
+549|549|California|Truckee|96161|139
+550|550|California|Escondido|92027|268
+551|551|California|Livermore|94551|222
+552|552|California|Oroville|95966|566
+553|553|California|San Leandro|94579|560
+554|554|California|Alameda|94502|424
+555|555|California|Fremont|94538|522
+556|556|California|Fremont|94536|269
+557|557|California|Orange|92867|932
+558|558|California|Soda Springs|95728|882
+559|559|California|Fremont|94536|112
+560|560|California|Berkeley|94702|937
+561|561|California|Berkeley|94710|207
+562|562|California|Fresno|93737|655
+563|563|California|Hayward|94545|720
+564|564|California|King City|93930|862
+565|565|California|Alameda|94502|901
+566|566|California|Oakland|94602|775
+567|567|California|Union City|94587|684
+568|568|California|Oakland|94611|296
+569|569|California|San Leandro|94578|976
+570|570|California|Pioneer|95666|719
+571|571|California|Bakersfield|93304|670
+572|572|California|Oakland|94619|287
+573|573|California|Dublin|94568|239
+574|574|California|Hayward|94544|809
+575|575|California|Ione|95640|338
+576|576|California|Fremont|94539|671
+577|577|California|Castro Valley|94552|404
+578|578|California|Linda|95901|151
+579|579|California|Suisun City|94585|845
+580|580|California|Atascadero|93422|409
+581|581|California|Union City|94587|556
+582|582|California|Marysville|95901|518
+583|583|California|San Leandro|94579|989
+584|584|California|Oakland|94602|775
+585|585|California|Fremont|94538|447
+586|586|California|Roseville|95747|224
+587|587|California|Fairfield|94534|947
+588|588|California|Livermore|94550|845
+589|589|California|Santa Clara|95051|298
+590|590|California|Cupertino|95014|715
+591|591|California|Hayward|94545|461
+592|592|California|Berkeley|94710|391
+593|593|California|Hayward|94545|103
+594|594|California|Oakland|94619|761
+595|595|California|Livermore|94550|674
+596|596|California|Los Angeles|90066|663
+597|597|California|Fremont|94536|174
+598|598|California|Fremont|94538|324
+599|599|California|Union City|94587|132
+600|600|California|Santa Rosa|95404|681
+601|601|California|Union City|94587|639
+602|602|California|Capitola|95010|481
+603|603|California|Castro Valley|94552|471
+604|604|California|Berkeley|94707|365
+605|605|California|Berkeley|94702|467
+606|606|California|Livermore|94550|415
+607|607|California|Fremont|94536|133
+608|608|California|Oakland|94607|426
+609|609|California|Fremont|94536|826
+610|610|California|San Leandro|94578|308
+611|611|California|Smartsville|95977|294
+612|612|California|Newark|94560|576
+613|613|California|Cupertino|95014|416
+614|614|California|Orange|92867|916
+615|615|California|Fremont|94536|470
+616|616|California|Fremont|94539|745
+617|617|California|Oakland|94611|713
+618|618|California|San Gabriel|91775|733
+619|619|California|Berkeley|94709|455
+620|620|California|Berkeley|94702|712
+621|621|California|Paso Robles|93446|411
+622|622|California|Gardena|90248|654
+623|623|California|San Leandro|94578|733
+624|624|California|Oakland|94609|684
+625|625|California|Berkeley|94702|567
+626|626|California|nan|95076|312
+627|627|California|Soquel|95073|235
+628|628|California|Berkeley|94709|629
+629|629|California|Woodland|95695|248
+630|630|California|Oakland|94609|568
+631|631|California|San Leandro|94577|983
+632|632|California|Monte Rio|95462|581
+633|633|California|Fremont|94539|652
+634|634|California|Eureka|95503|500
+635|635|California|Castro Valley|94552|190
+636|636|California|Oakland|94610|467
+637|637|California|Concord|94519|426
+638|638|California|San Leandro|94579|355
+639|639|California|Oakland|94611|550
+640|640|California|Alameda|94501|213
+641|641|California|Berkeley|94705|237
+642|642|California|Lincoln|95648|647
+643|643|California|Dublin|94568|909
+644|644|California|Bakersfield|93313|806
+645|645|California|Livermore|94550|518
+646|646|California|Sebastopol|95472|466
+647|647|California|Hayward|94541|921
+648|648|California|Vacaville|95687|333
+649|649|California|San Jose|95132|144
+650|650|California|Fremont|94536|409
+651|651|California|Berkeley|94705|385
+652|652|California|Hayward|94544|338
+653|653|California|Chico|95928|582
+654|654|California|Union City|94587|628
+655|655|California|Hanford|93230|416
+656|656|California|Fremont|94538|860
+657|657|California|Berkeley|94705|476
+658|658|California|Berkeley|94709|786
+659|659|California|Yucaipa|92399|294
+660|660|California|Berkeley|94708|729
+661|661|California|Fremont|94539|621
+662|662|California|Wheatland|95692|768
+663|663|California|Hanford|93230|614
+664|664|California|Fremont|94538|383
+665|665|California|Fremont|94538|170
+666|666|California|Cupertino|95014|729
+667|667|California|Redding|96002|157
+668|668|California|Pleasanton|94588|698
+669|669|California|San Leandro|94579|145
+670|670|California|Berkeley|94703|536
+671|671|California|Hayward|94545|297
+672|672|California|Oakland|94605|440
+673|673|California|Oakland|94606|935
+674|674|California|San Leandro|94578|837
+675|675|California|San Luis Obispo|93405|801
+676|676|California|Oakhurst|93644|334
+677|677|California|Oakland|94605|795
+678|678|California|Hayward|94544|566
+679|679|California|Oakland|94603|216
+680|680|California|Redding|96003|362
+681|681|California|Antioch|94509|989
+682|682|California|South Lake Tahoe|96150|314
+683|683|California|Hayward|94544|794
+684|684|California|Livermore|94550|751
+685|685|California|Castaic|91384|802
+686|686|California|Redding|96001|926
+687|687|California|Whitmore|96096|817
+688|688|California|Carson|90745|243
+689|689|California|West Sacramento|95691|434
+690|690|California|Fremont|94536|743
+691|691|California|Alameda|94502|184
+692|692|California|Orange|92868|450
+693|693|California|Tollhouse|93667|150
+694|694|California|Oakland|94621|512
+695|695|California|Oakland|94601|965
+696|696|California|Sutter Creek|95685|202
+697|697|California|San Diego|92111|549
+698|698|California|Fremont|94536|139
+699|699|California|Oakland|94602|487
+700|700|California|Union City|94587|575
+701|701|California|Madera|93638|530
+702|702|California|Berkeley|94709|134
+703|703|California|Pismo Beach|93449|230
+704|704|California|Union City|94587|869
+705|705|California|San Leandro|94578|940
+706|706|California|Piedmont|94610|649
+707|707|California|Oakland|94605|228
+708|708|California|Berkeley|94702|683
+709|709|California|Sutter Creek|95685|920
+710|710|California|Union City|94587|183
+711|711|California|Union City|94587|950
+712|712|California|Fremont|94555|706
+713|713|California|Rohnert Park|94928|470
+714|714|California|Selma|93662|900
+715|715|California|Mammoth Lakes|93546|347
+716|716|California|San Jose|95127|424
+717|717|California|Mammoth Lakes|93546|110
+718|718|Connecticut|Manchester|06040|207
+719|719|Connecticut|Manchester|06040|189
+720|720|Connecticut|Manchester|06042|906
+721|721|Connecticut|Manchester|06042|736
+722|722|Connecticut|Manchester|06040|562
+723|723|Connecticut|Manchester|06040|860
+724|724|Connecticut|Manchester|06040|773
+725|725|Connecticut|Manchester|06042|410
+726|726|Connecticut|Manchester|06040|718
+727|727|Connecticut|Manchester|06042|927
+728|728|Connecticut|Manchester|06040|961
+729|729|Connecticut|Manchester|06040|909
+730|730|Connecticut|Manchester|06042|589
+731|731|Connecticut|Manchester|06042|727
+732|732|Connecticut|Manchester|06040|955
+733|733|Connecticut|Manchester|06042|135
+734|734|Connecticut|Manchester|06040|682
+735|735|Connecticut|Manchester|06042|502
+736|736|Connecticut|Manchester|06040|912
+737|737|Connecticut|Manchester|06040|212
+738|738|Connecticut|Manchester|06040|898
+739|739|Connecticut|Groton|06340|551
+740|740|Connecticut|Manchester|06040|350
+741|741|Connecticut|Manchester|06040|452
+742|742|Connecticut|Manchester|06040|131
+743|743|Connecticut|Manchester|06040|815
+744|744|Connecticut|Manchester|06040|419
+745|745|Connecticut|Manchester|06040|512
+746|746|Connecticut|Manchester|06040|894
+747|747|Connecticut|Manchester|06040|241
+748|748|Connecticut|Manchester|06040|700
+749|749|Connecticut|Manchester|06040|892
+750|750|Connecticut|Manchester|06040|567
+751|751|Connecticut|Manchester|06040|614
+752|752|Connecticut|Manchester|06040|649
+753|753|Connecticut|Manchester|06040|531
+754|754|Connecticut|Manchester|06040|294
+755|755|Connecticut|Manchester|06040|421
+756|756|Connecticut|Manchester|06040|912
+757|757|Connecticut|Manchester|06042|796
+758|758|Connecticut|Manchester|06042|925
+759|759|Connecticut|Manchester|06040|954
+760|760|Connecticut|Manchester|06040|552
+761|761|Connecticut|Manchester|06040|659
+762|762|Connecticut|Manchester|06040|935
+763|763|Connecticut|Manchester|06040|523
+764|764|Connecticut|Manchester|06040|726
+765|765|Connecticut|Manchester|06040|977
+766|766|Connecticut|Manchester|06040|236
+767|767|Connecticut|Manchester|06040|954
+768|768|Connecticut|Manchester|06042|622
+769|769|Connecticut|Manchester|06042|385
+770|770|Connecticut|Manchester|06042|398
+771|771|Connecticut|Manchester|06040|646
+772|772|Connecticut|Manchester|06040|732
+773|773|Connecticut|Manchester|06042|965
+774|774|Connecticut|Manchester|06040|117
+775|775|Connecticut|Manchester|06040|958
+776|776|Connecticut|Manchester|06040|962
+777|777|Connecticut|Manchester|06040|398
+778|778|Connecticut|Manchester|06040|563
+779|779|Connecticut|Manchester|06042|697
+780|780|Connecticut|Manchester|06040|174
+781|781|Connecticut|Manchester|06040|531
+782|782|Connecticut|Manchester|06042|248
+783|783|Connecticut|Manchester|06042|968
+784|784|Connecticut|Manchester|06040|477
+785|785|Connecticut|Manchester|06040|369
+786|786|Connecticut|Manchester|06040|734
+787|787|Connecticut|Manchester|06040|187
+788|788|Connecticut|Manchester|06042|318
+789|789|Connecticut|Manchester|06040|607
+790|790|Connecticut|Manchester|06040|266
+791|791|Connecticut|Manchester|06042|765
+792|792|Connecticut|Manchester|06040|500
+793|793|Connecticut|Manchester|06042|100
+794|794|Connecticut|Manchester|06040|884
+795|795|Connecticut|Manchester|06042|931
+796|796|Connecticut|Manchester|06040|260
+797|797|Connecticut|Manchester|06042|989
+798|798|Connecticut|Manchester|06042|805
+799|799|Connecticut|Manchester|06042|829
+800|800|Connecticut|Manchester|06042|932
+801|801|Connecticut|Manchester|06042|109
+802|802|Connecticut|Manchester|06042|102
+803|803|Connecticut|Manchester|06040|631
+804|804|Connecticut|Manchester|06040|566
+805|805|Connecticut|Manchester|06040|943
+806|806|Connecticut|Manchester|06040|620
+807|807|Connecticut|Manchester|06040|272
+808|808|Connecticut|Manchester|06040|989
+809|809|Connecticut|Manchester|06040|455
+810|810|Connecticut|Manchester|06040|471
+811|811|Connecticut|Manchester|06040|294
+812|812|Connecticut|Manchester|06040|933
+813|813|Connecticut|Manchester|06042|241
+814|814|Connecticut|Manchester|06040|754
+815|815|Connecticut|Manchester|06040|915
+816|816|Connecticut|Manchester|06040|246
+817|817|Connecticut|Manchester|06040|987
+818|818|Connecticut|Manchester|06040|419
+819|819|Connecticut|Manchester|06040|216
+820|820|Connecticut|Manchester|06040|733
+821|821|Connecticut|Manchester|06042|602
+822|822|Connecticut|Manchester|06040|299
+823|823|Connecticut|Manchester|06040|909
+824|824|Connecticut|Manchester|06040|568
+825|825|Connecticut|Manchester|06040|877
+826|826|Connecticut|Manchester|06040|171
+827|827|Connecticut|Manchester|06040|929
+828|828|Connecticut|Manchester|06042|491
+829|829|Connecticut|Manchester|06040|130
+830|830|Connecticut|Manchester|06040|752
+831|831|Connecticut|Groton|06340|190
+832|832|Connecticut|Manchester|06040|631
+833|833|Connecticut|Manchester|06040|831
+834|834|Connecticut|Manchester|06040|670
+835|835|Connecticut|Manchester|06040|514
+836|836|Connecticut|Manchester|06040|710
+837|837|Connecticut|Manchester|06042|885
+838|838|Connecticut|Manchester|06042|854
+839|839|Connecticut|Manchester|06040|124
+840|840|Connecticut|Manchester|06040|734
+841|841|Connecticut|Manchester|06042|824
+842|842|Connecticut|Manchester|06040|686
+843|843|Connecticut|Manchester|06040|388
+844|844|Connecticut|Manchester|06042|562
+845|845|Connecticut|Manchester|06042|130
+846|846|Connecticut|Manchester|06040|110
+847|847|Connecticut|Manchester|06040|949
+848|848|Connecticut|Manchester|06042|797
+849|849|Connecticut|Manchester|06042|606
+850|850|Connecticut|Manchester|06040|756
+851|851|Connecticut|Groton|06340|626
+852|852|Connecticut|Manchester|06042|875
+853|853|Connecticut|Manchester|06040|514
+854|854|Connecticut|Manchester|06042|833
+855|855|Connecticut|Manchester|06042|124
+856|856|Connecticut|Manchester|06040|442
+857|857|Connecticut|Manchester|06040|156
+858|858|Connecticut|Manchester|06042|664
+859|859|Connecticut|Manchester|06040|693
+860|860|Connecticut|Manchester|06040|445
+861|861|Connecticut|Manchester|06042|445
+862|862|Connecticut|Manchester|06040|482
+863|863|Connecticut|Manchester|06040|625
+864|864|Connecticut|Manchester|06040|276
+865|865|Connecticut|Manchester|06040|585
+866|866|Connecticut|Manchester|06040|524
+867|867|Connecticut|Manchester|06040|414
+868|868|Connecticut|Manchester|06042|973
+869|869|Connecticut|Manchester|06040|365
+870|870|Connecticut|Groton|06340|191
+871|871|Connecticut|Manchester|06040|602
+872|872|Connecticut|Manchester|06040|274
+873|873|Connecticut|Manchester|06040|543
+874|874|Connecticut|Manchester|06042|692
+875|875|Connecticut|Manchester|06040|100
+876|876|Connecticut|Manchester|06042|804
+877|877|Connecticut|Manchester|06040|900
+878|878|Connecticut|Manchester|06040|425
+879|879|Connecticut|Manchester|06040|118
+880|880|Connecticut|Manchester|06040|148
+881|881|Connecticut|Manchester|06042|944
+882|882|Connecticut|Manchester|06042|184
+883|883|Connecticut|Manchester|06042|669
+884|884|Connecticut|Manchester|06042|245
+885|885|Connecticut|Manchester|06040|123
+886|886|Connecticut|Manchester|06042|425
+887|887|Connecticut|Manchester|06042|650
+888|888|Connecticut|Manchester|06040|791
+889|889|Connecticut|Groton|06340|759
+890|890|Connecticut|Manchester|06042|345
+891|891|Connecticut|Manchester|06042|472
+892|892|Connecticut|Manchester|06040|249
+893|893|Connecticut|Manchester|06040|577
+894|894|Connecticut|Manchester|06040|381
+895|895|Connecticut|Manchester|06042|798
+896|896|Connecticut|Manchester|06042|268
+897|897|Connecticut|Manchester|06042|271
+898|898|Connecticut|Manchester|06042|252
+899|899|Connecticut|Manchester|06040|956
+900|900|Connecticut|Manchester|06040|549
+901|901|Connecticut|Manchester|06042|758
+902|902|Connecticut|Manchester|06040|908
+903|903|Connecticut|Manchester|06040|868
+904|904|Connecticut|Manchester|06042|708
+905|905|Connecticut|Manchester|06042|709
+906|906|Connecticut|Manchester|06042|672
+907|907|Connecticut|Manchester|06040|260
+908|908|Connecticut|Manchester|06042|529
+909|909|Connecticut|Manchester|06040|428
+910|910|Connecticut|Manchester|06040|494
+911|911|Connecticut|Manchester|06040|281
+912|912|Connecticut|Manchester|06042|615
+913|913|Connecticut|Manchester|06042|493
+914|914|Vermont|Essex|05452|290
+915|915|Vermont|West Windsor|05037|865
+916|916|Vermont|Westmore|05860|482
+917|917|Vermont|nan|05753|214
+918|918|Vermont|Burlington|05401|948
+919|919|Vermont|Alburgh|05440|398
+920|920|Vermont|nan|05443|852
+921|921|Vermont|Chester|05143|375
+922|922|Vermont|nan|05468|493
+923|923|Vermont|Essex|05452|334
+924|924|Vermont|nan|05488|376
+925|925|Vermont|nan|05468|657
+926|926|Vermont|Windsor|05089|425
+927|927|Vermont|Westmore|05860|700
+928|928|Vermont|Walden|05836|817
+929|929|Vermont|New Haven|05472|101
+930|930|Vermont|Randolph|05060|692
+931|931|Vermont|Castleton|05735|197
+932|932|Vermont|nan|05488|616
+933|933|Vermont|Saint Albans City|05478|666
+934|934|Vermont|Springfield|05156|538
+935|935|Vermont|Saint Albans City|05478|844
+936|936|Vermont|Hartford|05001|985
+937|937|Vermont|Poultney|05764|252
+938|938|Vermont|Wilmington|05363|454
+939|939|Vermont|Rutland|05701|616
+940|940|Vermont|Essex|05452|103
+941|941|Vermont|Hinesburg|05461|998
+942|942|Vermont|Stratton|05360|625
+943|943|Vermont|Vershire|05079|757
+944|944|Vermont|Newport|05855|132
+945|945|Vermont|Town of Rockingham|05101|213
+946|946|Vermont|Windham|05359|619
+947|947|Vermont|Barre|05641|586
+948|948|Vermont|Saint Albans Town|05488|665
+949|949|Vermont|Fairfax|05454|418
+950|950|Vermont|Hartford|05001|217
+951|951|Vermont|Lowell|05847|300
+952|952|Vermont|South Burlington|05403|441
+953|953|Vermont|Waterbury Center|05677|883
+954|954|Vermont|Proctor|05765|487
+955|955|Vermont|Brighton|05846|917
+956|956|Vermont|Essex|05452|777
+957|957|Vermont|Rutland|05701|501
+958|958|Vermont|Huntington|05462|290
+959|959|Vermont|Barre|05641|435
+960|960|Vermont|Morristown|05661|695
+961|961|Vermont|nan|05149|834
+962|962|Vermont|Colchester|05446|899
+963|963|Vermont|Burlington|05401|991
+964|964|Vermont|Burlington|05408|543
+965|965|Vermont|Woodford|05201|839
+966|966|Vermont|Reading|05062|648
+967|967|Vermont|Bristol|05443|500
+968|968|Vermont|Shaftsbury|05262|351
+969|969|Vermont|Groton|05046|712
+970|970|Vermont|nan|05150|294
+971|971|Vermont|Derby|05829|647
+972|972|Vermont|Williston|05495|532
+973|973|Vermont|Montpelier|05602|312
+974|974|Vermont|Waitsfield|05673|232
+975|975|Vermont|Hartford|05001|871
+976|976|Vermont|Wolcott|05680|503
+977|977|Vermont|Burke|05871|787
+978|978|Vermont|Poultney|05764|372
+979|979|Vermont|Barnard|05068|521
+980|980|Vermont|Colchester|05446|134
+981|981|Vermont|Colchester|05446|398
+982|982|Vermont|nan|05156|267
+983|983|Vermont|Bethel|05032|153
+984|984|Vermont|Stowe|05672|367
+985|985|Vermont|Saint Albans City|05478|550
+986|986|Vermont|Charlotte|05445|512
+987|987|Vermont|Underhill|05489|119
+988|988|Vermont|Highgate|05459|961
+989|989|Vermont|Chester|05143|344
+990|990|Vermont|nan|05647|250
+991|991|Vermont|nan|05488|166
+992|992|Vermont|Maidstone|05905|868
+993|993|Vermont|Alburgh|05440|980
+994|994|Vermont|Colchester|05446|721
+995|995|Vermont|Townshend|05359|440
+996|996|Vermont|Bolton|05676|591
+997|997|Vermont|Essex|05452|867
+998|998|Vermont|West Brattleboro|05301|816
+999|999|Vermont|nan|05443|950
+1000|1000|Vermont|nan|05733|459
+1001|1001|Vermont|Westmore|05860|188
+1002|1002|Vermont|Shelburne|05482|805
+1003|1003|Vermont|Rutland|05701|795
+1004|1004|Vermont|Springfield|05156|481
+1005|1005|Vermont|nan|05250|454
+1006|1006|Vermont|Ludlow|05149|406
+1007|1007|Vermont|Fair Haven|05743|233
+1008|1008|Vermont|Greensboro|05841|572
+1009|1009|Vermont|Hartford|05001|456
+1010|1010|Vermont|Moretown|05660|667
+1011|1011|Vermont|Windsor|05089|854
+1012|1012|Vermont|Woodbury|05650|991
+1013|1013|Vermont|Shelburne|05482|343
+1014|1014|Vermont|Williamstown|05679|410
+1015|1015|Vermont|Thetford|05075|608
+1016|1016|Vermont|Danville|05873|175
+1017|1017|Vermont|Newport|05855|550
+1018|1018|Vermont|Burlington|05408|872
+1019|1019|Vermont|Williston|05495|208
+1020|1020|Vermont|Saint Johnsbury|05819|231
+1021|1021|Vermont|Woodford|05201|604
+1022|1022|Vermont|Franklin|05457|367
+1023|1023|Vermont|Newfane|05345|745
+1024|1024|Vermont|Bristol|05443|248
+1025|1025|Vermont|Hartford|05001|765
+1026|1026|Vermont|Hinesburg|05461|213
+1027|1027|Vermont|Colchester|05446|779
+1028|1028|Vermont|Guildhall|05905|555
+1029|1029|Vermont|Colchester|05446|264
+1030|1030|Vermont|Richford|05476|127
+1031|1031|Vermont|Vergennes|05491|720
+1032|1032|Vermont|nan|05033|534
+1033|1033|Vermont|Plymouth|05056|159
+1034|1034|Vermont|Shelburne|05482|427
+1035|1035|Vermont|East Haven|05837|275
+1036|1036|Vermont|Warren|05674|725
+1037|1037|Vermont|Richmond|05477|698
+1038|1038|Vermont|nan|05468|527
+1039|1039|Vermont|Burlington|05401|929
+1040|1040|Vermont|Castleton|05732|146
+1041|1041|Vermont|Middlebury|05753|175
+1042|1042|Vermont|Burlington|05408|273
+1043|1043|Vermont|South Burlington|05403|605
+1044|1044|Vermont|Brookfield|05036|826
+1045|1045|Vermont|Pittsford|05763|571
+1046|1046|Vermont|Barre|05641|952
+1047|1047|Vermont|Stowe|05672|803
+1048|1048|Vermont|Woodford|05201|642
+1049|1049|Vermont|Washington|05675|944
+1050|1050|Vermont|Hartland|05048|290
+1051|1051|Vermont|Saint Albans City|05478|877
+1052|1052|Vermont|Weathersfield|05151|393
+1053|1053|Vermont|Swanton|05488|808
+1054|1054|Vermont|Barre|05641|701
+1055|1055|Vermont|Lyndon|05851|702
+1056|1056|Vermont|Lunenburg|05906|669
+1057|1057|Vermont|Belvidere|05442|116
+1058|1058|Vermont|Fairlee|05045|751
+1059|1059|Vermont|Burke|05871|587
+1060|1060|Vermont|South Burlington|05403|135
+1061|1061|Vermont|Rutland|05701|249
+1062|1062|Vermont|Thetford|05043|825
+1063|1063|Vermont|nan|05465|884
+1064|1064|Vermont|Wolcott|05680|347
+1065|1065|Vermont|Groton|05046|648
+1066|1066|Vermont|Danville|05828|671
+1067|1067|Vermont|Wheelock|05851|393
+1068|1068|Vermont|Woodford|05201|512
+1069|1069|Vermont|Readsboro|05350|667
+1070|1070|Vermont|Hartford|05001|965
+1071|1071|Vermont|Guilford|05301|241
+1072|1072|Vermont|Mount Tabor|05739|554
+1073|1073|Vermont|Barre|05641|995
+1074|1074|Vermont|Saint Albans City|05478|504
+1075|1075|Vermont|Williston|05495|999
+1076|1076|Vermont|Barre|05641|415
+1077|1077|Vermont|Dummerston|05301|143
+1078|1078|Vermont|Burlington|05401|723
+1079|1079|Vermont|Westford|05494|115
+1080|1080|Vermont|Pawlet|05761|141
+1081|1081|Vermont|Barre|05641|410
+1082|1082|Vermont|Hyde Park|05655|772
+1083|1083|Vermont|Colchester|05446|182
+1084|1084|Vermont|Colchester|05446|657
+1085|1085|Vermont|Sheffield|05866|773
+1086|1086|Vermont|Moretown|05660|227
+1087|1087|Vermont|Rutland|05701|410
+1088|1088|Vermont|Burke|05832|430
+1089|1089|Arizona|Glendale|85306|176
+1090|1090|Arizona|Glendale|85305|840
+1091|1091|Arizona|Glendale|85306|992
+1092|1092|Arizona|Glendale|85308|227
+1093|1093|Arizona|Glendale|85308|696
+1094|1094|Arizona|Glendale|85305|429
+1095|1095|Arizona|Glendale|85301|519
+1096|1096|Arizona|Glendale|85301|913
+1097|1097|Arizona|Glendale|85308|466
+1098|1098|Arizona|Glendale|85301|335
+1099|1099|Arizona|Glendale|85301|388
+1100|1100|Arizona|Glendale|85308|669
+1101|1101|Arizona|Glendale|85302|872
+1102|1102|Arizona|Glendale|85301|270
+1103|1103|Arizona|Glendale|85301|497
+1104|1104|Arizona|Glendale|85301|754
+1105|1105|Arizona|Litchfield Park|85340|869
+1106|1106|Arizona|Glendale|85302|121
+1107|1107|Arizona|Glendale|85308|952
+1108|1108|Arizona|Glendale|85306|309
+1109|1109|Arizona|Glendale|85308|199
+1110|1110|Arizona|Glendale|85301|904
+1111|1111|Arizona|Glendale|85301|822
+1112|1112|Arizona|Glendale|85308|163
+1113|1113|Arizona|Glendale|85310|476
+1114|1114|Arizona|Glendale|85301|281
+1115|1115|Arizona|Glendale|85301|450
+1116|1116|Arizona|Glendale|85301|389
+1117|1117|Arizona|Litchfield Park|85340|282
+1118|1118|Arizona|Glendale|85301|733
+1119|1119|Arizona|Glendale|85304|685
+1120|1120|Arizona|Glendale|85301|239
+1121|1121|Arizona|Glendale|85302|174
+1122|1122|Arizona|Glendale|85308|614
+1123|1123|Arizona|Glendale|85305|912
+1124|1124|Arizona|Glendale|85310|465
+1125|1125|Arizona|Glendale|85310|361
+1126|1126|Arizona|Glendale|85308|211
+1127|1127|Arizona|Glendale|85303|251
+1128|1128|Arizona|Glendale|85302|580
+1129|1129|Arizona|Glendale|85304|248
+1130|1130|Arizona|Glendale|85303|318
+1131|1131|Arizona|Glendale|85310|328
+1132|1132|Arizona|Mesa|85201|123
+1133|1133|Arizona|Glendale|85301|480
+1134|1134|Arizona|Glendale|85302|818
+1135|1135|Arizona|Glendale|85306|305
+1136|1136|Arizona|Glendale|85302|743
+1137|1137|Arizona|Waddell|85355|943
+1138|1138|Arizona|Glendale|85303|623
+1139|1139|Arizona|Glendale|85303|297
+1140|1140|Arizona|Glendale|85308|868
+1141|1141|Arizona|Glendale|85306|236
+1142|1142|Arizona|Litchfield Park|85340|949
+1143|1143|Arizona|Glendale|85303|466
+1144|1144|Arizona|Glendale|85301|933
+1145|1145|Arizona|Glendale|85301|579
+1146|1146|Arizona|Glendale|85308|642
+1147|1147|Arizona|Glendale|85301|134
+1148|1148|Arizona|Glendale|85302|789
+1149|1149|Arizona|Glendale|85306|368
+1150|1150|Arizona|Glendale|85305|718
+1151|1151|Arizona|Glendale|85306|140
+1152|1152|Arizona|Glendale|85301|800
+1153|1153|Arizona|Peoria|85382|253
+1154|1154|Arizona|Glendale|85302|487
+1155|1155|Arizona|Glendale|85302|210
+1156|1156|Arizona|Glendale|85305|469
+1157|1157|Arizona|Glendale|85301|537
+1158|1158|Arizona|Glendale|85302|768
+1159|1159|Arizona|Glendale|85308|593
+1160|1160|Arizona|Glendale|85308|741
+1161|1161|Arizona|Glendale|85306|196
+1162|1162|Arizona|Glendale|85301|870
+1163|1163|Arizona|Glendale|85303|863
+1164|1164|Arizona|Glendale|85305|167
+1165|1165|Arizona|Glendale|85305|387
+1166|1166|Arizona|Glendale|85301|332
+1167|1167|Arizona|Glendale|85310|312
+1168|1168|Arizona|Glendale|85305|243
+1169|1169|Arizona|Glendale|85310|553
+1170|1170|Arizona|Glendale|85301|216
+1171|1171|Arizona|Glendale|85301|779
+1172|1172|Arizona|Glendale|85308|979
+1173|1173|Arizona|Glendale|85304|369
+1174|1174|Arizona|Glendale|85304|386
+1175|1175|Arizona|Glendale|85306|712
+1176|1176|Arizona|Glendale|85301|586
+1177|1177|Arizona|Litchfield Park|85340|813
+1178|1178|Arizona|Glendale|85304|936
+1179|1179|Arizona|Glendale|85301|526
+1180|1180|Arizona|Glendale|85301|133
+1181|1181|Arizona|Glendale|85306|351
+1182|1182|Arizona|Glendale|85303|582
+1183|1183|Arizona|Glendale|85303|339
+1184|1184|Arizona|Glendale|85302|690
+1185|1185|Arizona|Glendale|85306|232
+1186|1186|Arizona|Glendale|85308|973
+1187|1187|Arizona|Glendale|85302|995
+1188|1188|Arizona|Glendale|85301|668
+1189|1189|Arizona|Waddell|85355|629
+1190|1190|Arizona|Glendale|85308|121
+1191|1191|Arizona|Glendale|85303|922
+1192|1192|Arizona|Glendale|85308|761
+1193|1193|Arizona|Glendale|85301|887
+1194|1194|Arizona|Glendale|85303|491
+1195|1195|Arizona|Glendale|85302|897
+1196|1196|Arizona|Glendale|85306|803
+1197|1197|Arizona|Glendale|85304|690
+1198|1198|Arizona|Glendale|85308|318
+1199|1199|Arizona|Glendale|85302|294
+1200|1200|Arizona|Glendale|85306|630
+1201|1201|Arizona|Litchfield Park|85340|688
+1202|1202|Arizona|Glendale|85301|272
+1203|1203|Arizona|Glendale|85308|801
+1204|1204|Arizona|Glendale|85301|405
+1205|1205|Arizona|Glendale|85308|219
+1206|1206|Arizona|Glendale|85303|776
+1207|1207|Arizona|Glendale|85304|810
+1208|1208|Arizona|Glendale|85301|614
+1209|1209|Arizona|Mesa|85208|152
+1210|1210|Arizona|Glendale|85310|574
+1211|1211|Arizona|Glendale|85304|357
+1212|1212|Arizona|Glendale|85306|993
+1213|1213|Arizona|Glendale|85308|814
+1214|1214|Arizona|Glendale|85301|235
+1215|1215|Arizona|Glendale|85301|880
+1216|1216|Arizona|Glendale|85308|526
+1217|1217|Arizona|Mesa|85205|331
+1218|1218|Arizona|Glendale|85307|837
+1219|1219|Arizona|Glendale|85301|770
+1220|1220|Arizona|Glendale|85308|585
+1221|1221|Arizona|Glendale|85301|560
+1222|1222|Arizona|Glendale|85304|899
+1223|1223|Arizona|Glendale|85308|463
+1224|1224|Arizona|Glendale|85308|615
+1225|1225|Arizona|Litchfield Park|85340|616
+1226|1226|Arizona|Glendale|85304|606
+1227|1227|Arizona|Glendale|85306|302
+1228|1228|Arizona|Glendale|85302|887
+1229|1229|Arizona|Glendale|85302|845
+1230|1230|Arizona|Glendale|85302|804
+1231|1231|Arizona|Glendale|85301|786
+1232|1232|Arizona|Glendale|85301|851
+1233|1233|Arizona|Glendale|85301|972
+1234|1234|Arizona|Glendale|85306|277
+1235|1235|Arizona|Peoria|85382|523
+1236|1236|Arizona|Glendale|85308|265
+1237|1237|Arizona|Glendale|85304|881
+1238|1238|Arizona|Glendale|85303|623
+1239|1239|Arizona|Glendale|85302|848
+1240|1240|Arizona|Glendale|85301|391
+1241|1241|Arizona|Glendale|85304|386
+1242|1242|Arizona|Glendale|85301|540
+1243|1243|Arizona|Litchfield Park|85340|195
+1244|1244|Arizona|Glendale|85303|630
+1245|1245|Arizona|Glendale|85308|281
+1246|1246|Arizona|Glendale|85308|260
+1247|1247|Arizona|Mesa|85209|894
+1248|1248|Arizona|Glendale|85308|643
+1249|1249|Arizona|Glendale|85308|132
+1250|1250|Arizona|Glendale|85304|499
+1251|1251|Arizona|Peoria|85382|289
+1252|1252|Arizona|Litchfield Park|85340|774
+1253|1253|Arizona|Glendale|85303|461
+1254|1254|Arizona|Glendale|85308|439
+1255|1255|Arizona|Glendale|85304|835
+1256|1256|Arizona|Glendale|85301|526
+1257|1257|Arizona|Glendale|85302|443
+1258|1258|Arizona|Glendale|85301|289
+1259|1259|Arizona|Glendale|85308|199
+1260|1260|Arizona|Litchfield Park|85340|294
+1261|1261|Arizona|Waddell|85355|324
+1262|1262|Arizona|Glendale|85301|186
+1263|1263|Arizona|Glendale|85305|172
+1264|1264|Arizona|Peoria|85382|398
+1265|1265|Arizona|Glendale|85303|635
+1266|1266|Arizona|Glendale|85301|966
+1267|1267|Arizona|Glendale|85304|187
+1268|1268|Arizona|Glendale|85301|362
+1269|1269|Arizona|Glendale|85301|264
+1270|1270|Arizona|Glendale|85302|949
+1271|1271|Arizona|Glendale|85308|262
+1272|1272|Arizona|Glendale|85303|962
+1273|1273|Arizona|Glendale|85308|585
+1274|1274|Arizona|Glendale|85301|826
+1275|1275|Arizona|Glendale|85308|453
+1276|1276|Arizona|Glendale|85306|994
+1277|1277|Arizona|Glendale|85301|445
+1278|1278|Arizona|Glendale|85308|477
+1279|1279|Arizona|Glendale|85308|952
+1280|1280|Arizona|Glendale|85303|975
+1281|1281|Arizona|Glendale|85301|190
+1282|1282|Arizona|Glendale|85301|230
+1283|1283|Arizona|Glendale|85308|441
+1284|1284|Arizona|Glendale|85304|137
+1285|1285|Arizona|Glendale|85306|408
+1286|1286|Arizona|Glendale|85306|137
+1287|1287|Arizona|Glendale|85310|270
+1288|1288|Tennessee|Nashville|37209|991
+1289|1289|Tennessee|Nashville|37206|772
+1290|1290|Tennessee|Nashville|37076|179
+1291|1291|Tennessee|Nashville|37211|970
+1292|1292|Tennessee|Nashville|37013|167
+1293|1293|Tennessee|Nashville|37203|162
+1294|1294|Tennessee|Nashville|37211|535
+1295|1295|Tennessee|Brentwood|37027|720
+1296|1296|Tennessee|Nashville|37211|765
+1297|1297|Tennessee|Nashville|37013|473
+1298|1298|Tennessee|Nashville|37211|279
+1299|1299|Tennessee|Nashville|37214|913
+1300|1300|Tennessee|Brentwood|37027|191
+1301|1301|Tennessee|Nashville|37217|897
+1302|1302|Tennessee|Nashville|37207|970
+1303|1303|Tennessee|Nashville|37076|544
+1304|1304|Tennessee|Nashville|37013|193
+1305|1305|Tennessee|Nashville|37211|344
+1306|1306|Tennessee|Nashville|37215|733
+1307|1307|Tennessee|Nashville|37204|506
+1308|1308|Tennessee|Nashville|37207|412
+1309|1309|Tennessee|Nashville|37212|899
+1310|1310|Tennessee|Nashville|37214|880
+1311|1311|Tennessee|Nashville|37211|991
+1312|1312|Tennessee|Nashville|37013|462
+1313|1313|Tennessee|Nashville|37221|128
+1314|1314|Tennessee|Nashville|37209|317
+1315|1315|Tennessee|Nashville|37013|798
+1316|1316|Tennessee|Nashville|37211|151
+1317|1317|Tennessee|Nashville|37211|971
+1318|1318|Tennessee|Brentwood|37027|650
+1319|1319|Tennessee|Nashville|37013|171
+1320|1320|Tennessee|Nashville|37211|902
+1321|1321|Tennessee|Nashville|37211|262
+1322|1322|Tennessee|Nashville|37209|781
+1323|1323|Tennessee|Nashville|37115|736
+1324|1324|Tennessee|Nashville|37221|836
+1325|1325|Tennessee|Nashville|37218|336
+1326|1326|Tennessee|Nashville|37115|327
+1327|1327|Tennessee|Nashville|37218|861
+1328|1328|Tennessee|Nashville|37203|672
+1329|1329|Tennessee|Nashville|37211|742
+1330|1330|Tennessee|Nashville|37076|578
+1331|1331|Tennessee|Nashville|37203|931
+1332|1332|Tennessee|Nashville|37138|840
+1333|1333|Tennessee|Nashville|37207|483
+1334|1334|Tennessee|Nashville|37221|976
+1335|1335|Tennessee|Nashville|37211|618
+1336|1336|Tennessee|Nashville|37013|544
+1337|1337|Tennessee|Nashville|37211|740
+1338|1338|Tennessee|Nashville|37206|926
+1339|1339|Tennessee|Ashland City|37015|556
+1340|1340|Tennessee|Nashville|37214|960
+1341|1341|Tennessee|Nashville|37216|798
+1342|1342|Tennessee|Nashville|37206|554
+1343|1343|Tennessee|Nashville|37013|312
+1344|1344|Tennessee|Mount Juliet|37122|340
+1345|1345|Tennessee|Brentwood|37027|397
+1346|1346|Tennessee|Nashville|37211|556
+1347|1347|Tennessee|Goodlettsville|37072|736
+1348|1348|Tennessee|Nashville|37221|716
+1349|1349|Tennessee|Nashville|37211|572
+1350|1350|Tennessee|Nashville|37013|365
+1351|1351|Tennessee|Nashville|37208|146
+1352|1352|Tennessee|Nashville|37217|925
+1353|1353|Tennessee|Nashville|37210|483
+1354|1354|Tennessee|Nashville|37205|819
+1355|1355|Tennessee|Nashville|37208|529
+1356|1356|Tennessee|Nashville|37221|875
+1357|1357|Tennessee|Nashville|37212|693
+1358|1358|Tennessee|Nashville|37208|929
+1359|1359|Tennessee|Nashville|37211|274
+1360|1360|Tennessee|Nashville|37207|211
+1361|1361|Tennessee|Nashville|37221|772
+1362|1362|Tennessee|Nashville|37215|450
+1363|1363|Tennessee|Nashville|37138|613
+1364|1364|Tennessee|Goodlettsville|37072|500
+1365|1365|Tennessee|Nashville|37211|405
+1366|1366|Tennessee|Nashville|37204|235
+1367|1367|Tennessee|Nashville|37218|296
+1368|1368|Tennessee|Nashville|37210|381
+1369|1369|Tennessee|Nashville|37218|758
+1370|1370|Tennessee|Nashville|37080|692
+1371|1371|Tennessee|Goodlettsville|37072|640
+1372|1372|Tennessee|Nashville|37204|544
+1373|1373|Tennessee|Nashville|37221|478
+1374|1374|Tennessee|Nashville|37209|275
+1375|1375|Tennessee|Nashville|37217|233
+1376|1376|Tennessee|Nolensville|37135|402
+1377|1377|Tennessee|Nashville|37205|172
+1378|1378|Tennessee|Nashville|37209|717
+1379|1379|Tennessee|Nashville|37013|569
+1380|1380|Tennessee|Nashville|37216|166
+1381|1381|Tennessee|Nashville|37217|429
+1382|1382|Tennessee|Nashville|37209|702
+1383|1383|Tennessee|Nashville|37214|934
+1384|1384|Tennessee|Nashville|37013|596
+1385|1385|Tennessee|Nashville|37210|898
+1386|1386|Tennessee|nan|37080|543
+1387|1387|Tennessee|Nashville|37013|936
+1388|1388|Tennessee|Brentwood|37027|521
+1389|1389|Tennessee|Nashville|37217|432
+1390|1390|Tennessee|Nashville|37211|119
+1391|1391|Tennessee|Nashville|37207|400
+1392|1392|Tennessee|Nashville|37213|432
+1393|1393|Tennessee|Nashville|37214|991
+1394|1394|Tennessee|Nashville|37208|151
+1395|1395|Tennessee|Nashville|37208|810
+1396|1396|Tennessee|Nashville|37207|297
+1397|1397|Tennessee|Nashville|37207|549
+1398|1398|Tennessee|Nashville|37207|886
+1399|1399|Tennessee|Nashville|37138|280
+1400|1400|Tennessee|Nashville|37211|887
+1401|1401|Tennessee|Nashville|37206|951
+1402|1402|Tennessee|Nashville|37205|894
+1403|1403|Tennessee|Nashville|37211|188
+1404|1404|Tennessee|Nashville|37221|829
+1405|1405|Tennessee|Nashville|37217|384
+1406|1406|Tennessee|Nashville|37210|859
+1407|1407|Tennessee|Nashville|37214|132
+1408|1408|Tennessee|Nashville|37205|445
+1409|1409|Tennessee|Nashville|37211|198
+1410|1410|Tennessee|Nashville|37207|746
+1411|1411|Tennessee|Nashville|37013|365
+1412|1412|Tennessee|Nashville|37218|288
+1413|1413|Tennessee|Nashville|37218|750
+1414|1414|Tennessee|Brentwood|37027|284
+1415|1415|Tennessee|Nashville|37076|608
+1416|1416|Tennessee|Nashville|37214|343
+1417|1417|Tennessee|Nashville|37211|728
+1418|1418|Tennessee|Nashville|37214|512
+1419|1419|Tennessee|Nashville|37013|255
+1420|1420|Tennessee|Nashville|37221|702
+1421|1421|Tennessee|Nashville|37013|975
+1422|1422|Tennessee|Brentwood|37027|332
+1423|1423|Tennessee|Nashville|37211|189
+1424|1424|Tennessee|Nashville|37189|425
+1425|1425|Tennessee|Nashville|37221|909
+1426|1426|Tennessee|Nashville|37138|532
+1427|1427|Tennessee|Nashville|37013|672
+1428|1428|Tennessee|Nashville|37204|570
+1429|1429|Tennessee|Nashville|37210|889
+1430|1430|Tennessee|Nashville|37115|503
+1431|1431|Tennessee|Nashville|37115|109
+1432|1432|Tennessee|Nashville|37206|876
+1433|1433|Tennessee|Nashville|37076|321
+1434|1434|Tennessee|Nashville|37216|147
+1435|1435|Tennessee|Nashville|37080|382
+1436|1436|Tennessee|Nashville|37220|250
+1437|1437|Tennessee|Nashville|37210|656
+1438|1438|Tennessee|Nashville|37210|299
+1439|1439|Tennessee|Nashville|37214|252
+1440|1440|Tennessee|Nashville|37211|627
+1441|1441|Tennessee|Nashville|37013|779
+1442|1442|Tennessee|Nashville|37211|498
+1443|1443|Tennessee|Nashville|37013|126
+1444|1444|Tennessee|Nashville|37218|306
+1445|1445|Tennessee|Nashville|37205|392
+1446|1446|Tennessee|Nashville|37208|390
+1447|1447|Tennessee|Nashville|37218|426
+1448|1448|Tennessee|Nashville|37205|960
+1449|1449|Tennessee|Nashville|37206|862
+1450|1450|Tennessee|Brentwood|37027|727
+1451|1451|Tennessee|Nashville|37080|530
+1452|1452|Tennessee|Nashville|37205|406
+1453|1453|Tennessee|Nashville|37211|290
+1454|1454|Tennessee|Nashville|37206|917
+1455|1455|Tennessee|Nashville|37215|399
+1456|1456|Tennessee|Goodlettsville|37072|190
+1457|1457|Tennessee|Nashville|37013|722
+1458|1458|Tennessee|Nashville|37013|857
+1459|1459|Tennessee|Nashville|37209|993
+1460|1460|Tennessee|Nashville|37206|312
+1461|1461|Tennessee|Nashville|37218|947
+1462|1462|Tennessee|Nashville|37208|497
+1463|1463|Tennessee|Nashville|37207|587
+1464|1464|Tennessee|Nashville|37211|445
+1465|1465|Tennessee|Nashville|37138|609
+1466|1466|Tennessee|Nashville|37013|833
+1467|1467|Tennessee|Nashville|37210|629
+1468|1468|Tennessee|Nashville|37205|459
+1469|1469|Tennessee|Nashville|37203|412
+1470|1470|Tennessee|Nashville|37209|776
+1471|1471|Tennessee|Nashville|37211|993
+1472|1472|Tennessee|Nashville|37209|673
+1473|1473|Tennessee|Nashville|37218|159
+1474|1474|Tennessee|Nashville|37013|310
+1475|1475|Tennessee|Nashville|37221|462
+1476|1476|Tennessee|Nashville|37013|214
+1477|1477|Tennessee|Nashville|37215|547
+1478|1478|Tennessee|Nashville|37207|279
+1479|1479|Tennessee|Nashville|37211|442
+1480|1480|Tennessee|Nashville|37013|573
+1481|1481|Tennessee|Nashville|37203|157
+1482|1482|Tennessee|Nashville|37115|318
+1483|1483|Colorado|Arvada|80003|867
+1484|1484|Colorado|Grand Junction|81504|751
+1485|1485|Colorado|Arvada|80004|510
+1486|1486|Colorado|Fort Collins|80526|559
+1487|1487|Colorado|Arvada|80004|355
+1488|1488|Colorado|Fruita|81521|586
+1489|1489|Colorado|Arvada|80002|324
+1490|1490|Colorado|Arvada|80003|136
+1491|1491|Colorado|Arvada|80002|344
+1492|1492|Colorado|Arvada|80004|468
+1493|1493|Colorado|Arvada|80004|967
+1494|1494|Colorado|Arvada|80004|664
+1495|1495|Colorado|Arvada|80005|143
+1496|1496|Colorado|Arvada|80005|434
+1497|1497|Colorado|Arvada|80003|260
+1498|1498|Colorado|Aurora|80011|858
+1499|1499|Colorado|Arvada|80004|987
+1500|1500|Colorado|Mountain Village|81435|242
+1501|1501|Colorado|Arvada|80004|875
+1502|1502|Colorado|Arvada|80003|413
+1503|1503|Colorado|Greeley|80631|684
+1504|1504|Colorado|Greeley|80634|202
+1505|1505|Colorado|Boulder|80305|343
+1506|1506|Colorado|Arvada|80005|412
+1507|1507|Colorado|Arvada|80003|908
+1508|1508|Colorado|Arvada|80005|121
+1509|1509|Colorado|Arvada|80004|759
+1510|1510|Colorado|Pueblo|81003|770
+1511|1511|Colorado|Arvada|80005|693
+1512|1512|Colorado|Arvada|80005|128
+1513|1513|Colorado|Arvada|80002|177
+1514|1514|Colorado|Evans|80620|472
+1515|1515|Colorado|Arvada|80004|979
+1516|1516|Colorado|Arvada|80003|822
+1517|1517|Colorado|Arvada|80003|895
+1518|1518|Colorado|Arvada|80004|655
+1519|1519|Colorado|Arvada|80005|577
+1520|1520|Colorado|Arvada|80007|980
+1521|1521|Colorado|Arvada|80005|148
+1522|1522|Colorado|Arvada|80003|733
+1523|1523|Colorado|Arvada|80005|613
+1524|1524|Colorado|Arvada|80004|386
+1525|1525|Colorado|Arvada|80002|430
+1526|1526|Colorado|Arvada|80007|261
+1527|1527|Colorado|Arvada|80004|325
+1528|1528|Colorado|Arvada|80005|945
+1529|1529|Colorado|Arvada|80007|318
+1530|1530|Colorado|Arvada|80007|259
+1531|1531|Colorado|Arvada|80003|977
+1532|1532|Colorado|Arvada|80005|984
+1533|1533|Colorado|Arvada|80007|712
+1534|1534|Colorado|Arvada|80007|325
+1535|1535|Colorado|Golden|80403|802
+1536|1536|Colorado|Arvada|80005|586
+1537|1537|Colorado|Arvada|80005|400
+1538|1538|Colorado|Arvada|80003|780
+1539|1539|Colorado|Arvada|80004|425
+1540|1540|Colorado|Arvada|80004|587
+1541|1541|Colorado|Pueblo West|81007|806
+1542|1542|Colorado|Arvada|80004|345
+1543|1543|Colorado|Arvada|80003|251
+1544|1544|Colorado|Arvada|80003|687
+1545|1545|Colorado|Arvada|80005|332
+1546|1546|Colorado|Arvada|80004|750
+1547|1547|Colorado|Arvada|80002|742
+1548|1548|Colorado|Arvada|80005|288
+1549|1549|Colorado|Arvada|80003|979
+1550|1550|Colorado|Arvada|80003|701
+1551|1551|Colorado|Arvada|80004|857
+1552|1552|Colorado|Arvada|80005|460
+1553|1553|Colorado|Arvada|80005|579
+1554|1554|Colorado|Arvada|80004|127
+1555|1555|Colorado|Arvada|80003|555
+1556|1556|Colorado|Arvada|80005|777
+1557|1557|Colorado|Arvada|80002|761
+1558|1558|Colorado|Arvada|80003|461
+1559|1559|Colorado|Aurora|80012|657
+1560|1560|Colorado|Westminster|80030|922
+1561|1561|Colorado|Arvada|80005|883
+1562|1562|Colorado|Arvada|80007|542
+1563|1563|Colorado|Grand Junction|81506|810
+1564|1564|Colorado|Arvada|80005|976
+1565|1565|Colorado|Boulder|80302|320
+1566|1566|Colorado|Greeley|80631|643
+1567|1567|Colorado|Telluride|81435|341
+1568|1568|Colorado|Arvada|80003|702
+1569|1569|Colorado|Arvada|80003|517
+1570|1570|Colorado|Arvada|80004|808
+1571|1571|Colorado|Arvada|80004|360
+1572|1572|Colorado|Arvada|80003|222
+1573|1573|Colorado|Arvada|80003|507
+1574|1574|Colorado|Arvada|80004|737
+1575|1575|Colorado|Pueblo|81004|770
+1576|1576|Colorado|Arvada|80004|769
+1577|1577|Colorado|Arvada|80002|198
+1578|1578|Colorado|Evergreen|80439|558
+1579|1579|Colorado|Arvada|80004|337
+1580|1580|Colorado|Arvada|80007|918
+1581|1581|Colorado|Arvada|80005|669
+1582|1582|Colorado|Arvada|80002|361
+1583|1583|Colorado|Arvada|80002|405
+1584|1584|Colorado|Arvada|80004|512
+1585|1585|Colorado|Arvada|80004|369
+1586|1586|Colorado|Arvada|80002|677
+1587|1587|Colorado|Telluride|81435|890
+1588|1588|Colorado|Arvada|80007|815
+1589|1589|Colorado|Arvada|80003|690
+1590|1590|Colorado|Arvada|80002|840
+1591|1591|Colorado|Arvada|80002|841
+1592|1592|Colorado|Arvada|80003|537
+1593|1593|Colorado|Arvada|80005|862
+1594|1594|Colorado|Arvada|80003|693
+1595|1595|Colorado|Arvada|80005|900
+1596|1596|Colorado|Arvada|80003|855
+1597|1597|Colorado|Arvada|80003|222
+1598|1598|Colorado|Arvada|80005|565
+1599|1599|Colorado|Arvada|80004|838
+1600|1600|Colorado|Arvada|80004|701
+1601|1601|Colorado|Arvada|80005|673
+1602|1602|Colorado|Arvada|80004|504
+1603|1603|Colorado|Arvada|80003|955
+1604|1604|Colorado|Arvada|80004|682
+1605|1605|Colorado|Arvada|80003|843
+1606|1606|Colorado|Arvada|80005|841
+1607|1607|Colorado|Arvada|80003|325
+1608|1608|Colorado|Arvada|80005|650
+1609|1609|Colorado|Arvada|80004|350
+1610|1610|Colorado|Arvada|80002|362
+1611|1611|Colorado|Arvada|80004|482
+1612|1612|Colorado|Arvada|80002|615
+1613|1613|Colorado|Arvada|80002|406
+1614|1614|Colorado|Littleton|80128|249
+1615|1615|Colorado|Arvada|80005|728
+1616|1616|Colorado|Arvada|80002|506
+1617|1617|Colorado|Arvada|80005|208
+1618|1618|Colorado|Arvada|80005|811
+1619|1619|Colorado|Fort Collins|80525|352
+1620|1620|Colorado|Arvada|80007|477
+1621|1621|Colorado|Arvada|80004|318
+1622|1622|Colorado|Arvada|80005|365
+1623|1623|Colorado|Arvada|80004|538
+1624|1624|Colorado|Aurora|80016|499
+1625|1625|Colorado|Arvada|80007|380
+1626|1626|Colorado|Arvada|80004|679
+1627|1627|Colorado|Arvada|80003|535
+1628|1628|Colorado|Grand Junction|81501|232
+1629|1629|Colorado|Arvada|80004|485
+1630|1630|Colorado|Fort Collins|80524|351
+1631|1631|Colorado|Fort Collins|80521|318
+1632|1632|Colorado|Aurora|80011|123
+1633|1633|Colorado|Arvada|80002|468
+1634|1634|Colorado|Arvada|80003|591
+1635|1635|Colorado|Arvada|80002|524
+1636|1636|Colorado|Boulder|80304|519
+1637|1637|Colorado|Arvada|80003|670
+1638|1638|Colorado|Arvada|80003|588
+1639|1639|Colorado|Arvada|80002|967
+1640|1640|Colorado|Arvada|80003|699
+1641|1641|Colorado|Littleton|80128|168
+1642|1642|Colorado|Arvada|80004|912
+1643|1643|Colorado|Arvada|80003|632
+1644|1644|Colorado|Boulder|80301|938
+1645|1645|Colorado|Arvada|80004|459
+1646|1646|Colorado|Aspen|81611|929
+1647|1647|Colorado|Arvada|80003|904
+1648|1648|Colorado|Arvada|80003|823
+1649|1649|Colorado|Arvada|80003|113
+1650|1650|Colorado|Arvada|80003|615
+1651|1651|Colorado|Arvada|80002|186
+1652|1652|Colorado|Arvada|80002|332
+1653|1653|Colorado|Arvada|80003|437
+1654|1654|Colorado|Arvada|80403|382
+1655|1655|Colorado|Arvada|80002|762
+1656|1656|Colorado|Arvada|80004|524
+1657|1657|Colorado|Arvada|80003|261
+1658|1658|Colorado|Arvada|80005|118
+1659|1659|Colorado|Arvada|80005|616
+1660|1660|Colorado|Arvada|80005|836
+1661|1661|Colorado|Arvada|80007|496
+1662|1662|Colorado|Arvada|80002|760
+1663|1663|Colorado|Arvada|80004|469
+1664|1664|Colorado|Arvada|80003|301
+1665|1665|Colorado|Arvada|80005|728
+1666|1666|Colorado|Arvada|80004|203
+1667|1667|Colorado|Wheat Ridge|80033|946
+1668|1668|Colorado|Arvada|80002|145
+1669|1669|Colorado|Arvada|80002|104
+1670|1670|Colorado|Arvada|80004|857
+1671|1671|Colorado|Arvada|80002|747
+1672|1672|Colorado|Arvada|80003|172
+1673|1673|Colorado|Arvada|80003|834
+1674|1674|Colorado|Arvada|80003|133
+1675|1675|Colorado|Arvada|80005|282
+1676|1676|Colorado|Arvada|80005|591
+1677|1677|Colorado|Arvada|80004|595
+1678|1678|Colorado|Greeley|80631|407
+1679|1679|Colorado|Arvada|80403|345
+1680|1680|Colorado|Arvada|80002|438
+1681|1681|Colorado|Aurora|80011|461
+1682|1682|Colorado|Arvada|80005|445
+1683|1683|Colorado|Arvada|80004|201
+1684|1684|Colorado|Arvada|80007|562
+1685|1685|Colorado|Arvada|80002|455
+1686|1686|Colorado|Arvada|80004|809
+1687|1687|Colorado|Arvada|80005|533
+1688|1688|Colorado|Arvada|80005|189
+1689|1689|Colorado|Arvada|80003|635
+1690|1690|Colorado|Arvada|80002|126
+1691|1691|Colorado|Pueblo|81005|694
+1692|1692|Colorado|Arvada|80007|635
+1693|1693|Colorado|Arvada|80004|695
+1694|1694|Colorado|Arvada|80003|780
+1695|1695|Colorado|Arvada|80004|196
+1696|1696|Colorado|Arvada|80005|779
+1697|1697|Colorado|Arvada|80004|528
+1698|1698|Colorado|Arvada|80002|688
+1699|1699|Colorado|Arvada|80005|889
+1700|1700|Colorado|Pueblo|81006|405
+1701|1701|Colorado|Arvada|80004|556
+1702|1702|Colorado|Palisade|81526|300
+1703|1703|Colorado|Fort Collins|80525|585
+1704|1704|Colorado|Arvada|80004|322
+1705|1705|Colorado|Aspen|81611|421
+1706|1706|Colorado|Arvada|80003|399
+1707|1707|Colorado|Arvada|80004|243
+1708|1708|Colorado|Arvada|80403|190
+1709|1709|Colorado|Arvada|80002|251
+1710|1710|Colorado|Boulder|80302|361
+1711|1711|Colorado|Arvada|80002|184
+1712|1712|Colorado|Arvada|80005|546
+1713|1713|Massachusetts|Yarmouth|02664|142
+1714|1714|Massachusetts|Agawam|01001|873
+1715|1715|Massachusetts|Methuen|01844|111
+1716|1716|Massachusetts|Holyoke|01040|245
+1717|1717|Massachusetts|Easton|02375|230
+1718|1718|Massachusetts|East Longmeadow|01028|543
+1719|1719|Massachusetts|Hingham|02043|709
+1720|1720|Massachusetts|Medway|02053|824
+1721|1721|Massachusetts|Cambridge|02141|341
+1722|1722|Massachusetts|Salisbury|01952|299
+1723|1723|Massachusetts|Boxford|01921|263
+1724|1724|Massachusetts|Mansfield|02048|485
+1725|1725|Massachusetts|Springfield|01104|727
+1726|1726|Massachusetts|Beverly|01915|570
+1727|1727|Massachusetts|Woburn|01801|410
+1728|1728|Massachusetts|Peabody|01960|369
+1729|1729|Massachusetts|Everett|02149|588
+1730|1730|Massachusetts|Worcester|01606|618
+1731|1731|Massachusetts|Shelburne Falls|01370|873
+1732|1732|Massachusetts|Medford|02155|939
+1733|1733|Massachusetts|Quincy|02170|174
+1734|1734|Massachusetts|Quincy|02169|871
+1735|1735|Massachusetts|Pittsfield|01201|523
+1736|1736|Massachusetts|Worcester|01607|353
+1737|1737|Massachusetts|Athol|01331|459
+1738|1738|Massachusetts|North Reading|01864|291
+1739|1739|Massachusetts|Duxbury|02332|410
+1740|1740|Massachusetts|Springfield|01105|141
+1741|1741|Massachusetts|Chelsea|02150|764
+1742|1742|Massachusetts|Arlington|02474|514
+1743|1743|Massachusetts|Lynnfield|01940|117
+1744|1744|Massachusetts|Worcester|01603|321
+1745|1745|Massachusetts|Worcester|01604|573
+1746|1746|Massachusetts|Waltham|02453|174
+1747|1747|Massachusetts|Aquinnah|02535|450
+1748|1748|Massachusetts|Milton|02186|218
+1749|1749|Massachusetts|Quincy|02169|350
+1750|1750|Massachusetts|Framingham|01701|721
+1751|1751|Massachusetts|Athol|01331|539
+1752|1752|Massachusetts|Gardner|01440|889
+1753|1753|Massachusetts|Watertown|02472|914
+1754|1754|Massachusetts|Somerville|02143|881
+1755|1755|Massachusetts|Medford|02155|790
+1756|1756|Massachusetts|Longmeadow|01106|759
+1757|1757|Massachusetts|Brookline|02446|470
+1758|1758|Massachusetts|Lynn|01902|457
+1759|1759|Massachusetts|Watertown|02472|858
+1760|1760|Massachusetts|Hadley|01035|526
+1761|1761|Massachusetts|Pittsfield|01201|967
+1762|1762|Massachusetts|Pittsfield|01201|629
+1763|1763|Massachusetts|Medford|02155|932
+1764|1764|Massachusetts|Newton|02459|749
+1765|1765|Massachusetts|Springfield|01104|861
+1766|1766|Massachusetts|Brookline|02445|199
+1767|1767|Massachusetts|Westport|02790|487
+1768|1768|Massachusetts|Falmouth|02540|631
+1769|1769|Massachusetts|Boxborough|01719|919
+1770|1770|Massachusetts|Milford|01757|611
+1771|1771|Massachusetts|Brookline|02445|282
+1772|1772|Massachusetts|Burlington|01803|562
+1773|1773|Massachusetts|Middleborough|02346|905
+1774|1774|Massachusetts|Revere|02151|869
+1775|1775|Massachusetts|Needham|02492|582
+1776|1776|Massachusetts|Chicopee|01020|513
+1777|1777|Massachusetts|Reading|01867|228
+1778|1778|Massachusetts|Peabody|01960|197
+1779|1779|Massachusetts|Billerica|01862|420
+1780|1780|Massachusetts|Lawrence|01841|594
+1781|1781|Massachusetts|New Bedford|02740|465
+1782|1782|Massachusetts|Harwich|02645|397
+1783|1783|Massachusetts|Melrose|02176|972
+1784|1784|Massachusetts|Hardwick|01031|548
+1785|1785|Massachusetts|Easthampton|01027|744
+1786|1786|Massachusetts|Fall River|02721|758
+1787|1787|Massachusetts|Somerville|02143|205
+1788|1788|Massachusetts|Holden|01520|602
+1789|1789|Massachusetts|Dartmouth|02747|627
+1790|1790|Massachusetts|Dennis|02639|460
+1791|1791|Massachusetts|Somerset|02726|411
+1792|1792|Massachusetts|Watertown|02472|605
+1793|1793|Massachusetts|Worcester|01610|334
+1794|1794|Massachusetts|Medford|02155|413
+1795|1795|Massachusetts|Scituate|02066|354
+1796|1796|Massachusetts|Hingham|02043|670
+1797|1797|Massachusetts|Tewksbury|01876|438
+1798|1798|Massachusetts|Arlington|02474|303
+1799|1799|Massachusetts|Quincy|02169|222
+1800|1800|Massachusetts|Braintree|02184|503
+1801|1801|Massachusetts|Bourne|02532|529
+1802|1802|Massachusetts|Foxborough|02035|515
+1803|1803|Massachusetts|Waltham|02452|355
+1804|1804|Massachusetts|Ashland|01721|121
+1805|1805|Massachusetts|Waltham|02451|755
+1806|1806|Massachusetts|Dennis|02638|526
+1807|1807|Massachusetts|Peabody|01960|279
+1808|1808|Massachusetts|Cambridge|02139|915
+1809|1809|Massachusetts|Revere|02151|298
+1810|1810|Massachusetts|Quincy|02171|759
+1811|1811|Massachusetts|Tewksbury|01876|752
+1812|1812|Massachusetts|Quincy|02169|461
+1813|1813|Massachusetts|Wakefield|01880|437
+1814|1814|Massachusetts|Yarmouth|02673|207
+1815|1815|Massachusetts|East Longmeadow|01028|391
+1816|1816|Massachusetts|Attleboro|02703|206
+1817|1817|Massachusetts|Norwood|02062|811
+1818|1818|Massachusetts|Lowell|01850|955
+1819|1819|Massachusetts|Brockton|02301|818
+1820|1820|Massachusetts|Dracut|01826|167
+1821|1821|Massachusetts|Oak Bluffs|02568|942
+1822|1822|Massachusetts|Marshfield|02050|834
+1823|1823|Massachusetts|West Tisbury|02568|479
+1824|1824|Massachusetts|New Bedford|02745|897
+1825|1825|Massachusetts|Holbrook|02343|641
+1826|1826|Massachusetts|Cambridge|02138|730
+1827|1827|Massachusetts|Wilbraham|01095|679
+1828|1828|Massachusetts|Gardner|01440|716
+1829|1829|Massachusetts|Gloucester|01930|695
+1830|1830|Massachusetts|Tyngsborough|01879|120
+1831|1831|Massachusetts|Holyoke|01040|689
+1832|1832|Massachusetts|Lawrence|01843|227
+1833|1833|Massachusetts|Worcester|01604|200
+1834|1834|Massachusetts|Winchester|01890|303
+1835|1835|Massachusetts|Hubbardston|01452|680
+1836|1836|Massachusetts|Cambridge|02139|919
+1837|1837|Massachusetts|Marlborough|01752|580
+1838|1838|Massachusetts|Lunenburg|01462|215
+1839|1839|Massachusetts|Belchertown|01007|744
+1840|1840|Massachusetts|Lexington|02420|431
+1841|1841|Massachusetts|Brookline|02446|142
+1842|1842|Massachusetts|Chelmsford|01863|247
+1843|1843|Massachusetts|Milton|02186|267
+1844|1844|Massachusetts|Newton|02459|638
+1845|1845|Massachusetts|Braintree|02184|376
+1846|1846|Massachusetts|Haverhill|01830|565
+1847|1847|Massachusetts|Norton|02766|970
+1848|1848|Massachusetts|Medford|02155|973
+1849|1849|Massachusetts|Agawam|01030|493
+1850|1850|Massachusetts|Auburn|01501|682
+1851|1851|Massachusetts|Brockton|02302|503
+1852|1852|Massachusetts|Saugus|01906|696
+1853|1853|Massachusetts|Everett|02149|671
+1854|1854|Massachusetts|Freetown|02717|695
+1855|1855|Massachusetts|Brockton|02301|783
+1856|1856|Massachusetts|Cambridge|02139|213
+1857|1857|Massachusetts|Wareham|02571|245
+1858|1858|Massachusetts|Plymouth|02360|945
+1859|1859|Massachusetts|Dedham|02026|476
+1860|1860|Massachusetts|Merrimac|01860|629
+1861|1861|Massachusetts|Springfield|01106|744
+1862|1862|Massachusetts|Quincy|02169|235
+1863|1863|Massachusetts|New Bedford|02745|556
+1864|1864|Massachusetts|Fall River|02721|850
+1865|1865|Massachusetts|Easthampton|01027|922
+1866|1866|Massachusetts|Melrose|02176|522
+1867|1867|Massachusetts|Westfield|01085|737
+1868|1868|Massachusetts|Walpole|02081|178
+1869|1869|Massachusetts|Randolph|02368|450
+1870|1870|Massachusetts|Charlton|01507|277
+1871|1871|Massachusetts|Dartmouth|02748|683
+1872|1872|Massachusetts|Lowell|01851|425
+1873|1873|Massachusetts|Barnstable|02635|142
+1874|1874|Massachusetts|Plymouth|02360|224
+1875|1875|Massachusetts|South Hadley|01075|912
+1876|1876|Massachusetts|Lawrence|01841|457
+1877|1877|Massachusetts|Salem|01970|164
+1878|1878|Massachusetts|Athol|01331|157
+1879|1879|Massachusetts|Lynn|01904|455
+1880|1880|Massachusetts|Middleton|01949|802
+1881|1881|Massachusetts|Brimfield|01010|627
+1882|1882|Massachusetts|Springfield|01151|748
+1883|1883|Massachusetts|Brookline|02446|121
+1884|1884|Massachusetts|Webster|01570|305
+1885|1885|Massachusetts|Holbrook|02343|920
+1886|1886|Massachusetts|Easton|02375|768
+1887|1887|Massachusetts|Quincy|02169|484
+1888|1888|Massachusetts|Revere|02151|125
+1889|1889|Massachusetts|North Adams|01247|939
+1890|1890|Massachusetts|Palmer|01069|455
+1891|1891|Massachusetts|Yarmouth|02664|759
+1892|1892|Massachusetts|Fitchburg|01420|799
+1893|1893|Massachusetts|Salem|01970|298
+1894|1894|Massachusetts|Marblehead|01945|680
+1895|1895|Massachusetts|Cambridge|02140|128
+1896|1896|Massachusetts|Greenfield|01301|534
+1897|1897|Massachusetts|Millis|02054|917
+1898|1898|Massachusetts|Medway|02053|427
+1899|1899|Massachusetts|Needham|02492|763
+1900|1900|Massachusetts|Lynn|01902|806
+1901|1901|Arkansas|Fayetteville|72704|717
+1902|1902|Arkansas|Fayetteville|72704|960
+1903|1903|Arkansas|Fayetteville|72703|807
+1904|1904|Arkansas|Fayetteville|72704|474
+1905|1905|Arkansas|Fayetteville|72701|636
+1906|1906|Arkansas|Fayetteville|72704|902
+1907|1907|Arkansas|Fayetteville|72701|726
+1908|1908|Arkansas|Fayetteville|72701|387
+1909|1909|Arkansas|Fayetteville|72701|311
+1910|1910|Arkansas|Fayetteville|72704|310
+1911|1911|Arkansas|Fayetteville|72703|698
+1912|1912|Arkansas|Fayetteville|72701|446
+1913|1913|Arkansas|Fayetteville|72703|956
+1914|1914|Arkansas|Fayetteville|72704|745
+1915|1915|Arkansas|Fayetteville|72701|802
+1916|1916|Arkansas|Fayetteville|72701|933
+1917|1917|Arkansas|Fayetteville|72704|939
+1918|1918|Arkansas|Van Buren|72956|894
+1919|1919|Arkansas|Fayetteville|72703|452
+1920|1920|Arkansas|Fayetteville|72703|147
+1921|1921|Arkansas|Fayetteville|72703|275
+1922|1922|Arkansas|Fayetteville|72704|731
+1923|1923|Arkansas|Fayetteville|72701|560
+1924|1924|Arkansas|Fayetteville|72703|482
+1925|1925|Arkansas|Fayetteville|72701|178
+1926|1926|Arkansas|Fayetteville|72703|589
+1927|1927|Arkansas|Fayetteville|72701|261
+1928|1928|Arkansas|Fayetteville|72704|739
+1929|1929|Arkansas|Fayetteville|72703|963
+1930|1930|Arkansas|Fayetteville|72703|697
+1931|1931|Arkansas|Fayetteville|72703|666
+1932|1932|Arkansas|Fayetteville|72701|273
+1933|1933|Arkansas|Fayetteville|72701|842
+1934|1934|Arkansas|Fayetteville|72703|251
+1935|1935|Arkansas|Fayetteville|72704|302
+1936|1936|Arkansas|Fayetteville|72701|224
+1937|1937|Arkansas|Fayetteville|72703|130
+1938|1938|Arkansas|Fayetteville|72704|769
+1939|1939|Arkansas|Fayetteville|72704|271
+1940|1940|Arkansas|Fayetteville|72701|747
+1941|1941|Arkansas|Fayetteville|72703|158
+1942|1942|Arkansas|Fayetteville|72703|239
+1943|1943|Arkansas|Fayetteville|72701|630
+1944|1944|Arkansas|Fayetteville|72764|392
+1945|1945|Arkansas|Fayetteville|72704|760
+1946|1946|Arkansas|Fayetteville|72703|944
+1947|1947|Arkansas|Fayetteville|72704|876
+1948|1948|Arkansas|Fayetteville|72703|884
+1949|1949|Arkansas|Fayetteville|72701|105
+1950|1950|Arkansas|Fayetteville|72703|977
+1951|1951|Arkansas|Fayetteville|72701|685
+1952|1952|Arkansas|Fayetteville|72704|164
+1953|1953|Arkansas|Fayetteville|72701|254
+1954|1954|Arkansas|Fayetteville|72701|185
+1955|1955|Arkansas|Fayetteville|72703|240
+1956|1956|Arkansas|Fayetteville|72701|737
+1957|1957|Arkansas|Fayetteville|72701|398
+1958|1958|Arkansas|Fayetteville|72703|599
+1959|1959|Arkansas|Farmington|72730|747
+1960|1960|Arkansas|Fayetteville|72703|228
+1961|1961|Arkansas|Fayetteville|72701|396
+1962|1962|Arkansas|Fayetteville|72704|719
+1963|1963|Arkansas|Fayetteville|72701|574
+1964|1964|Arkansas|Fayetteville|72703|964
+1965|1965|Arkansas|Fayetteville|72704|645
+1966|1966|Arkansas|Fayetteville|72701|258
+1967|1967|Arkansas|Fayetteville|72701|232
+1968|1968|Arkansas|Fayetteville|72704|152
+1969|1969|Arkansas|Fayetteville|72703|413
+1970|1970|Arkansas|Fayetteville|72703|268
+1971|1971|Arkansas|Fayetteville|72704|886
+1972|1972|Arkansas|Fayetteville|72703|576
+1973|1973|Arkansas|Fayetteville|72701|205
+1974|1974|Arkansas|Fayetteville|72701|692
+1975|1975|Arkansas|Fayetteville|72701|322
+1976|1976|Arkansas|Fayetteville|72701|712
+1977|1977|Arkansas|Fayetteville|72703|200
+1978|1978|Arkansas|Fayetteville|72701|295
+1979|1979|Arkansas|Fayetteville|72701|409
+1980|1980|Arkansas|Fayetteville|72701|848
+1981|1981|Arkansas|Farmington|72730|466
+1982|1982|Arkansas|Farmington|72730|913
+1983|1983|Arkansas|Farmington|72730|815
+1984|1984|Arkansas|Fayetteville|72701|150
+1985|1985|Arkansas|Fayetteville|72701|515
+1986|1986|Arkansas|Fayetteville|72704|192
+1987|1987|Arkansas|Fayetteville|72704|661
+1988|1988|Arkansas|Fayetteville|72701|609
+1989|1989|Arkansas|Fayetteville|72703|742
+1990|1990|Arkansas|Fayetteville|72701|415
+1991|1991|Arkansas|Farmington|72730|669
+1992|1992|Arkansas|Fayetteville|72703|748
+1993|1993|Arkansas|Fayetteville|72703|836
+1994|1994|Arkansas|Fayetteville|72701|219
+1995|1995|Arkansas|Fayetteville|72703|450
+1996|1996|Arkansas|Fayetteville|72704|449
+1997|1997|Arkansas|Fayetteville|72701|880
+1998|1998|Arkansas|Fayetteville|72701|238
+1999|1999|Arkansas|Fayetteville|72703|706
+2000|2000|Arkansas|Fayetteville|72701|225
+2001|2001|Arkansas|Fayetteville|72703|577
+2002|2002|Arkansas|Fayetteville|72701|565
+2003|2003|Arkansas|Fayetteville|72704|169
+2004|2004|Arkansas|Fayetteville|72701|318
+2005|2005|Arkansas|Fayetteville|72701|186
+2006|2006|Arkansas|Fayetteville|72703|367
+2007|2007|Arkansas|Fayetteville|72704|359
+2008|2008|Arkansas|Fayetteville|72703|763
+2009|2009|Arkansas|Fayetteville|72703|103
+2010|2010|Arkansas|Fayetteville|72701|164
+2011|2011|Arkansas|Fayetteville|72701|611
+2012|2012|Arkansas|Fayetteville|72701|834
+2013|2013|Arkansas|Fayetteville|72703|502
+2014|2014|Arkansas|Fayetteville|72703|816
+2015|2015|Arkansas|Fayetteville|72701|736
+2016|2016|Arkansas|McCrory|72101|493
+2017|2017|Arkansas|Fayetteville|72703|691
+2018|2018|Arkansas|Fayetteville|72701|362
+2019|2019|Arkansas|Fayetteville|72701|896
+2020|2020|Arkansas|Fayetteville|72703|860
+2021|2021|Arkansas|Farmington|72730|298
+2022|2022|Arkansas|Fayetteville|72703|878
+2023|2023|Arkansas|Fayetteville|72701|702
+2024|2024|Arkansas|Fayetteville|72703|265
+2025|2025|Arkansas|Fayetteville|72703|623
+2026|2026|Arkansas|Fayetteville|72701|938
+2027|2027|Arkansas|Fayetteville|72701|378
+2028|2028|Arkansas|Fayetteville|72704|954
+2029|2029|Arkansas|Fayetteville|72701|307
+2030|2030|Arkansas|Fayetteville|72703|518
+2031|2031|Arkansas|Fayetteville|72703|642
+2032|2032|Arkansas|Fayetteville|72704|226
+2033|2033|Arkansas|North Little Rock|72117|469
+2034|2034|Arkansas|Fayetteville|72701|195
+2035|2035|Arkansas|Fayetteville|72701|687
+2036|2036|Arkansas|Conway|72032|930
+2037|2037|Arkansas|Fayetteville|72703|714
+2038|2038|Arkansas|Fayetteville|72701|224
+2039|2039|Arkansas|Fayetteville|72703|952
+2040|2040|Arkansas|Fayetteville|72703|666
+2041|2041|Arkansas|Fayetteville|72701|881
+2042|2042|Arkansas|Fayetteville|72701|182
+2043|2043|Arkansas|Fayetteville|72701|724
+2044|2044|Arkansas|Fayetteville|72703|225
+2045|2045|Arkansas|Fayetteville|72701|874
+2046|2046|Arkansas|Fayetteville|72703|963
+2047|2047|Arkansas|Fayetteville|72701|616
+2048|2048|Arkansas|Fayetteville|72703|836
+2049|2049|Arkansas|Fayetteville|72701|382
+2050|2050|Arkansas|Fayetteville|72701|972
+2051|2051|Arkansas|Fayetteville|72701|808
+2052|2052|Arkansas|Fayetteville|72704|523
+2053|2053|Arkansas|Fayetteville|72701|583
+2054|2054|Arkansas|Fayetteville|72703|948
+2055|2055|Arkansas|Fayetteville|72701|130
+2056|2056|Arkansas|Fayetteville|72703|801
+2057|2057|Arkansas|Fayetteville|72701|703
+2058|2058|Arkansas|Fayetteville|72703|529
+2059|2059|Arkansas|Farmington|72730|882
+2060|2060|Arkansas|Fayetteville|72764|574
+2061|2061|Arkansas|Fayetteville|72703|270
+2062|2062|Arkansas|Fayetteville|72701|197
+2063|2063|Arkansas|Fayetteville|72704|193
+2064|2064|Arkansas|Fayetteville|72704|110
+2065|2065|Arkansas|Fayetteville|72703|710
+2066|2066|Arkansas|Fayetteville|72703|197
+2067|2067|Arkansas|Fayetteville|72701|778
+2068|2068|Arkansas|Fayetteville|72703|179
+2069|2069|Arkansas|Fayetteville|72703|193
+2070|2070|Arkansas|Fayetteville|72701|186
+2071|2071|Arkansas|Fayetteville|72703|877
+2072|2072|Arkansas|Fayetteville|72704|234
+2073|2073|Arkansas|Conway|72034|657
+2074|2074|Arkansas|Fayetteville|72701|580
+2075|2075|Arkansas|Fayetteville|72703|741
+2076|2076|Arkansas|Fayetteville|72701|116
+2077|2077|Arkansas|Fayetteville|72704|232
+2078|2078|Arkansas|Fayetteville|72701|229
+2079|2079|Arkansas|Fayetteville|72703|512
+2080|2080|Arkansas|Fayetteville|72703|943
+2081|2081|Arkansas|Fayetteville|72704|620
+2082|2082|Arkansas|Fayetteville|72703|691
+2083|2083|Arkansas|Fayetteville|72701|908
+2084|2084|Arkansas|Fayetteville|72701|332
+2085|2085|Arkansas|Fayetteville|72701|936
+2086|2086|Arkansas|Farmington|72730|169
+2087|2087|Arkansas|Fayetteville|72703|618
+2088|2088|Arkansas|Fayetteville|72703|946
+2089|2089|Arkansas|Fayetteville|72701|257
+2090|2090|Arkansas|Fayetteville|72703|962
+2091|2091|Georgia|Savannah|31415|972
+2092|2092|Georgia|Savannah|31419|899
+2093|2093|Georgia|Savannah|31405|974
+2094|2094|Georgia|Savannah|31406|228
+2095|2095|Georgia|Savannah|31419|757
+2096|2096|Georgia|Savannah|31404|590
+2097|2097|Georgia|Pooler|31322|281
+2098|2098|Georgia|Savannah|31401|419
+2099|2099|Georgia|Savannah|31406|170
+2100|2100|Georgia|Savannah|31411|415
+2101|2101|Georgia|Savannah|31408|796
+2102|2102|Georgia|Savannah|31406|920
+2103|2103|Georgia|Savannah|31401|149
+2104|2104|Georgia|Savannah|31408|426
+2105|2105|Georgia|Savannah|31405|974
+2106|2106|Georgia|Savannah|31419|859
+2107|2107|Georgia|Savannah|31419|213
+2108|2108|Georgia|Savannah|31401|131
+2109|2109|Georgia|Savannah|31419|975
+2110|2110|Georgia|Savannah|31419|965
+2111|2111|Georgia|Savannah|31405|556
+2112|2112|Georgia|Savannah|31419|526
+2113|2113|Georgia|Savannah|31401|179
+2114|2114|Georgia|Savannah|31406|631
+2115|2115|Georgia|Savannah|31411|531
+2116|2116|Georgia|Savannah|31404|928
+2117|2117|Georgia|Savannah|31401|385
+2118|2118|Georgia|Savannah|31411|382
+2119|2119|Georgia|Pooler|31322|908
+2120|2120|Georgia|Savannah|31419|538
+2121|2121|Georgia|Pooler|31322|422
+2122|2122|Georgia|Pooler|31322|869
+2123|2123|Georgia|Savannah|31401|328
+2124|2124|Georgia|Savannah|31408|405
+2125|2125|Georgia|Tybee Island|31328|402
+2126|2126|Georgia|Savannah|31406|514
+2127|2127|Georgia|Pooler|31322|572
+2128|2128|Georgia|Savannah|31419|233
+2129|2129|Georgia|Savannah|31419|764
+2130|2130|Georgia|Savannah|31401|583
+2131|2131|Georgia|Savannah|31419|960
+2132|2132|Georgia|Savannah|31415|134
+2133|2133|Georgia|Savannah|31419|129
+2134|2134|Georgia|Savannah|31404|137
+2135|2135|Georgia|Savannah|31405|379
+2136|2136|Georgia|Pooler|31322|764
+2137|2137|Georgia|Savannah|31406|543
+2138|2138|Georgia|Savannah|31419|203
+2139|2139|Georgia|Savannah|31410|259
+2140|2140|Georgia|Savannah|31419|936
+2141|2141|Georgia|Calhoun|30701|828
+2142|2142|Georgia|Savannah|31404|149
+2143|2143|Georgia|Savannah|31404|135
+2144|2144|Georgia|Savannah|31404|369
+2145|2145|Georgia|Savannah|31404|165
+2146|2146|Georgia|Savannah|31405|933
+2147|2147|Georgia|Savannah|31415|756
+2148|2148|Georgia|Savannah|31405|688
+2149|2149|Georgia|Savannah|31419|228
+2150|2150|Georgia|Port Wentworth|31407|756
+2151|2151|Georgia|Bloomingdale|31302|951
+2152|2152|Georgia|Savannah|31405|776
+2153|2153|Georgia|Savannah|31404|166
+2154|2154|Georgia|Savannah|31405|278
+2155|2155|Georgia|Savannah|31405|175
+2156|2156|Georgia|Savannah|31405|776
+2157|2157|Georgia|Savannah|31411|503
+2158|2158|Georgia|Savannah|31405|334
+2159|2159|Georgia|Savannah|31410|296
+2160|2160|Georgia|Savannah|31404|477
+2161|2161|Georgia|Calhoun|30701|616
+2162|2162|Georgia|Savannah|31415|820
+2163|2163|Georgia|Savannah|31419|139
+2164|2164|Georgia|Pooler|31322|582
+2165|2165|Georgia|Savannah|31411|954
+2166|2166|Georgia|Pooler|31322|787
+2167|2167|Georgia|Savannah|31404|894
+2168|2168|Georgia|Savannah|31405|489
+2169|2169|Georgia|Savannah|31415|543
+2170|2170|Georgia|Savannah|31419|566
+2171|2171|Georgia|Savannah|31407|588
+2172|2172|Georgia|Savannah|31404|765
+2173|2173|Georgia|Savannah|31406|881
+2174|2174|Georgia|Savannah|31404|866
+2175|2175|Georgia|Savannah|31401|229
+2176|2176|Georgia|Savannah|31404|728
+2177|2177|Georgia|Savannah|31406|614
+2178|2178|Georgia|Savannah|31406|729
+2179|2179|Georgia|Thunderbolt|31410|431
+2180|2180|Georgia|Savannah|31401|265
+2181|2181|Georgia|Savannah|31406|276
+2182|2182|Georgia|Savannah|31419|192
+2183|2183|Georgia|Savannah|31401|831
+2184|2184|Georgia|Savannah|31415|350
+2185|2185|Georgia|Savannah|31405|594
+2186|2186|Georgia|Savannah|31404|703
+2187|2187|Georgia|Savannah|31415|866
+2188|2188|Georgia|Savannah|31405|817
+2189|2189|Georgia|Savannah|31419|388
+2190|2190|Georgia|Savannah|31404|203
+2191|2191|Georgia|Savannah|31405|412
+2192|2192|Georgia|Savannah|31404|884
+2193|2193|Georgia|Savannah|31405|613
+2194|2194|Georgia|Calhoun|30701|278
+2195|2195|Georgia|Savannah|31406|885
+2196|2196|Georgia|Savannah|31419|714
+2197|2197|Georgia|Pooler|31322|997
+2198|2198|Georgia|Savannah|31401|879
+2199|2199|Georgia|Savannah|31401|917
+2200|2200|Georgia|Port Wentworth|31407|750
+2201|2201|Georgia|Pooler|31322|899
+2202|2202|Georgia|Savannah|31404|293
+2203|2203|Georgia|Savannah|31405|887
+2204|2204|Georgia|Pooler|31322|467
+2205|2205|Georgia|Savannah|31404|893
+2206|2206|Georgia|Savannah|31406|454
+2207|2207|Georgia|Savannah|31401|783
+2208|2208|Georgia|Savannah|31405|432
+2209|2209|Georgia|Pooler|31322|755
+2210|2210|Georgia|Garden City|31408|380
+2211|2211|Georgia|Savannah|31405|761
+2212|2212|Georgia|Thunderbolt|31404|646
+2213|2213|Georgia|Pooler|31322|181
+2214|2214|Georgia|Savannah|31406|921
+2215|2215|Georgia|Tybee Island|31328|642
+2216|2216|Georgia|Port Wentworth|31407|486
+2217|2217|Georgia|Savannah|31405|385
+2218|2218|Georgia|Savannah|31410|103
+2219|2219|Georgia|Garden City|31408|885
+2220|2220|Georgia|Savannah|31401|296
+2221|2221|Georgia|Thunderbolt|31404|284
+2222|2222|Georgia|Savannah|31419|763
+2223|2223|Georgia|Pooler|31322|312
+2224|2224|Georgia|Savannah|31419|776
+2225|2225|Georgia|Savannah|31404|292
+2226|2226|Georgia|Savannah|31401|658
+2227|2227|Georgia|Savannah|31419|342
+2228|2228|Georgia|Savannah|31419|274
+2229|2229|Georgia|Savannah|31415|717
+2230|2230|Georgia|Savannah|31406|990
+2231|2231|Georgia|Savannah|31405|417
+2232|2232|Georgia|Savannah|31415|547
+2233|2233|Georgia|Savannah|31404|292
+2234|2234|Georgia|Savannah|31419|360
+2235|2235|Georgia|Savannah|31411|383
+2236|2236|Georgia|Savannah|31411|546
+2237|2237|Georgia|Savannah|31405|597
+2238|2238|Georgia|Savannah|31401|324
+2239|2239|Georgia|Savannah|31410|153
+2240|2240|Georgia|Savannah|31410|998
+2241|2241|Georgia|Savannah|31419|347
+2242|2242|Georgia|Savannah|31419|303
+2243|2243|Georgia|Savannah|31405|476
+2244|2244|Georgia|Pooler|31322|266
+2245|2245|Georgia|Savannah|31404|689
+2246|2246|Georgia|Savannah|31419|679
+2247|2247|Georgia|Savannah|31415|738
+2248|2248|Georgia|Savannah|31419|766
+2249|2249|Georgia|Tybee Island|31328|630
+2250|2250|Georgia|Savannah|31419|763
+2251|2251|Georgia|Savannah|31419|151
+2252|2252|Georgia|Savannah|31410|179
+2253|2253|Georgia|Savannah|31408|855
+2254|2254|Georgia|Savannah|31419|704
+2255|2255|Georgia|Savannah|31405|387
+2256|2256|Georgia|Bloomingdale|31302|334
+2257|2257|Georgia|Savannah|31410|281
+2258|2258|Georgia|Savannah|31404|844
+2259|2259|Georgia|Savannah|31410|778
+2260|2260|Georgia|Thunderbolt|31404|367
+2261|2261|Georgia|Savannah|31405|512
+2262|2262|Georgia|Pooler|31322|643
+2263|2263|Georgia|Savannah|31411|546
+2264|2264|Georgia|Savannah|31410|386
+2265|2265|Georgia|Pooler|31322|513
+2266|2266|Georgia|Savannah|31405|635
+2267|2267|Georgia|Pooler|31322|986
+2268|2268|Georgia|Savannah|31401|718
+2269|2269|Georgia|Savannah|31419|480
+2270|2270|Georgia|Savannah|31404|707
+2271|2271|Georgia|Savannah|31411|943
+2272|2272|Georgia|Port Wentworth|31407|433
+2273|2273|Georgia|Savannah|31406|582
+2274|2274|Georgia|Savannah|31401|262
+2275|2275|Georgia|Savannah|31401|864
+2276|2276|Georgia|Savannah|31406|554
+2277|2277|Georgia|Pooler|31322|622
+2278|2278|Georgia|Pooler|31322|485
+2279|2279|Georgia|Pooler|31322|845
+2280|2280|Georgia|Pooler|31322|908
+2281|2281|Georgia|Savannah|31405|495
+2282|2282|Georgia|Savannah|31419|101
+2283|2283|Alaska|Anchorage|99503|121
+2284|2284|Alaska|Anchorage|99503|955
+2285|2285|Alaska|Anchorage|99518|311
+2286|2286|Alaska|Anchorage|99504|192
+2287|2287|Alaska|Anchorage|99504|485
+2288|2288|Alaska|Anchorage|99502|202
+2289|2289|Alaska|Anchorage|99501|308
+2290|2290|Alaska|Anchorage|99502|920
+2291|2291|Alaska|Anchorage|99517|418
+2292|2292|Alaska|Soldotna|99669|101
+2293|2293|Alaska|Anchorage|99501|556
+2294|2294|Alaska|Anchorage|99508|559
+2295|2295|Alaska|Anchorage|99502|660
+2296|2296|Alaska|Anchorage|99508|419
+2297|2297|Alaska|Anchorage|99502|663
+2298|2298|Alaska|Anchorage|99518|656
+2299|2299|Alaska|Anchorage|99507|517
+2300|2300|Alaska|Anchorage|99503|438
+2301|2301|Alaska|Anchorage|99515|680
+2302|2302|Alaska|Anchorage|99577|606
+2303|2303|Alaska|Anchorage|99502|275
+2304|2304|Alaska|Anchorage|99507|537
+2305|2305|Alaska|Anchorage|99502|408
+2306|2306|Alaska|Anchorage|99517|795
+2307|2307|Alaska|Anchorage|99516|644
+2308|2308|Alaska|Anchorage|99515|515
+2309|2309|Alaska|Anchorage|99503|562
+2310|2310|Alaska|Anchorage|99577|774
+2311|2311|Alaska|Anchorage|99515|828
+2312|2312|Alaska|Anchorage|99504|156
+2313|2313|Alaska|Anchorage|99518|300
+2314|2314|Alaska|Anchorage|99516|441
+2315|2315|Alaska|Anchorage|99501|152
+2316|2316|Alaska|Anchorage|99501|304
+2317|2317|Alaska|Anchorage|99502|545
+2318|2318|Alaska|Anchorage|99501|950
+2319|2319|Alaska|Anchorage|99518|228
+2320|2320|Alaska|Anchorage|99515|819
+2321|2321|Alaska|Anchorage|99577|908
+2322|2322|Alaska|Anchorage|99516|750
+2323|2323|Alaska|Anchorage|99501|169
+2324|2324|Alaska|Anchorage|99507|216
+2325|2325|Alaska|Anchorage|99567|719
+2326|2326|Alaska|Anchorage|99517|235
+2327|2327|Alaska|Anchorage|99518|251
+2328|2328|Alaska|Anchorage|99507|878
+2329|2329|Alaska|Anchorage|99577|258
+2330|2330|Alaska|Anchorage|99515|445
+2331|2331|Alaska|Anchorage|99507|892
+2332|2332|Alaska|Kenai|99611|737
+2333|2333|Alaska|Anchorage|99501|878
+2334|2334|Alaska|Anchorage|99508|539
+2335|2335|Alaska|Anchorage|99508|881
+2336|2336|Alaska|Kenai|99611|337
+2337|2337|Alaska|Anchorage|99517|806
+2338|2338|Alaska|Anchorage|99516|555
+2339|2339|Alaska|Anchorage|99515|110
+2340|2340|Alaska|Anchorage|99507|952
+2341|2341|Alaska|Anchorage|99501|982
+2342|2342|Alaska|Anchorage|99507|703
+2343|2343|Alaska|Anchorage|99508|775
+2344|2344|Alaska|Anchorage|99577|913
+2345|2345|Alaska|Anchorage|99501|916
+2346|2346|Alaska|Anchorage|99508|201
+2347|2347|Alaska|Anchorage|99502|711
+2348|2348|Alaska|Anchorage|99516|516
+2349|2349|Alaska|Anchorage|99504|386
+2350|2350|Alaska|Anchorage|99501|789
+2351|2351|Alaska|Anchorage|99503|738
+2352|2352|Alaska|Anchorage|99508|240
+2353|2353|Alaska|Anchorage|99501|437
+2354|2354|Alaska|Anchorage|99507|173
+2355|2355|Alaska|Anchorage|99503|379
+2356|2356|Alaska|Anchorage|99501|638
+2357|2357|Alaska|Anchorage|99501|356
+2358|2358|Alaska|Anchorage|99503|718
+2359|2359|Alaska|Anchorage|99504|691
+2360|2360|Alaska|Anchorage|99502|535
+2361|2361|Alaska|Anchorage|99515|137
+2362|2362|Alaska|Anchorage|99501|142
+2363|2363|Alaska|Anchorage|99517|792
+2364|2364|Alaska|Anchorage|99501|282
+2365|2365|Alaska|Anchorage|99504|995
+2366|2366|Alaska|Anchorage|99507|989
+2367|2367|Alaska|Anchorage|99504|893
+2368|2368|Alaska|Homer|99603|386
+2369|2369|Alaska|Anchorage|99577|147
+2370|2370|Alaska|Anchorage|99503|940
+2371|2371|Alaska|Anchorage|99577|398
+2372|2372|Alaska|Anchorage|99515|686
+2373|2373|Alaska|Anchorage|99507|605
+2374|2374|Alaska|Anchorage|99507|676
+2375|2375|Alaska|Anchorage|99517|159
+2376|2376|Alaska|Anchorage|99508|816
+2377|2377|Alaska|Anchorage|99504|596
+2378|2378|Alaska|Anchorage|99577|354
+2379|2379|Alaska|Anchorage|99503|218
+2380|2380|Alaska|Anchorage|99503|945
+2381|2381|Alaska|Anchorage|99507|615
+2382|2382|Alaska|Anchorage|99504|202
+2383|2383|Alaska|Anchorage|99508|494
+2384|2384|Alaska|Anchorage|99516|996
+2385|2385|Alaska|Anchorage|99503|424
+2386|2386|Alaska|Anchorage|99508|673
+2387|2387|Alaska|Anchorage|99515|871
+2388|2388|Alaska|Anchorage|99503|518
+2389|2389|Alaska|Anchorage|99515|835
+2390|2390|Alaska|Anchorage|99504|442
+2391|2391|Alaska|Anchorage|99518|593
+2392|2392|Alaska|Anchorage|99516|939
+2393|2393|Alaska|Anchorage|99508|757
+2394|2394|Alaska|Anchorage|99516|815
+2395|2395|Alaska|Anchorage|99501|561
+2396|2396|Alaska|Anchorage|99517|593
+2397|2397|Alaska|Anchorage|99502|596
+2398|2398|Alaska|Anchorage|99508|206
+2399|2399|Alaska|Anchorage|99577|923
+2400|2400|Alaska|Anchorage|99567|443
+2401|2401|Alaska|Anchorage|99501|216
+2402|2402|Alaska|Anchorage|99517|978
+2403|2403|Alaska|Anchorage|99515|746
+2404|2404|Alaska|Anchorage|99577|837
+2405|2405|Alaska|Anchorage|99507|421
+2406|2406|Alaska|Anchorage|99501|897
+2407|2407|Alaska|Anchorage|99518|963
+2408|2408|Alaska|Anchorage|99502|799
+2409|2409|Alaska|Anchorage|99518|715
+2410|2410|Alaska|Anchorage|99508|413
+2411|2411|Alaska|Anchorage|99577|557
+2412|2412|Alaska|Anchorage|99577|383
+2413|2413|Alaska|Anchorage|99504|956
+2414|2414|Alaska|Anchorage|99567|217
+2415|2415|Alaska|Anchorage|99508|614
+2416|2416|Alaska|Anchorage|99515|191
+2417|2417|Alaska|Anchorage|99567|753
+2418|2418|Alaska|Anchorage|99504|847
+2419|2419|Alaska|Anchorage|99507|381
+2420|2420|Alaska|Anchorage|99508|493
+2421|2421|Alaska|Anchorage|99508|766
+2422|2422|Alaska|Anchorage|99577|500
+2423|2423|Alaska|Anchorage|99515|809
+2424|2424|Alaska|Anchorage|99508|920
+2425|2425|Alaska|Anchorage|99501|702
+2426|2426|Alaska|Anchorage|99503|188
+2427|2427|Alaska|Anchorage|99502|899
+2428|2428|Alaska|Anchorage|99508|811
+2429|2429|Alaska|Anchorage|99501|419
+2430|2430|Alaska|Anchorage|99504|227
+2431|2431|Alaska|Anchorage|99567|614
+2432|2432|Alaska|Anchorage|99501|599
+2433|2433|Alaska|Anchorage|99577|868
+2434|2434|Alaska|Anchorage|99507|814
+2435|2435|Alaska|Anchorage|99507|472
+2436|2436|Alaska|Anchorage|99508|612
+2437|2437|Alaska|Anchorage|99501|731
+2438|2438|Alaska|Anchorage|99507|615
+2439|2439|Alaska|Anchorage|99508|643
+2440|2440|Alaska|Anchorage|99577|103
+2441|2441|Alaska|Anchorage|99507|128
+2442|2442|Alaska|Anchorage|99502|810
+2443|2443|Alaska|Anchorage|99516|279
+2444|2444|Alaska|Anchorage|99517|763
+2445|2445|Alaska|Anchorage|99508|635
+2446|2446|Alaska|Anchorage|99567|885
+2447|2447|Alaska|Anchorage|99507|969
+2448|2448|Alaska|Anchorage|99577|556
+2449|2449|Alaska|Anchorage|99577|729
+2450|2450|Alaska|Anchorage|99518|366
+2451|2451|Alaska|Anchorage|99507|331
+2452|2452|Alaska|Anchorage|99504|324
+2453|2453|Alaska|Anchorage|99577|650
+2454|2454|Alaska|Anchorage|99508|955
+2455|2455|Alaska|Anchorage|99507|624
+2456|2456|Alaska|Anchorage|99504|437
+2457|2457|Maryland|Crofton|21114|364
+2458|2458|Maryland|Deale|20751|521
+2459|2459|Maryland|Glen Burnie|21061|402
+2460|2460|Maryland|Baltimore|21225|247
+2461|2461|Maryland|Glen Burnie|21061|554
+2462|2462|Maryland|Pasadena|21122|782
+2463|2463|Maryland|Annapolis|21403|596
+2464|2464|Maryland|Annapolis|21403|733
+2465|2465|Maryland|Glen Burnie|21060|112
+2466|2466|Maryland|Severn|21144|102
+2467|2467|Maryland|Brooklyn Park|21225|363
+2468|2468|Maryland|Severn|21144|425
+2469|2469|Maryland|Pasadena|21122|161
+2470|2470|Maryland|Glen Burnie|21060|774
+2471|2471|Maryland|Severn|21144|952
+2472|2472|Maryland|Severn|21144|656
+2473|2473|Maryland|Annapolis|21401|621
+2474|2474|Maryland|Pasadena|21122|171
+2475|2475|Maryland|Deale|20733|636
+2476|2476|Maryland|Odenton|21113|230
+2477|2477|Maryland|Edgewater|21037|704
+2478|2478|Maryland|Annapolis|21401|662
+2479|2479|Maryland|Millersville|21108|386
+2480|2480|Maryland|Millersville|21108|270
+2481|2481|Maryland|Annapolis|21409|835
+2482|2482|Maryland|Arnold|21012|463
+2483|2483|Maryland|Glen Burnie|21060|517
+2484|2484|Maryland|Baltimore|21225|952
+2485|2485|Maryland|Pasadena|21122|955
+2486|2486|Maryland|Annapolis|21401|742
+2487|2487|Maryland|Crownsville|21032|617
+2488|2488|Maryland|Annapolis|21401|187
+2489|2489|Maryland|Glen Burnie|21061|983
+2490|2490|Maryland|Glen Burnie|21060|465
+2491|2491|Maryland|Annapolis|21401|162
+2492|2492|Maryland|Laurel|20724|241
+2493|2493|Maryland|Glen Burnie|21061|610
+2494|2494|Maryland|Crofton|21114|172
+2495|2495|Maryland|Laurel|20724|961
+2496|2496|Maryland|Pasadena|21122|973
+2497|2497|Maryland|Annapolis|21403|923
+2498|2498|Maryland|Crofton|21114|603
+2499|2499|Maryland|Annapolis|21401|400
+2500|2500|Maryland|Glen Burnie|21061|792
+2501|2501|Maryland|Deale|20751|190
+2502|2502|Maryland|Odenton|21113|923
+2503|2503|Maryland|Crofton|21114|916
+2504|2504|Maryland|Baltimore|21225|985
+2505|2505|Maryland|Severna Park|21146|399
+2506|2506|Maryland|Hanover|21076|765
+2507|2507|Maryland|Edgewater|21037|395
+2508|2508|Maryland|Crofton|21114|419
+2509|2509|Maryland|Annapolis|21409|162
+2510|2510|Maryland|Gambrills|21054|466
+2511|2511|Maryland|Annapolis|21401|720
+2512|2512|Maryland|Severn|21144|411
+2513|2513|Maryland|Pasadena|21122|521
+2514|2514|Maryland|Davidsonville|21035|152
+2515|2515|Maryland|Severna Park|21146|283
+2516|2516|Maryland|Arnold|21012|202
+2517|2517|Maryland|Annapolis|21403|441
+2518|2518|Maryland|Glen Burnie|21060|774
+2519|2519|Maryland|Annapolis|21409|268
+2520|2520|Maryland|Glen Burnie|21061|404
+2521|2521|Maryland|Pasadena|21122|625
+2522|2522|Maryland|Crofton|21114|878
+2523|2523|Maryland|Riva|21140|591
+2524|2524|Maryland|Millersville|21108|865
+2525|2525|Maryland|Millersville|21108|189
+2526|2526|Maryland|Annapolis|21403|970
+2527|2527|Maryland|Glen Burnie|21061|625
+2528|2528|Maryland|Gibson Island|21056|484
+2529|2529|Maryland|Pasadena|21122|394
+2530|2530|Maryland|Severn|21144|308
+2531|2531|Maryland|Edgewater|21037|161
+2532|2532|Maryland|Glen Burnie|21061|184
+2533|2533|Maryland|Glen Burnie|21061|322
+2534|2534|Maryland|Annapolis|21401|545
+2535|2535|Maryland|Arnold|21012|362
+2536|2536|Maryland|Severn|21144|659
+2537|2537|Maryland|Glen Burnie|21061|588
+2538|2538|Maryland|Edgewater|21037|407
+2539|2539|Maryland|Laurel|20724|792
+2540|2540|Maryland|Annapolis|21403|753
+2541|2541|Maryland|Shady Side|20764|306
+2542|2542|Maryland|Arnold|21012|621
+2543|2543|Maryland|Severn|21144|713
+2544|2544|Maryland|Glen Burnie|21060|668
+2545|2545|Maryland|Pasadena|21122|600
+2546|2546|Maryland|Crownsville|21032|876
+2547|2547|Maryland|Annapolis|21403|443
+2548|2548|Maryland|Hanover|21076|954
+2549|2549|Maryland|Pasadena|21122|606
+2550|2550|Maryland|Severna Park|21146|990
+2551|2551|Maryland|Pasadena|21122|240
+2552|2552|Maryland|Severna Park|21146|302
+2553|2553|Maryland|Annapolis|21401|974
+2554|2554|Maryland|Hanover|21076|187
+2555|2555|Maryland|Glen Burnie|21061|945
+2556|2556|Maryland|West River|20778|291
+2557|2557|Maryland|Linthicum Heights|21090|458
+2558|2558|Maryland|Glen Burnie|21061|552
+2559|2559|Maryland|Annapolis|21409|767
+2560|2560|Maryland|Severn|21144|363
+2561|2561|Maryland|Annapolis|21402|748
+2562|2562|Maryland|Annapolis|21409|259
+2563|2563|Maryland|Annapolis|21403|174
+2564|2564|Maryland|Davidsonville|21035|951
+2565|2565|Maryland|Odenton|21113|985
+2566|2566|Maryland|Annapolis|21401|747
+2567|2567|Maryland|Pasadena|21122|484
+2568|2568|Maryland|Pasadena|21122|601
+2569|2569|Maryland|Annapolis|21401|545
+2570|2570|Maryland|Pasadena|21122|426
+2571|2571|Maryland|Annapolis|21403|868
+2572|2572|Maryland|Glen Burnie|21061|866
+2573|2573|Maryland|Crofton|21114|608
+2574|2574|Maryland|Glen Burnie|21061|226
+2575|2575|Maryland|Crofton|21114|875
+2576|2576|Maryland|North Beach|20714|601
+2577|2577|Maryland|Pasadena|21122|560
+2578|2578|Maryland|Hanover|21076|273
+2579|2579|Maryland|nan|21226|785
+2580|2580|Maryland|Pasadena|21122|903
+2581|2581|Maryland|Glen Burnie|21060|558
+2582|2582|Maryland|Deale|20751|831
+2583|2583|Maryland|Severn|21144|174
+2584|2584|Maryland|Pasadena|21122|560
+2585|2585|Maryland|Jessup|20794|996
+2586|2586|Maryland|Severna Park|21146|121
+2587|2587|Maryland|Brooklyn Park|21225|793
+2588|2588|Maryland|Laurel|20724|629
+2589|2589|Maryland|Severna Park|21146|241
+2590|2590|Maryland|Glen Burnie|21060|695
+2591|2591|Maryland|Severna Park|21146|962
+2592|2592|Maryland|Edgewater|21037|718
+2593|2593|Maryland|Glen Burnie|21061|414
+2594|2594|Maryland|Laurel|20724|436
+2595|2595|Maryland|Glen Burnie|21060|343
+2596|2596|Maryland|Glen Burnie|21061|661
+2597|2597|Maryland|Annapolis|21403|365
+2598|2598|Maryland|Linthicum Heights|21090|656
+2599|2599|Maryland|Severn|21144|745
+2600|2600|Maryland|Gambrills|21054|530
+2601|2601|Maryland|Crofton|21114|891
+2602|2602|Maryland|Annapolis|21401|255
+2603|2603|Maryland|Annapolis|21401|907
+2604|2604|Maryland|Annapolis|21401|647
+2605|2605|Maryland|Riva|21140|459
+2606|2606|Maryland|Glen Burnie|21061|588
+2607|2607|Maryland|Glen Burnie|21060|764
+2608|2608|Maryland|Baltimore|21225|323
+2609|2609|Maryland|Pasadena|21122|417
+2610|2610|Maryland|Edgewater|21037|746
+2611|2611|Maryland|Severna Park|21146|962
+2612|2612|Maryland|Edgewater|21037|584
+2613|2613|Maryland|Crofton|21114|370
+2614|2614|Maryland|Crownsville|21032|225
+2615|2615|Maryland|Millersville|21108|432
+2616|2616|Maryland|Annapolis|21409|276
+2617|2617|Maryland|Edgewater|21037|824
+2618|2618|Maryland|Gambrills|21054|904
+2619|2619|Maryland|Arnold|21012|742
+2620|2620|Maryland|Severna Park|21146|281
+2621|2621|Maryland|Crownsville|21032|263
+2622|2622|Maryland|Annapolis|21403|815
+2623|2623|Maryland|Glen Burnie|21060|666
+2624|2624|Maryland|Odenton|21113|347
+2625|2625|Maryland|Severn|21144|198
+2626|2626|Maryland|Severn|21144|754
+2627|2627|Maryland|Annapolis|21401|980
+2628|2628|Maryland|Annapolis|21401|749
+2629|2629|Maryland|Pasadena|21122|125
+2630|2630|Maryland|Pasadena|21122|685
+2631|2631|Maryland|Severn|21144|489
+2632|2632|Maryland|Glen Burnie|21060|162
+2633|2633|Maryland|Pasadena|21122|591
+2634|2634|Maryland|Severn|21144|106
+2635|2635|Maryland|Harwood|20776|959
+2636|2636|Maryland|Glen Burnie|21060|722
+2637|2637|Maryland|Laurel|20724|677
+2638|2638|Maryland|Glen Burnie|21061|122
+2639|2639|Maryland|Glen Burnie|21061|552
+2640|2640|Maryland|Annapolis|21403|574
+2641|2641|Maryland|Annapolis|21409|129
+2642|2642|Maryland|Glen Burnie|21060|155
+2643|2643|Maryland|Linthicum Heights|21090|525
+2644|2644|Oklahoma|Norman|73071|348
+2645|2645|Oklahoma|Norman|73071|218
+2646|2646|Oklahoma|Norman|73069|769
+2647|2647|Oklahoma|Edmond|73034|284
+2648|2648|Oklahoma|Edmond|73012|856
+2649|2649|Oklahoma|Oklahoma City|73135|942
+2650|2650|Oklahoma|Edmond|73025|259
+2651|2651|Oklahoma|Oklahoma City|73162|663
+2652|2652|Oklahoma|Oklahoma City|73169|943
+2653|2653|Oklahoma|Edmond|73034|288
+2654|2654|Oklahoma|Oklahoma City|73103|575
+2655|2655|Oklahoma|Harrah|73045|366
+2656|2656|Oklahoma|Norman|73069|732
+2657|2657|Oklahoma|Oklahoma City|73129|174
+2658|2658|Oklahoma|Oklahoma City|73114|393
+2659|2659|Oklahoma|Oklahoma City|73162|211
+2660|2660|Oklahoma|Oklahoma City|73129|792
+2661|2661|Oklahoma|Oklahoma City|73139|605
+2662|2662|Oklahoma|Moore|73160|714
+2663|2663|Oklahoma|Edmond|73034|343
+2664|2664|Oklahoma|Moore|73160|566
+2665|2665|Oklahoma|Warr Acres|73122|703
+2666|2666|Oklahoma|Midwest City|73110|305
+2667|2667|Oklahoma|Bethany|73008|869
+2668|2668|Oklahoma|Oklahoma City|73111|314
+2669|2669|Oklahoma|Oklahoma City|73112|978
+2670|2670|Oklahoma|Oklahoma City|73159|494
+2671|2671|Oklahoma|The Village|73120|821
+2672|2672|Oklahoma|Oklahoma City|73127|228
+2673|2673|Oklahoma|Oklahoma City|73120|970
+2674|2674|Oklahoma|Oklahoma City|73162|906
+2675|2675|Oklahoma|Nichols Hills|73116|117
+2676|2676|Oklahoma|Oklahoma City|73162|650
+2677|2677|Oklahoma|Oklahoma City|73159|753
+2678|2678|Oklahoma|Edmond|73013|218
+2679|2679|Oklahoma|Ardmore|73401|793
+2680|2680|Oklahoma|Oklahoma City|73106|528
+2681|2681|Oklahoma|Norman|73069|424
+2682|2682|Oklahoma|Moore|73160|842
+2683|2683|Oklahoma|Oklahoma City|73109|117
+2684|2684|Oklahoma|Oklahoma City|73112|856
+2685|2685|Oklahoma|Edmond|73012|439
+2686|2686|Oklahoma|Oklahoma City|73119|771
+2687|2687|Oklahoma|Norman|73071|336
+2688|2688|Oklahoma|Edmond|73013|403
+2689|2689|Oklahoma|Oklahoma City|73107|525
+2690|2690|Oklahoma|Oklahoma City|73118|717
+2691|2691|Oklahoma|Oklahoma City|73118|927
+2692|2692|Oklahoma|Del City|73115|422
+2693|2693|Oklahoma|Midwest City|73110|261
+2694|2694|Oklahoma|Oklahoma City|73162|977
+2695|2695|Oklahoma|Choctaw|73020|217
+2696|2696|Oklahoma|Midwest City|73110|584
+2697|2697|Oklahoma|Oklahoma City|73129|736
+2698|2698|Oklahoma|Oklahoma City|73159|380
+2699|2699|Oklahoma|Oklahoma City|73135|545
+2700|2700|Oklahoma|Oklahoma City|73119|111
+2701|2701|Oklahoma|Norman|73072|650
+2702|2702|Oklahoma|Oklahoma City|73104|531
+2703|2703|Oklahoma|Oklahoma City|73112|855
+2704|2704|Oklahoma|Oklahoma City|73114|180
+2705|2705|Oklahoma|Oklahoma City|73122|376
+2706|2706|Oklahoma|Norman|73072|889
+2707|2707|Oklahoma|Edmond|73003|545
+2708|2708|Oklahoma|Oklahoma City|73127|276
+2709|2709|Oklahoma|Norman|73071|369
+2710|2710|Oklahoma|Ardmore|73401|374
+2711|2711|Oklahoma|Oklahoma City|73159|617
+2712|2712|Oklahoma|Oklahoma City|73112|145
+2713|2713|Oklahoma|Oklahoma City|73129|393
+2714|2714|Oklahoma|Norman|73069|108
+2715|2715|Oklahoma|Norman|73072|156
+2716|2716|Oklahoma|Oklahoma City|73162|117
+2717|2717|Oklahoma|Oklahoma City|73109|847
+2718|2718|Oklahoma|Moore|73160|592
+2719|2719|Oklahoma|Oklahoma City|73159|812
+2720|2720|Oklahoma|Moore|73160|265
+2721|2721|Oklahoma|Edmond|73034|734
+2722|2722|Oklahoma|Norman|73071|922
+2723|2723|Oklahoma|Oklahoma City|73173|770
+2724|2724|Oklahoma|Moore|73160|818
+2725|2725|Oklahoma|Bethany|73008|603
+2726|2726|Oklahoma|Norman|73072|975
+2727|2727|Oklahoma|Moore|73160|168
+2728|2728|Oklahoma|Spencer|73084|546
+2729|2729|Oklahoma|Midwest City|73130|824
+2730|2730|Oklahoma|Moore|73160|404
+2731|2731|Oklahoma|Oklahoma City|73170|464
+2732|2732|Oklahoma|Oklahoma City|73135|355
+2733|2733|Oklahoma|Bethany|73008|796
+2734|2734|Oklahoma|Oklahoma City|73170|756
+2735|2735|Oklahoma|Moore|73160|537
+2736|2736|Oklahoma|Oklahoma City|73129|407
+2737|2737|Oklahoma|Edmond|73013|560
+2738|2738|Oklahoma|Norman|73069|532
+2739|2739|Oklahoma|Oklahoma City|73118|643
+2740|2740|Oklahoma|Oklahoma City|73112|457
+2741|2741|Oklahoma|Moore|73160|491
+2742|2742|Oklahoma|Oklahoma City|73129|891
+2743|2743|Oklahoma|Oklahoma City|73114|615
+2744|2744|Oklahoma|Norman|73072|471
+2745|2745|Oklahoma|Oklahoma City|73132|663
+2746|2746|Oklahoma|Norman|73071|672
+2747|2747|Oklahoma|Oklahoma City|73159|491
+2748|2748|Oklahoma|Edmond|73003|795
+2749|2749|Oklahoma|Edmond|73013|589
+2750|2750|Oklahoma|Norman|73072|711
+2751|2751|Oklahoma|Edmond|73013|843
+2752|2752|Oklahoma|Oklahoma City|73108|859
+2753|2753|Oklahoma|Oklahoma City|73142|337
+2754|2754|Oklahoma|Oklahoma City|73129|983
+2755|2755|Oklahoma|Oklahoma City|73117|752
+2756|2756|Oklahoma|Oklahoma City|73159|996
+2757|2757|Oklahoma|Oklahoma City|73129|918
+2758|2758|Oklahoma|Oklahoma City|73107|261
+2759|2759|Oklahoma|Oklahoma City|73119|553
+2760|2760|Oklahoma|Oklahoma City|73149|358
+2761|2761|Oklahoma|Oklahoma City|73107|886
+2762|2762|Oklahoma|Moore|73160|655
+2763|2763|Oklahoma|Oklahoma City|73132|352
+2764|2764|Oklahoma|Oklahoma City|73162|539
+2765|2765|Oklahoma|Oklahoma City|73139|507
+2766|2766|Oklahoma|Oklahoma City|73108|532
+2767|2767|Oklahoma|Del City|73115|275
+2768|2768|Oklahoma|Edmond|73034|190
+2769|2769|Oklahoma|Oklahoma City|73103|691
+2770|2770|Oklahoma|Edmond|73003|806
+2771|2771|Oklahoma|Oklahoma City|73170|273
+2772|2772|Oklahoma|Oklahoma City|73119|695
+2773|2773|Oklahoma|Oklahoma City|73132|956
+2774|2774|Oklahoma|Oklahoma City|73120|485
+2775|2775|Oklahoma|Oklahoma City|73116|533
+2776|2776|Oklahoma|Oklahoma City|73112|312
+2777|2777|Oklahoma|Oklahoma City|73121|480
+2778|2778|Oklahoma|Oklahoma City|73112|202
+2779|2779|Oklahoma|Norman|73072|606
+2780|2780|Oklahoma|Oklahoma City|73135|626
+2781|2781|Oklahoma|Oklahoma City|73135|690
+2782|2782|Oklahoma|Guthrie|73044|234
+2783|2783|Oklahoma|Midwest City|73110|735
+2784|2784|Oklahoma|Oklahoma City|73109|479
+2785|2785|Oklahoma|Oklahoma City|73159|742
+2786|2786|Oklahoma|Oklahoma City|73159|504
+2787|2787|Oklahoma|Edmond|73003|953
+2788|2788|Oklahoma|Bethany|73008|393
+2789|2789|Oklahoma|Edmond|73013|275
+2790|2790|Oklahoma|Oklahoma City|73170|246
+2791|2791|Oklahoma|Oklahoma City|73162|990
+2792|2792|Oklahoma|Edmond|73034|180
+2793|2793|Oklahoma|Del City|73115|919
+2794|2794|Oklahoma|Moore|73160|980
+2795|2795|Oklahoma|Oklahoma City|73112|407
+2796|2796|Oklahoma|Oklahoma City|73170|434
+2797|2797|Oklahoma|Edmond|73013|932
+2798|2798|Oklahoma|Edmond|73034|295
+2799|2799|Oklahoma|Ardmore|73401|446
+2800|2800|Oklahoma|Edmond|73034|405
+2801|2801|Oklahoma|Oklahoma City|73106|636
+2802|2802|Oklahoma|Moore|73160|781
+2803|2803|Oklahoma|Oklahoma City|73120|125
+2804|2804|Oklahoma|Oklahoma City|73114|342
+2805|2805|Oklahoma|Oklahoma City|73162|432
+2806|2806|Oklahoma|Oklahoma City|73106|411
+2807|2807|Oklahoma|Oklahoma City|73139|855
+2808|2808|Oklahoma|Oklahoma City|73114|990
+2809|2809|Oklahoma|Noble|73068|565
+2810|2810|Oklahoma|Oklahoma City|73135|122
+2811|2811|Oklahoma|Ardmore|73401|981
+2812|2812|Oklahoma|Oklahoma City|73120|588
+2813|2813|Oklahoma|Oklahoma City|73135|813
+2814|2814|Oklahoma|Midwest City|73110|483
+2815|2815|Oklahoma|Edmond|73012|627
+2816|2816|Oklahoma|Edmond|73003|557
+2817|2817|Oklahoma|Oklahoma City|73112|650
+2818|2818|Oklahoma|Midwest City|73130|531
+2819|2819|Florida|Panama City|32405|371
+2820|2820|Florida|Panama City|32401|567
+2821|2821|Florida|Panama City Beach|32408|111
+2822|2822|Florida|Panama City|32413|744
+2823|2823|Florida|Panama City Beach|32408|922
+2824|2824|Florida|Panama City Beach|32408|704
+2825|2825|Florida|Panama City Beach|32413|651
+2826|2826|Florida|Panama City|32405|752
+2827|2827|Florida|Panama City|32407|302
+2828|2828|Florida|Panama City|32405|367
+2829|2829|Florida|Lithia|33547|941
+2830|2830|Florida|Panama City|32404|866
+2831|2831|Florida|Panama City|32408|803
+2832|2832|Florida|Panama City|32404|953
+2833|2833|Florida|Panama City|32405|477
+2834|2834|Florida|Panama City|32405|261
+2835|2835|Florida|Lynn Haven|32444|667
+2836|2836|Florida|Panama City Beach|32413|829
+2837|2837|Florida|Tyndall Air Force Base|32403|556
+2838|2838|Florida|Panama City|32404|848
+2839|2839|Florida|Panama City|32405|467
+2840|2840|Florida|Panama City Beach|32413|213
+2841|2841|Florida|Beverly Hills|34465|689
+2842|2842|Florida|Panama City|32405|415
+2843|2843|Florida|Panama City Beach|32407|388
+2844|2844|Florida|Panama City|32404|661
+2845|2845|Florida|Mexico Beach|32456|964
+2846|2846|Florida|Panama City|32409|300
+2847|2847|Florida|Panama City|32404|458
+2848|2848|Florida|Panama City Beach|32407|324
+2849|2849|Florida|Panama City|32413|349
+2850|2850|Florida|Panama City|32401|521
+2851|2851|Florida|Panama City Beach|32413|161
+2852|2852|Florida|Southport|32409|881
+2853|2853|Florida|Panama City|32401|902
+2854|2854|Florida|Lynn Haven|32444|394
+2855|2855|Florida|Panama City|32401|318
+2856|2856|Florida|Lynn Haven|32444|595
+2857|2857|Florida|Melbourne Beach|32951|735
+2858|2858|Florida|Panama City Beach|32407|256
+2859|2859|Florida|Panama City|32404|228
+2860|2860|Florida|Lynn Haven|32444|280
+2861|2861|Florida|Panama City|32401|717
+2862|2862|Florida|Panama City|32405|331
+2863|2863|Florida|Panama City Beach|32408|236
+2864|2864|Florida|Panama City|32405|153
+2865|2865|Florida|Panama City|32405|810
+2866|2866|Florida|Panama City|32413|807
+2867|2867|Florida|Panama City Beach|32413|503
+2868|2868|Florida|Panama City|32401|991
+2869|2869|Florida|Panama City|32404|619
+2870|2870|Florida|Panama City|32404|514
+2871|2871|Florida|Panama City|32408|771
+2872|2872|Florida|Panama City|32404|553
+2873|2873|Florida|Panama City|32405|134
+2874|2874|Florida|Panama City|32405|223
+2875|2875|Florida|Panama City|32401|853
+2876|2876|Florida|Panama City Beach|32413|348
+2877|2877|Florida|Panama City Beach|32413|960
+2878|2878|Florida|Panama City|32408|634
+2879|2879|Florida|Panama City|32401|266
+2880|2880|Florida|Panama City|32401|309
+2881|2881|Florida|Panama City|32404|374
+2882|2882|Florida|Panama City|32404|210
+2883|2883|Florida|Panama City|32408|654
+2884|2884|Florida|Panama City Beach|32413|698
+2885|2885|Florida|Port Charlotte|33954|219
+2886|2886|Florida|Panama City|32404|131
+2887|2887|Florida|Lynn Haven|32444|396
+2888|2888|Florida|Panama City|32405|472
+2889|2889|Florida|Lynn Haven|32444|207
+2890|2890|Florida|Panama City|32405|938
+2891|2891|Florida|Panama City Beach|32407|963
+2892|2892|Florida|Panama City|32401|199
+2893|2893|Florida|Lynn Haven|32444|689
+2894|2894|Florida|Lynn Haven|32444|573
+2895|2895|Florida|Mexico Beach|32456|214
+2896|2896|Florida|Panama City|32401|884
+2897|2897|Florida|Panama City Beach|32413|710
+2898|2898|Florida|Panama City|32405|513
+2899|2899|Florida|Panama City|32401|395
+2900|2900|Florida|Panama City|32404|661
+2901|2901|Florida|Mexico Beach|32456|289
+2902|2902|Florida|Panama City|32404|903
+2903|2903|Florida|Panama City Beach|32413|725
+2904|2904|Florida|Panama City|32401|270
+2905|2905|Florida|Panama City|32404|253
+2906|2906|Florida|Panama City|32404|936
+2907|2907|Florida|Panama City Beach|32413|161
+2908|2908|Florida|Lynn Haven|32444|552
+2909|2909|Florida|Panama City|32404|978
+2910|2910|Florida|Panama City|32405|324
+2911|2911|Florida|Panama City|32401|735
+2912|2912|Florida|Panama City|32409|933
+2913|2913|Florida|Fountain|32438|219
+2914|2914|Florida|Panama City Beach|32413|504
+2915|2915|Florida|Lynn Haven|32444|504
+2916|2916|Florida|Punta Gorda|33950|898
+2917|2917|Florida|Panama City|32408|903
+2918|2918|Florida|Lynn Haven|32444|892
+2919|2919|Florida|Panama City|32404|648
+2920|2920|Florida|Panama City|32404|335
+2921|2921|Florida|Port Charlotte|33954|800
+2922|2922|Florida|Panama City|32404|949
+2923|2923|Florida|Mexico Beach|32456|388
+2924|2924|Florida|Panama City|32409|682
+2925|2925|Florida|Panama City|32405|392
+2926|2926|Florida|Panama City|32408|199
+2927|2927|Florida|Panama City Beach|32408|837
+2928|2928|Florida|Panama City|32404|691
+2929|2929|Florida|Panama City|32404|807
+2930|2930|Florida|Panama City Beach|32413|993
+2931|2931|Florida|Panama City Beach|32408|410
+2932|2932|Florida|Panama City Beach|32413|353
+2933|2933|Florida|Panama City|32405|161
+2934|2934|Florida|Panama City|32405|520
+2935|2935|Florida|Panama City|32405|186
+2936|2936|Florida|Port Charlotte|33980|420
+2937|2937|Florida|Panama City|32405|987
+2938|2938|Florida|Fountain|32438|727
+2939|2939|Florida|Panama City|32404|927
+2940|2940|Florida|Panama City|32408|313
+2941|2941|Florida|Mexico Beach|32456|669
+2942|2942|Florida|Youngstown|32466|675
+2943|2943|Florida|Panama City|32404|677
+2944|2944|Florida|Panama City|32401|102
+2945|2945|Florida|Lynn Haven|32444|411
+2946|2946|Florida|Youngstown|32466|942
+2947|2947|Florida|Panama City|32405|175
+2948|2948|Florida|Panama City|32405|294
+2949|2949|Florida|Panama City|32405|631
+2950|2950|Florida|Lynn Haven|32444|963
+2951|2951|Florida|Panama City|32401|283
+2952|2952|Florida|Panama City|32401|887
+2953|2953|Florida|Panama City|32404|142
+2954|2954|Florida|Panama City|32401|379
+2955|2955|Florida|Panama City|32404|822
+2956|2956|Florida|Mexico Beach|32456|383
+2957|2957|Florida|Mexico Beach|32456|667
+2958|2958|Florida|Youngstown|32466|784
+2959|2959|Florida|Panama City|32404|780
+2960|2960|Florida|Port Charlotte|33954|429
+2961|2961|Florida|Panama City Beach|32408|881
+2962|2962|Florida|Panama City Beach|32413|379
+2963|2963|Florida|Tyndall Air Force Base|32403|461
+2964|2964|Florida|Panama City|32405|333
+2965|2965|Florida|Panama City Beach|32413|307
+2966|2966|Florida|Panama City|32401|176
+2967|2967|Florida|Panama City|32404|292
+2968|2968|Florida|Panama City Beach|32408|401
+2969|2969|Florida|Merritt Island|32952|813
+2970|2970|Florida|Panama City|32404|187
+2971|2971|Florida|Panama City|32405|591
+2972|2972|Florida|Youngstown|32466|533
+2973|2973|Florida|Panama City|32408|266
+2974|2974|Florida|Southport|32409|614
+2975|2975|Florida|Panama City|32405|359
+2976|2976|Florida|Panama City|32404|369
+2977|2977|Florida|Tampa|33614|231
+2978|2978|Florida|Panama City Beach|32407|412
+2979|2979|Florida|Panama City|32404|164
+2980|2980|Florida|Southport|32409|736
+2981|2981|Florida|Riverview|33579|186
+2982|2982|Florida|Fountain|32438|475
+2983|2983|Florida|Panama City Beach|32407|975
+2984|2984|Florida|Palm Bay|32907|950
+2985|2985|Florida|Beverly Hills|34465|620
+2986|2986|Florida|Panama City|32404|276
+2987|2987|Florida|Panama City|32408|915
+2988|2988|Florida|Panama City Beach|32413|433
+2989|2989|Florida|Panama City|32404|725
+2990|2990|Florida|Panama City Beach|32413|499
+2991|2991|Florida|Panama City|32405|913
+2992|2992|Florida|Panama City Beach|32407|447
+2993|2993|Florida|Panama City|32401|671
+2994|2994|Florida|Lynn Haven|32444|984
+2995|2995|Florida|Panama City|32407|636
+2996|2996|Florida|Panama City|32404|951
+2997|2997|Florida|Panama City Beach|32413|226
+2998|2998|Florida|Panama City|32405|711
+2999|2999|Florida|Panama City Beach|32407|930
+3000|3000|Florida|Panama City Beach|32408|657
+3001|3001|Florida|Panama City|32405|662
+3002|3002|Florida|Fountain|32438|491
+3003|3003|Florida|Panama City|32405|279
+3004|3004|Florida|Lynn Haven|32444|658
+3005|3005|Florida|Tampa|33634|675
+3006|3006|Florida|Panama City Beach|32408|488
+3007|3007|Florida|Panama City Beach|32413|972
+3008|3008|Florida|Panama City|32404|798
+3009|3009|Florida|Panama City|32404|410
+3010|3010|Florida|Panama City Beach|32407|373
+3011|3011|Florida|Panama City|32404|475
+3012|3012|Florida|Palm Bay|32907|389
+3013|3013|Florida|Panama City|32409|289
+3014|3014|Florida|Sun City Center|33573|498
+3015|3015|Florida|Panama City|32401|967
+3016|3016|Florida|Panama City|32404|979
+3017|3017|Florida|Panama City|32401|707
+3018|3018|Florida|Panama City|32404|489
+3019|3019|Florida|Panama City|32404|646
+3020|3020|Florida|Panama City|32404|754
+3021|3021|Florida|Lynn Haven|32444|698
+3022|3022|Florida|Panama City|32405|638
+3023|3023|Florida|Panama City Beach|32408|647
+3024|3024|Florida|Inverness|34452|285
+3025|3025|Florida|Panama City Beach|32408|573
+3026|3026|Florida|Panama City Beach|32407|262

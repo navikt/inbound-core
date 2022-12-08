@@ -1,0 +1,12 @@
+ jobs:
+    - name: "CSV to DuckDB"
+      source:
+        type: "file"
+        spec:
+          path: "source.csv"
+          chunksize: 100
+      target: 
+        type: "duckdb"
+        spec:
+          table: "test"
+          database: "tempdb"

@@ -1,0 +1,34 @@
+ jobs:
+    - name: "CSV to DuckDB"
+      source:
+        type: "file"
+        spec:
+          path: "source.csv"
+      target: 
+        type: "duckdb"
+        spec:
+          table: "test"
+          database: "{{env_var('INBOUND_DATA_PATH')}}/duckdb"
+    - name: "DuckDB to SQLite"
+      source:
+        type: "duckdb"
+        spec:
+          query: "select * from test"
+          database: "{{env_var('INBOUND_DATA_PATH')}}/duckdb"
+      target: 
+        type: "sqlalchemy"
+        spec:
+          connection_string: "sqlite:////{{env_var('INBOUND_DATA_PATH')}}/test.db"
+          table: "duck_table"
+    - name: "SQLite to CSV"
+      source:
+        type: "sqlalchemy"
+        spec:
+          connection_string: "sqlite:////{{env_var('INBOUND_DATA_PATH')}}/test.db"
+          query: "select * from duck_table"
+      target: 
+        type: "file"
+        spec:
+          path: "{{env_var('INBOUND_DATA_PATH')}}/source_processed.csv"
+
+          

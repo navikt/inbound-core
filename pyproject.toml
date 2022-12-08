@@ -1,0 +1,104 @@
+[tool.poetry]
+name = "inbound-core"
+version = "0.0.0"
+description = ""
+authors = ["Virksomhetsdatalaget"]
+readme = "README.md"
+packages = [{include = "inbound"}]
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+
+[tool.poetry.dependencies]
+python = "3.9.12"
+dbt-core = "^1.3.1"
+dbt-snowflake = "^1.3.0"
+duckdb = "^0.6.0"
+click = "^8.1.3"
+coloredlogs = "^15.0.1"
+google-cloud-bigquery = "^3.4.0"
+google-cloud-bigquery-storage = "^2.16.2"
+google-cloud-storage = "^2.6.0"
+google-auth = "^2.15.0"
+google-api-core = "^2.11.0"
+google-cloud-core = "^2.3.2"
+google-cloud-secret-manager = "^2.12.6"
+oracledb = "^1.2.1"
+pandas = "^1.5.2"
+pydantic = "^1.10.2"
+pyyaml = "^6.0"
+python-json-logger = "^2.0.4"
+psycopg2 = "^2.9.5"
+requests = "^2.28.1"
+schema = "^0.7.5"
+sqlalchemy = "^1.4.44"
+sqlalchemy-bigquery = "^1.5.0"
+snowflake-sqlalchemy = "^1.4.4"
+types-click = "^7.1.8"
+loguru = "^0.6.0"
+snowflake-connector-python = "2.7.12"
+pyarrow = "^10.0.1"
+
+[tool.poetry.group.dev.dependencies]
+faker = "^15.3.4"
+coverage = "^6.5.0"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
+duckdb = "^0.6.0"
+isort = "^5.10.1"
+black = "^22.10.0"
+mypy = "^0.991"
+flake8 = "^6.0.0"
+flake8-docstrings = "^1.6.0"
+flake8-black = "^0.3.5"
+twine = "^4.0.2"
+sqlfluff = "^1.4.2"
+dunamai = "^1.15.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.pytest.ini_options]
+pythonpath = [".", "src"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.venv
+  | \.env
+  | build
+  | dist
+  | \.mypy_cache
+  | tests/data
+)/
+'''
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+known_first_party = ["inbound", "tests"]
+default_section = "THIRDPARTY"
+
+[tool.coverage.paths]
+source = ["inbound", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["inbound"]
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
+omit = []
+exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
+

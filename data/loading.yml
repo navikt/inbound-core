@@ -1,0 +1,12 @@
+ jobs:
+    - name: "ssb to Snowflake"
+      source:
+        type: "file"
+        spec:
+          "url": "http://data.ssb.no/api/v0/dataset/1054.csv?lang=en"
+      target: 
+        type: "snowflake"
+        spec:
+          profile: "snowflake_eyeshare"
+          target: "loader"
+          table: "ssb_1054"

@@ -1,0 +1,32 @@
+ jobs:
+    - name: fylker_fra_datavarehus
+      acl :
+        allow: ["paul.bencze@nav.no"]
+      meta: 
+        title: "Fylkesdimensjon"
+        description: "Speiling av tabell dt_p.dim_fylke i datavarehuset"
+        pii: false 
+      source:
+        type: "bigquery"
+        name: "dim_fylke_datavarehus"
+        config:
+          query: "SELECT * FROM {{env_var('TAP_BIGQUERY_DATASET')}}.DIM_FYLKE" 
+          project_id: "{{env_var('TAP_BIGQUERY_PROJECT_ID')}}"
+          keyfile: "{{env_var('TAP_BIGQUERY_CREDENTIALS')}}"
+          chunksize: 10000
+      target: 
+        type: "bigquery"
+        name: "dim_fylke_bigquery"
+        config:
+          project_id: "{{env_var('TARGET_BIGQUERY_PROJECT_ID')}}"
+          table: "{{env_var('TARGET_BIGQUERY_PROJECT_ID')}}.{{env_var('TARGET_BIGQUERY_DATASET')}}.DIM_FYLKE"
+          keyfile: "{{env_var('TARGET_BIGQUERY_CREDENTIALS')}}"
+          table_schema: [
+              {"name": "pk_fylke", "type": "STRING"}, 
+              {"name": "fylke_nr", "type": "STRING"}, 
+              {"name": "fylke_navn", "type": "STRING"}, 
+              {"name": "fylke_nr_navn", "type": "STRING"}, 
+              {"name": "navarende_fylke_nr_navn", "type": "STRING"}, 
+              {"name": "navarende_fylke_navn", "type": "STRING"}, 
+              {"name": "fylke_kortnavn", "type": "STRING"}]
+          

@@ -1,0 +1,16 @@
+ jobs:
+    - name: "CSV to DuckDB"
+      source:
+        type: "file"
+        spec:
+          path: "source.csv"
+          format: "meta+json" 
+          meta: 
+            system: "SSB Statistikkbank"
+            api: "http://data.ssb.no/api/v0/dataset/1054.csv?lang=en"
+            description: "Sysselsetting og arbeidsledighet (AKU), etter kjønn og alder. Hele datasettet 2006M02 - siste måned"
+      
+      target: 
+        type: "duckdb"
+        spec:
+          table: "test"

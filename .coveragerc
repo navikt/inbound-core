@@ -1,0 +1,7 @@
+[paths]
+source= inbound/
+
+[report]
+exclude_lines = 
+    pragma: not covered
+    Protocol
