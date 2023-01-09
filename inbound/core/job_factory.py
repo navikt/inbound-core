@@ -20,7 +20,7 @@ class Job:
     def run(self) -> JobResult:
         job_id = self.config.job_id
         start_time_job_ns = time.monotonic_ns()
-        res = JobResult(job_id=job_id, start_date_time=datetime.datetime.now())
+        job_result = JobResult(job_id=job_id, start_date_time=datetime.datetime.now())
 
         try:
             with self.source as source:
@@ -31,30 +31,38 @@ class Job:
                         start_time_batch = time.monotonic_ns()
 
                         # transform dataframe if specified
-                        df, transform_res = transform(source.profile.spec, df, job_id)
-                        res.append(transform_res)
-
-                        # add metadata if specified
-                        df, metadata_res = enriched_with_metadata(
+                        df, transform_job_result = transform(
                             source.profile.spec, df, job_id
                         )
-                        res.append(metadata_res)
+                        job_result.append(transform_job_result)
 
-                        result, batch_res = sink.from_pandas(
-                            df, index, mode=self.sink.profile.spec.mode
+                        # add metadata if specified
+                        df, metadata_job_result = enriched_with_metadata(
+                            source.profile.spec, df, job_id
                         )
-                        batch_res.duration_ns = time.monotonic_ns() - start_time_batch
-                        res.append(batch_res)
+                        job_result.append(metadata_job_result)
 
-            res.result = "DONE"
+                        # write to sink
+                        result, batch_job_result = sink.from_pandas(
+                            df,
+                            chunk=index,
+                            mode=self.sink.profile.spec.mode,
+                            job_id=job_id,
+                        )
+                        batch_job_result.duration_ns = (
+                            time.monotonic_ns() - start_time_batch
+                        )
+                        job_result.append(batch_job_result)
+
+            job_result.result = "DONE"
         except Exception as e:
             LOGGER.error(f"Error running job. {e}")
-            res.result = "FAILED"
+            job_result.result = "FAILED"
 
         finally:
-            res.duration_ns = time.monotonic_ns() - start_time_job_ns
-            res.end_date_time = datetime.datetime.now()
-            return res
+            job_result.duration_ns = time.monotonic_ns() - start_time_job_ns
+            job_result.end_date_time = datetime.datetime.now()
+            return job_result
 
 
 @dataclass

@@ -1,7 +1,4 @@
-# from inbound.plugins.common import await_connection
 import datetime
-import os
-import sys
 from typing import Any, Iterator, Tuple
 
 import pandas
@@ -92,13 +89,12 @@ class SQLAlchemyConnection(BaseConnection):
     def from_pandas(
         self,
         df: pandas.DataFrame,
-        job_id: str = None,
-        table_name: str = None,
         chunk: int = 0,
         mode: str = "replace",
+        job_id: str = None,
     ) -> Tuple[Any, JobResult]:
 
-        mode = (
+        sync_mode = (
             SyncMode.REPLACE if (chunk == 0 and mode == "replace") else SyncMode.APPEND
         )
 
@@ -107,9 +103,13 @@ class SQLAlchemyConnection(BaseConnection):
         job_result = JobResult(job_id=job_id)
 
         try:
-            if mode == SyncMode.REPLACE:
+            if sync_mode == SyncMode.REPLACE:
+                LOGGER.info(f"Dropping table {table}")
                 self.drop(table)
 
+            LOGGER.info(
+                f"Writing chunk {chunk} to table {table}. Mode {sync_mode}. Job: {job_id}"
+            )
             df.to_sql(table, con=self.connection, index=False, if_exists="append")
 
             job_result.rows = len(df)

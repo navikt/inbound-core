@@ -12,13 +12,11 @@ vcs = "git"
 style = "semver"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-dbt-core = "^1.3.1"
-dbt-snowflake = "^1.3.0"
+python = "^3.8.1,<3.11"
 duckdb = "^0.6.0"
 click = "^8.1.3"
 coloredlogs = "^15.0.1"
-google-cloud-bigquery = "^3.4.0"
+google-cloud-bigquery = "^2.34.0"
 google-cloud-bigquery-storage = "^2.16.2"
 google-cloud-storage = "^2.6.0"
 google-auth = "^2.15.0"
@@ -39,7 +37,6 @@ snowflake-sqlalchemy = "^1.4.4"
 types-click = "^7.1.8"
 loguru = "^0.6.0"
 snowflake-connector-python = "2.7.12"
-pyarrow = "^10.0.1"
 
 [tool.poetry.group.dev.dependencies]
 faker = "^15.3.4"

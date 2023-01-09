@@ -39,6 +39,12 @@ class SnowflakeConnection(SQLAlchemyConnection):
                     profile.spec.profile, profile.spec.target, profile.spec.profiles_dir
                 )
                 profile.spec.connection_string = URL(**params)
+                LOGGER.info(
+                    f"Loaded dbt profile for profile={profile.spec.profile} and target={profile.spec.target} with profiles_dir {profile.spec.profiles_dir}."
+                )
+                LOGGER.info(
+                    f"Profile type: {params.get('type')}. Database: : {params.get('database')}. Schema: {params.get('schema')}. User: {params.get('user')}. Warehouse: {params.get('warehouse')}"
+                )
                 return
             except Exception as e:
                 LOGGER.error(
