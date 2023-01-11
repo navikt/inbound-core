@@ -13,7 +13,6 @@ style = "semver"
 
 [tool.poetry.dependencies]
 python = "^3.8.1,<3.11"
-duckdb = "^0.6.0"
 click = "^8.1.3"
 coloredlogs = "^15.0.1"
 google-cloud-bigquery = "^2.34.0"
@@ -28,7 +27,6 @@ pandas = "^1.5.2"
 pydantic = "^1.10.2"
 pyyaml = "^6.0"
 python-json-logger = "^2.0.4"
-psycopg2 = "^2.9.5"
 requests = "^2.28.1"
 schema = "^0.7.5"
 sqlalchemy = "^1.4.44"
@@ -53,6 +51,7 @@ flake8-black = "^0.3.5"
 twine = "^4.0.2"
 sqlfluff = "^1.4.2"
 dunamai = "^1.15.0"
+psycopg2 = "^2.9.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
