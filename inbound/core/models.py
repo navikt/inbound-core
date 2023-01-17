@@ -68,6 +68,8 @@ class FileSpec(BaseSpec):
     type: str = "csv"
     sep: Optional[str] = ","
     encoding: Optional[str] = "utf-8"
+    sheet_name: Optional[str] = "Sheet1"
+    header: Optional[int] = 0
 
 
 class BucketSpec(BaseSpec):
