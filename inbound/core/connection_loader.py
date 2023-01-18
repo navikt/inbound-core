@@ -24,9 +24,12 @@ def load_plugins(plugins: List[str]) -> None:
     # plugins installed by default
     for plugin_name in plugins:
         if not plugin_name in loadedPlugins:
-            plugin = import_module(f"...plugins.connections.{plugin_name}")
-            plugin.register()
-            loadedPlugins.append(plugin_name)
+            try:
+                plugin = import_module(f"...plugins.connections.{plugin_name}")
+                plugin.register()
+                loadedPlugins.append(plugin_name)
+            except Exception as e:
+                LOGGER.error(f"Error loading plugin {name}. {e}")
 
     # plugins installed separetely
     for finder, name, ispkg in pkgutil.iter_modules():
