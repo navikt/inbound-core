@@ -30,7 +30,7 @@ def load_plugins(plugins: List[str]) -> None:
 
     # plugins installed separetely
     for finder, name, ispkg in pkgutil.iter_modules():
-        if name.startswith("inbound_"):
+        if name.startswith("inbound_connector_"):
             try:
                 plugin = import_module(name)
                 plugin.register()
