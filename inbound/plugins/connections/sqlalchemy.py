@@ -56,7 +56,7 @@ class SQLAlchemyConnection(BaseConnection):
         self, job_id: str = None
     ) -> Iterator[Tuple[pandas.DataFrame, JobResult]]:
         query = self.profile.spec.query or f"SELECT * FROM {self.profile.spec.table}"
-        chunk_size = self.profile.spec.chunksize or 1000
+        chunk_size = self.profile.spec.chunksize or 100000
 
         if not query:
             raise ValueError("Please provide an SQL query string or table name.")

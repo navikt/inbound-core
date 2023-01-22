@@ -12,11 +12,6 @@ from inbound.core.logging import LOGGER
 from inbound.core.models import Spec
 from inbound.core.package import get_pacage_name, get_package_version
 
-# lastet_session: "hvordan kom jeg over - for eksempel batch last med <navn på app>"
-# kildesystem: "<OeBS, Lydia, etc.>"
-# grensesnitt: "hva slags grensesnitt kommer dataene fra, for eksempel, views i kilde database etc"
-# lastet_tid: tidspunkt når dataene kommer i til oss
-
 
 def enriched_with_metadata(
     spec: Spec, df: pandas.DataFrame, job_id: str = None

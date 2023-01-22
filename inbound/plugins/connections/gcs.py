@@ -28,7 +28,7 @@ class GCSConnection(BaseConnection):
         self.prefix = profile.spec.prefix or None
         self.blob_name = profile.spec.blob or os.urandom(24).hex()
         self.blob_format = profile.spec.format or "parquet"
-        self.chunk_size = profile.spec.chunksize or 10000
+        self.chunk_size = profile.spec.chunksize or 100000
 
     def __enter__(self):
         try:
