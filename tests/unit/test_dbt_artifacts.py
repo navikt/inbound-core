@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from inbound.dbt_artifacts import manifest
+from inbound.artifacts.dbt import manifest
 
 
 def test_parse_manifest(data_path):

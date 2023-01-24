@@ -11,6 +11,7 @@ from pydantic.env_settings import SettingsSourceCallable
 
 from inbound.core.environment import get_env
 from inbound.core.logging import LOGGER
+from inbound.core.models import Profile
 
 
 class DbtProfileModel(BaseModel):
@@ -65,7 +66,7 @@ class DbtProfile(BaseSettings):
             return (
                 init_settings,
                 env_settings,
-                get_dbt_profile_from_yml,
+                dbt_profile_from_yml,
                 file_secret_settings,
             )
 
@@ -80,7 +81,7 @@ def is_dbt_profiles_dir(profiles_dir: str):
     return False
 
 
-def get_dbt_profile_from_yml(settings: BaseSettings) -> Dict[str, Any]:
+def dbt_profile_from_yml(settings: BaseSettings) -> Dict[str, Any]:
 
     profiles_dir = settings.__config__.default_dir
 
@@ -127,7 +128,7 @@ def get_dbt_profile_from_yml(settings: BaseSettings) -> Dict[str, Any]:
     return {}
 
 
-def get_dbt_connection_params(
+def dbt_connection_params(
     profile_name: str, target: str = "dev", profiles_dir: str = None
 ) -> Dict[str, Any]:
 
@@ -141,12 +142,11 @@ def get_dbt_connection_params(
     profiles = DbtProfile(profile_name, profiles_dir).profile.elements
     if not profiles:
         return {}
-    target = profiles[profile_name]["target"]
     params = profiles[profile_name]["outputs"][target]
     return params
 
 
-def get_dbt_config(profiles_dir: str = None) -> Dict[str, Any]:
+def dbt_config(profiles_dir: str = None) -> Dict[str, Any]:
     profiles = DbtProfile(profiles_dir=profiles_dir).profile.elements
     if not profiles:
         return {}
@@ -155,3 +155,14 @@ def get_dbt_config(profiles_dir: str = None) -> Dict[str, Any]:
         return config
     except:
         return {}
+
+
+def profile(
+    profile_type, profile_name: str, target: str = "dev", profiles_dir: str = None
+) -> Profile:
+    try:
+        spec = dbt_connection_params(profile_name, target, profiles_dir)
+        profile = Profile(type=profile_type, name=profile_name, spec=spec)
+        return profile
+    except:
+        return None

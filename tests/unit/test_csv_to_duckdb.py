@@ -40,8 +40,3 @@ def test_csv_duckdb_job_with_metadata(data_path):
     ret = run_job(data_path + "/csv_duckdb_metadata.yml")
 
     assert ret.result == "DONE"
-
-
-if __name__ == "__main__":
-    os.environ["INBOUND_DATA_PATH"] = "/Users/paulbencze/Projects/dbc/data"
-    test_csv_duckdb_job_with_metadata("/Users/paulbencze/Projects/inbound/data")
