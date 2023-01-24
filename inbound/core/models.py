@@ -149,3 +149,11 @@ class SodaProfile(BaseModel):
 
     def __getitem__(self, item):
         return self.__root__[item]
+
+    def dict(self, **kwargs):
+        kwargs.setdefault("by_alias", True)
+        return super().dict(**kwargs)
+
+    def json(self, **kwargs):
+        kwargs.setdefault("by_alias", True)
+        return super().json(**kwargs)

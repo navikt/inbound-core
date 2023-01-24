@@ -23,7 +23,7 @@ def soda_profile(
             role=spec.role,
             database=spec.database,
             warehouse=spec.warehouse,
-            database_schema=spec.database_schema,
+            schema=spec.database_schema,
         )
         if soda_spec.host is None and soda_spec.type == "snowflake":
             soda_spec.host = f"https://{soda_spec.account}.snowflakecomputing.com"
