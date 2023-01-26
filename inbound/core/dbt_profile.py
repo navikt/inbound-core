@@ -84,12 +84,14 @@ def is_dbt_profiles_dir(profiles_dir: str):
 def dbt_profile_from_yml(settings: BaseSettings) -> Dict[str, Any]:
 
     profiles_dir = settings.__config__.default_dir
+    LOGGER.info(f"Profiles in settings: {profiles_dir}")
 
     if not is_dbt_profiles_dir(profiles_dir):
         profiles_dir = os.getenv("DBT_PROFILES_DIR")
 
     if not is_dbt_profiles_dir(profiles_dir):
         start_search = Path.cwd().parents[1]
+        LOGGER.info(f"Searching for profiles dir starting from: {start_search}")
         pattern = f"{start_search}/**/dbt/profiles.yml"
         for filename in glob.iglob(pattern, recursive=True):
             profiles_dir = Path(filename).parent
@@ -103,7 +105,7 @@ def dbt_profile_from_yml(settings: BaseSettings) -> Dict[str, Any]:
         return {}
 
     path = Path(profiles_dir) / "profiles.yml"
-
+    LOGGER.info(f"Loading dbt profile from {path}")
     if path.is_file():
         try:
             with open(path, "r") as stream:
@@ -129,19 +131,27 @@ def dbt_profile_from_yml(settings: BaseSettings) -> Dict[str, Any]:
 
 
 def dbt_connection_params(
-    profile_name: str, target: str = "dev", profiles_dir: str = None
+    profile_name: str, target: None, profiles_dir: str = None
 ) -> Dict[str, Any]:
 
     if (
         profiles_dir
-        and Path(profiles_dir).is_dir()
+        and is_dbt_profiles_dir(profiles_dir)
         and os.environ.get("DBT_PROFILES_DIR") is None
     ):
         os.environ["DBT_PROFILES_DIR"] = profiles_dir
 
-    profiles = DbtProfile(profile_name, profiles_dir).profile.elements
+    profiles = DbtProfile(profile_name, target, profiles_dir).profile.elements
+    LOGGER.info(f"Loaded profiles {str(list(profiles.keys()))}")
     if not profiles:
+        LOGGER.error(
+            f"Profile with name {profile_name} and target {target} not found in profile_dir {profiles_dir}"
+        )
         return {}
+
+    LOGGER.info(f"Loading target: {target} from profile {profile_name}")
+    target = target or profiles[profile_name]["target"] or "dev"
+    LOGGER.info(f"Loading profile {profile_name}. Target: {target}")
     params = profiles[profile_name]["outputs"][target]
     return params
 
@@ -155,14 +165,3 @@ def dbt_config(profiles_dir: str = None) -> Dict[str, Any]:
         return config
     except:
         return {}
-
-
-def profile(
-    profile_type, profile_name: str, target: str = "dev", profiles_dir: str = None
-) -> Profile:
-    try:
-        spec = dbt_connection_params(profile_name, target, profiles_dir)
-        profile = Profile(type=profile_type, name=profile_name, spec=spec)
-        return profile
-    except:
-        return None

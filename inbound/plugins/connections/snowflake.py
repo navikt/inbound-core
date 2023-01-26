@@ -6,7 +6,7 @@ from typing import Tuple
 from snowflake.sqlalchemy import URL
 
 from inbound.core import JobResult, connection_factory, logging
-from inbound.core.dbt_profile import DbtProfile, dbt_connection_params
+from inbound.core.dbt_profile import dbt_connection_params
 from inbound.core.models import Profile, Spec
 from inbound.plugins.connections.gcs import GCSConnection
 from inbound.plugins.connections.sqlalchemy import SQLAlchemyConnection

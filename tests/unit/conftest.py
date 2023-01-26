@@ -32,6 +32,8 @@ def pytest_sessionstart(session):
     secret_dir = tempfile.TemporaryDirectory()
     os.environ["INBOUND_SECRET_PATH"] = secret_dir.name
 
+    os.environ["DBT_PROFILES_DIR"] = str(DATA_DIR / "dbt")
+
 
 def pytest_sessionfinish(session, exitstatus):
     """
@@ -40,6 +42,8 @@ def pytest_sessionfinish(session, exitstatus):
     """
 
     secret_dir = os.environ["INBOUND_SECRET_PATH"]
+
+    os.environ.pop("DBT_PROFILES_DIR", None)
 
     try:
         shutil.rmtree(secret_dir)

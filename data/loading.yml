@@ -7,6 +7,6 @@
       target: 
         type: "snowflake"
         spec:
-          profile: "snowflake_eyeshare"
+          profile: "snowflake_test"
           target: "loader"
           table: "ssb_1054"
