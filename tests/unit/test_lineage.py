@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from inbound.dbt_artifacts.graph import write_lineage_graph
+from inbound.artifacts.dbt.graph import write_lineage_graph
 
 
 def test_write_lineage_graph(data_path):

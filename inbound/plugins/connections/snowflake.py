@@ -6,7 +6,7 @@ from typing import Tuple
 from snowflake.sqlalchemy import URL
 
 from inbound.core import JobResult, connection_factory, logging
-from inbound.core.dbt_profile import DbtProfile, get_dbt_connection_params
+from inbound.core.dbt_profile import dbt_connection_params
 from inbound.core.models import Profile, Spec
 from inbound.plugins.connections.gcs import GCSConnection
 from inbound.plugins.connections.sqlalchemy import SQLAlchemyConnection
@@ -35,7 +35,7 @@ class SnowflakeConnection(SQLAlchemyConnection):
 
         if profile.spec.profile and profile.spec.target:
             try:
-                params = get_dbt_connection_params(
+                params = dbt_connection_params(
                     profile.spec.profile, profile.spec.target, profile.spec.profiles_dir
                 )
                 profile.spec.connection_string = URL(**params)

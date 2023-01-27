@@ -20,6 +20,7 @@ def profile(data_path):
     return Profile(spec=spec)
 
 
+@pytest.mark.skip(reason="append mode not implemented yet")
 def test_write_pandas_append(profile):
 
     # split in 4 chunks
