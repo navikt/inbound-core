@@ -7,6 +7,7 @@ from pygit2 import Repository
 
 from inbound import __version__ as version
 from inbound.core.jobs import run_all_job_in_directory, run_job
+from inbound.core.models import Profile, Spec
 
 here = os.getcwd()
 
@@ -70,22 +71,24 @@ def run(profiles_dir, project_dir, job):
 
 @inbound.command
 def clone() -> None:
-    prefix = Repository('.').head.shorthand.replace("-","_") 
-    if prefix.upper() != "MAIN":
-        os.environ["dev_db".upper()] = prefix + '_' + datapipeline.snowflake.database.name
+    spec = Spec(profile="vdl-regnskap-profile", target="constructor", profiles_dir="./src/dbt")
+    print(spec)
+    #prefix = Repository('.').head.shorthand.replace("-","_") 
+    #if prefix.upper() != "MAIN":
+        #os.environ["dev_db".upper()] = prefix + '_' + datapipeline.snowflake.database.name
         
-        connection.execute(f"use role sysadmin")
-        connection.execute("create database if not exists {cloned_db} clone {original_db}".format(
-            cloned_db = os.getenv("dev_db".upper()),
-            original_db = datapipeline.snowflake.database.name,
-        ))
-        for key, value in datapipeline.snowflake.database.roles.items():
-            connection.execute("grant usage on database {cloned_db} to role {role}".format(
-                cloned_db=os.getenv("dev_db".upper()),
-                role = value.role,
-            ))
-    else:
-        os.environ["dev_db".upper()] = datapipeline.snowflake.database.name
+        #connection.execute(f"use role sysadmin")
+        #connection.execute("create database if not exists {cloned_db} clone {original_db}".format(
+            #cloned_db = os.getenv("dev_db".upper()),
+            #original_db = datapipeline.snowflake.database.name,
+        #))
+        #for key, value in datapipeline.snowflake.database.roles.items():
+            #connection.execute("grant usage on database {cloned_db} to role {role}".format(
+                #cloned_db=os.getenv("dev_db".upper()),
+                #role = value.role,
+            #))
+    #else:
+        #os.environ["dev_db".upper()] = datapipeline.snowflake.database.name
 
 def main():
     inbound()
