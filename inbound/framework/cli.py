@@ -8,6 +8,7 @@ from pygit2 import Repository
 from inbound import __version__ as version
 from inbound.core.jobs import run_all_job_in_directory, run_job
 from inbound.core.models import Profile, Spec
+from inbound.plugins.connections import SnowflakeConnection
 
 here = os.getcwd()
 
@@ -71,8 +72,10 @@ def run(profiles_dir, project_dir, job):
 
 @inbound.command
 def clone() -> None:
-    spec = Spec(profile="vdl-regnskap-profile", target="constructor", profiles_dir="./src/dbt")
-    print(spec)
+    spec = Spec(profile="vdl-regnskap-profile", target="constructor", profiles_dir="/Users/ivar/Github/vdl-regnskapsdata/src/dbt/profiles.yml")
+    profile = Profile(type="snowflake",name=f"snowflake",spec=spec)
+    snow = SnowflakeConnection(profile=profile)
+    print(snow)
     #prefix = Repository('.').head.shorthand.replace("-","_") 
     #if prefix.upper() != "MAIN":
         #os.environ["dev_db".upper()] = prefix + '_' + datapipeline.snowflake.database.name
