@@ -72,10 +72,9 @@ def run(profiles_dir, project_dir, job):
 
 @inbound.command
 def clone() -> None:
-    spec = Spec(profile="vdl-regnskap-profile", target="constructor", profiles_dir="/Users/ivar/Github/vdl-regnskapsdata/src/dbt/profiles.yml")
+    spec = Spec(profile="vdl_regnskap_profile", target="constructor", profiles_dir="/Users/patrick/git/vdl-regnskapsdata/src/dbt")
     profile = Profile(type="snowflake",name=f"snowflake",spec=spec)
     snow = SnowflakeConnection(profile=profile)
-    print(snow)
     #prefix = Repository('.').head.shorthand.replace("-","_") 
     #if prefix.upper() != "MAIN":
         #os.environ["dev_db".upper()] = prefix + '_' + datapipeline.snowflake.database.name
