@@ -5,6 +5,7 @@ from pathlib import Path
 import click
 from pygit2 import Repository
 
+import inbound.core.dbt_profile as dbt_profile
 from inbound import __version__ as version
 from inbound.core.jobs import run_all_job_in_directory, run_job
 from inbound.core.models import Profile, Spec
@@ -72,25 +73,36 @@ def run(profiles_dir, project_dir, job):
 
 @inbound.command
 def clone() -> None:
-    spec = Spec(profile="vdl_regnskap_profile", target="constructor", profiles_dir="/Users/patrick/git/vdl-regnskapsdata/src/dbt")
-    profile = Profile(type="snowflake",name=f"snowflake",spec=spec)
-    snow = SnowflakeConnection(profile=profile)
-    #prefix = Repository('.').head.shorthand.replace("-","_") 
-    #if prefix.upper() != "MAIN":
-        #os.environ["dev_db".upper()] = prefix + '_' + datapipeline.snowflake.database.name
-        
-        #connection.execute(f"use role sysadmin")
-        #connection.execute("create database if not exists {cloned_db} clone {original_db}".format(
-            #cloned_db = os.getenv("dev_db".upper()),
-            #original_db = datapipeline.snowflake.database.name,
-        #))
-        #for key, value in datapipeline.snowflake.database.roles.items():
-            #connection.execute("grant usage on database {cloned_db} to role {role}".format(
-                #cloned_db=os.getenv("dev_db".upper()),
-                #role = value.role,
-            #))
-    #else:
-        #os.environ["dev_db".upper()] = datapipeline.snowflake.database.name
+    user_input = dict(
+        profile="vdl_regnskap_profile",
+        target="constructor",
+        profiles_dir="/Users/patrick/git/vdl-regnskapsdata/src/dbt",
+    )
+    dbt_profile_params = dbt_profile.dbt_connection_params(**user_input)
+    spec = Spec(**dbt_profile_params)
+    profile = Profile(type="snowflake", name=f"snowflake", spec=spec)
+
+    prefix = Repository(".").head.shorthand.replace("-", "_")
+    original_db = spec.database
+    cloned_db = f"{prefix}_{original_db}"
+
+    if prefix.upper() == "MAIN":
+        os.environ["DEV_DB"] = original_db
+        return
+
+    os.environ["DEV_DB"] = cloned_db
+
+
+#    with SnowflakeConnection(profile=profile) as connection:
+#        connection.execute(f"use role sysadmin")
+#        connection.execute(
+#        f"create database if not exists {cloned_db} clone {original_db}"
+#        )
+#        for key, value in datapipeline.snowflake.database.roles.items():
+#        connection.execute(
+#        f"grant usage on database {cloned_db} to role {value.role}"
+#        )
+
 
 def main():
     inbound()
