@@ -72,15 +72,16 @@ def run(profiles_dir, project_dir, job):
 
 
 @inbound.command
-def clone() -> None:
-    user_input = dict(
-        profile="vdl_regnskap_profile",
-        target="constructor",
-        profiles_dir="/Users/patrick/git/vdl-regnskapsdata/src/dbt",
-    )
+@click.option("--profile", default=None, required=True)
+@click.option("--target", default="constructor", required=False)
+@click.option(
+    "--profiles_dir",
+    default="./src/dbt",
+    required=False,
+)
+def clone(**user_input) -> None:
     dbt_profile_params = dbt_profile.dbt_connection_params(**user_input)
     spec = Spec(**dbt_profile_params)
-    profile = Profile(type="snowflake", name=f"snowflake", spec=spec)
 
     prefix = Repository(".").head.shorthand.replace("-", "_")
     original_db = spec.database
@@ -91,6 +92,8 @@ def clone() -> None:
         return
 
     os.environ["DEV_DB"] = cloned_db
+
+    profile = Profile(type="snowflake", name=f"snowflake", spec=spec)
 
 
 #    with SnowflakeConnection(profile=profile) as connection:
