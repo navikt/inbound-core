@@ -3,6 +3,7 @@ import webbrowser
 from pathlib import Path
 
 import click
+import pandas as pd
 from pygit2 import Repository
 
 import inbound.core.dbt_profile as dbt_profile
@@ -82,29 +83,19 @@ def run(profiles_dir, project_dir, job):
 def clone(**user_input) -> None:
     dbt_profile_params = dbt_profile.dbt_connection_params(**user_input)
     spec = Spec(**dbt_profile_params)
+    profile = Profile(type="snowflake", name=f"snowflake", spec=spec)
 
     prefix = Repository(".").head.shorthand.replace("-", "_")
     original_db = spec.database
-    cloned_db = f"{prefix}_{original_db}"
+    cloned_db = f"{prefix}_{original_db}"  
 
-    if prefix.upper() == "MAIN":
-        os.environ["DEV_DB"] = original_db
-        return
-
-    os.environ["DEV_DB"] = cloned_db
-
-    profile = Profile(type="snowflake", name=f"snowflake", spec=spec)
-
-
-#    with SnowflakeConnection(profile=profile) as connection:
-#        connection.execute(f"use role sysadmin")
-#        connection.execute(
-#        f"create database if not exists {cloned_db} clone {original_db}"
-#        )
-#        for key, value in datapipeline.snowflake.database.roles.items():
-#        connection.execute(
-#        f"grant usage on database {cloned_db} to role {value.role}"
-#        )
+    query = f"show grants on database regnskap"
+    with SnowflakeConnection(profile=profile) as db:
+         db.execute(f"create database if not exists {cloned_db} clone {original_db}")
+         df = pd.read_sql(sql=query, con=db.engine)
+         df=df[df["privilege"]=="USAGE"]
+         for grantee in df["grantee_name"].__iter__():
+            db.execute(f"grant usage on database {cloned_db} to role {grantee}")
 
 
 def main():
