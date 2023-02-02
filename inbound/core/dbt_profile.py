@@ -131,7 +131,7 @@ def dbt_profile_from_yml(settings: BaseSettings) -> Dict[str, Any]:
 
 
 def dbt_connection_params(
-    profile_name: str, target: None, profiles_dir: str = None
+    profile: str, target: None, profiles_dir: str = None, *args, **kwargs
 ) -> Dict[str, Any]:
 
     if (
@@ -141,18 +141,18 @@ def dbt_connection_params(
     ):
         os.environ["DBT_PROFILES_DIR"] = profiles_dir
 
-    profiles = DbtProfile(profile_name, target, profiles_dir).profile.elements
+    profiles = DbtProfile(profile, target, profiles_dir).profile.elements
     LOGGER.info(f"Loaded profiles {str(list(profiles.keys()))}")
     if not profiles:
         LOGGER.error(
-            f"Profile with name {profile_name} and target {target} not found in profile_dir {profiles_dir}"
+            f"Profile with name {profile} and target {target} not found in profile_dir {profiles_dir}"
         )
         return {}
 
-    LOGGER.info(f"Loading target: {target} from profile {profile_name}")
-    target = target or profiles[profile_name]["target"] or "dev"
-    LOGGER.info(f"Loading profile {profile_name}. Target: {target}")
-    params = profiles[profile_name]["outputs"][target]
+    LOGGER.info(f"Loading target: {target} from profile {profile}")
+    target = target or profiles[profile]["target"] or "dev"
+    LOGGER.info(f"Loading profile {profile}. Target: {target}")
+    params = profiles[profile]["outputs"][target]
     return params
 
 

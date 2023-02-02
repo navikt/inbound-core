@@ -38,6 +38,7 @@ duckdb = "^0.6.0"
 oracledb = "^1.2.1"
 psycopg2 = "^2.9.5"
 openpyxl = "^3.0.10"
+pygit2 = "^1.11.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -100,3 +101,5 @@ show_missing = true
 omit = []
 exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
 
+[tool.poetry.scripts]
+inbound = 'inbound.framework.cli:inbound'

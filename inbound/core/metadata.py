@@ -58,14 +58,15 @@ def enriched_with_metadata(
                         .apply(lambda x: "_".join(x.astype(str)), axis=1)
                         .replace(" ", "_")
                     )
-
-            df_out["raw"] = df.astype(str).to_dict(orient="records")
+            # Vil Paul komme med en kommentar her? #
+            df_out["raw"]= json.loads(df.to_json(orient="records"))
             df_out["raw"] = df_out["raw"].apply(lambda x: json.dumps(x))
+            
             df_out["source"] = spec.source
             df_out["interface"] = spec.interface
             df_out["loader"] = get_pacage_name() + "-" + get_package_version()
             df_out["job_id"] = job_id
-            df_out["timestamp"] = datetime.datetime.now().timestamp()
+            df_out["load_time"] = datetime.datetime.now().timestamp()
             df_out["hash"] = [
                 hashlib.md5(data.encode("utf-8")).hexdigest() for data in df_out["raw"]
             ]
