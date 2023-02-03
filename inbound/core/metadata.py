@@ -58,10 +58,10 @@ def enriched_with_metadata(
                         .apply(lambda x: "_".join(x.astype(str)), axis=1)
                         .replace(" ", "_")
                     )
-            # Vil Paul komme med en kommentar her? #
-            df_out["raw"]= json.loads(df.to_json(orient="records"))
-            df_out["raw"] = df_out["raw"].apply(lambda x: json.dumps(x))
-            
+            df_out["raw"] = df.to_json(
+                orient="records", lines=True, force_ascii=False
+            ).splitlines()
+
             df_out["source"] = spec.source
             df_out["interface"] = spec.interface
             df_out["loader"] = get_pacage_name() + "-" + get_package_version()
