@@ -59,7 +59,7 @@ def enriched_with_metadata(
                         .replace(" ", "_")
                     )
             df_out["raw"] = df.to_json(
-                orient="records", lines=True, force_ascii=False
+                orient="records", lines=True, force_ascii=False, date_format="iso"
             ).splitlines()
 
             df_out["source"] = spec.source
