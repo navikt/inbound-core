@@ -2,6 +2,8 @@ import datetime
 import time
 from dataclasses import dataclass
 
+import pandas
+
 from inbound.core.job_id import generate_id
 from inbound.core.job_result import JobResult
 from inbound.core.logging import LOGGER
@@ -53,7 +55,25 @@ class Job:
                             time.monotonic_ns() - start_time_batch
                         )
                         job_result.append(batch_job_result)
-
+                        if self.config.source.spec.watermark:
+                            watermarks = df[self.config.source.spec.watermark]
+                            highwatermark = watermarks.max()
+                            df_watermark = pandas.DataFrame()
+                            df_watermark["source_name"] = (
+                                self.config.source.spec.source,
+                            )
+                            df_watermark["target_name"] = (
+                                self.config.sink.spec.target,
+                            )
+                            df_watermark["query"] = (self.config.source.spec.query,)
+                            df_watermark[
+                                "watermark_column"
+                            ] = self.config.source.spec.watermark
+                            df_watermark["highwatermark"] = (highwatermark,)
+                            filename = f"highwatermark_job__{self.config.name}.csv"
+                            # TODO: Pseudo code for writing to bucket
+                            # with self.watermark_bucket.blob(filename).open("w") as f:
+                            #   f.write(df_watermark.to_csv())
             job_result.result = "DONE"
         except Exception as e:
             LOGGER.error(f"Error running job. {e}")

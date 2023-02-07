@@ -46,7 +46,7 @@ class BaseSpec(BaseModel):
     profile: Optional[str] = None
     target: Optional[str] = None
     profiles_dir: Optional[str] = None
-    target_watermark_query: Optional[str] = None
+    watermark: Optional[str] = None
 
 
 class SnowflakeSpec(BaseSpec):

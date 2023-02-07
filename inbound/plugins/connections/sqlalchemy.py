@@ -19,7 +19,7 @@ class SQLAlchemyConnection(BaseConnection):
         self.engine = None
         self.connection = None
 
-    def __enter__(self):
+    def __enter__(self) -> Connection:
         conn_string = self.profile.spec.connection_string
 
         if not conn_string:
