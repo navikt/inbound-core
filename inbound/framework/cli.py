@@ -91,7 +91,7 @@ def clone(**user_input) -> None:
 
     query = f"show grants on database regnskap"
     with SnowflakeConnection(profile=profile) as db:
-         db.execute(f"create database if not exists {cloned_db} clone {original_db}")
+         db.execute(f"create or replace database {cloned_db} clone {original_db}")
          df = pd.read_sql(sql=query, con=db.engine)
          df=df[df["privilege"]=="USAGE"]
          for grantee in df["grantee_name"].__iter__():
