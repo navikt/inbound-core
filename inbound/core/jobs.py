@@ -82,7 +82,7 @@ def get_json_config(source: Union[str, dict]):
         LOGGER.info(f"Error loading jobs configuration from {source}. {e}")
 
 
-def run_jobs_from_model(jobs: JobsModel) -> JobResult:
+def run_jobs_list(jobs: List) -> JobResult:
 
     # Load plugins for source og target
     source_types = [job.source.type for job in jobs]
@@ -91,7 +91,6 @@ def run_jobs_from_model(jobs: JobsModel) -> JobResult:
     connection_loader.load_plugins(types)
 
     # Run E(T)L jobs
-
     ret = JobResult()
     for job in jobs:
         job.job_id = generate_id()
@@ -112,11 +111,11 @@ def run_jobs_from_model(jobs: JobsModel) -> JobResult:
             )
         except Exception as e:
             duration = (time.monotonic_ns() - start_time) // 1000000
+            ret.result = "FAILED"
             LOGGER.info(
                 f"Job {job.name} ({job.job_id}) failed after {str(duration)} nanoseconds. Exception {str(e)}"
             )
             pass
-
     return ret
 
 def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
@@ -134,6 +133,6 @@ def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
         LOGGER.info(f"Invalid jobs configuration: {str(e)}")
         return JobResult()
 
-    return run_jobs_from_model(jobs=jobs)
+    return run_jobs_list(jobs=jobs)
     
     

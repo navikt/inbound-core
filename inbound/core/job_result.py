@@ -13,7 +13,7 @@ JobResult = ForwardRef("JobResult")
 class JobResult(BaseModel):
     """Observability parameters from a job run."""
 
-    result: Optional[str] = "FAILED"
+    result: Optional[str] = "NO_RUN"
     job_id: Optional[str] = ""
     rows: Optional[int] = 0
     size: Optional[int] = 0
