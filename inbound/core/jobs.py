@@ -82,20 +82,7 @@ def get_json_config(source: Union[str, dict]):
         LOGGER.info(f"Error loading jobs configuration from {source}. {e}")
 
 
-def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
-
-    jobs_spec = get_json_config(source)
-
-    # Replace 'env_var's in template
-    temp = Template(json.dumps(jobs_spec)).render(env_var=get_env)
-    jobs_config = json.loads(temp, strict=False)
-
-    # Parse json
-    try:
-        jobs = JobsModel(**jobs_config).jobs
-    except Exception as e:
-        LOGGER.info(f"Invalid jobs configuration: {str(e)}")
-        return JobResult()
+def run_jobs_from_model(jobs: JobsModel) -> JobResult:
 
     # Load plugins for source og target
     source_types = [job.source.type for job in jobs]
@@ -104,6 +91,7 @@ def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
     connection_loader.load_plugins(types)
 
     # Run E(T)L jobs
+
     ret = JobResult()
     for job in jobs:
         job.job_id = generate_id()
@@ -130,3 +118,22 @@ def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
             pass
 
     return ret
+
+def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
+
+    jobs_spec = get_json_config(source)
+
+    # Replace 'env_var's in template
+    temp = Template(json.dumps(jobs_spec)).render(env_var=get_env)
+    jobs_config = json.loads(temp, strict=False)
+
+    # Parse json
+    try:
+        jobs = JobsModel(**jobs_config).jobs
+    except Exception as e:
+        LOGGER.info(f"Invalid jobs configuration: {str(e)}")
+        return JobResult()
+
+    return run_jobs_from_model(jobs=jobs)
+    
+    
