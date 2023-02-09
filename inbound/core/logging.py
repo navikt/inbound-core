@@ -24,7 +24,7 @@ class InterceptHandler(logging.Handler):
         )
 
 
-logging.basicConfig(handlers=[InterceptHandler()], level=0)
+logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
 
 
 class SnowflakeHandler(logging.Handler):
