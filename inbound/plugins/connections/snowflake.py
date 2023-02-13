@@ -1,11 +1,13 @@
 import os
 import shutil
 from pathlib import Path
-from typing import Tuple
+from typing import Any, Tuple
 
+import pandas
+from snowflake.connector.pandas_tools import pd_writer
 from snowflake.sqlalchemy import URL
 
-from inbound.core import JobResult, connection_factory, logging
+from inbound.core import JobResult, Profile, connection_factory, logging
 from inbound.core.dbt_profile import dbt_connection_params
 from inbound.core.models import Profile, Spec
 from inbound.plugins.connections.gcs import GCSConnection
@@ -101,7 +103,12 @@ class SnowflakeConnection(SQLAlchemyConnection):
                 shutil.rmtree(temp_dir_name)
 
         return JobResult()
-
+    
+    def to_sql(self, df: pandas.DataFrame, table:str,) -> None: 
+        df.to_sql(table, con=self.connection, index=False, if_exists="append", method=pd_writer)
+        self.connection.execute("COMMIT") 
+        
+        # TODO: Dette ser ikke bra ut, burde finnet ut hvorfor vi tryner her
 
 def register() -> None:
     """Register connector"""

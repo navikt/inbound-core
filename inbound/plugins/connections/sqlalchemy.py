@@ -86,6 +86,9 @@ class SQLAlchemyConnection(BaseConnection):
             LOGGER.error(f"Could not read from {query}")
             return [], JobResult()
 
+    def to_sql(self, df: pandas.DataFrame, table:str,) -> None:
+        df.to_sql(table, con=self.connection, index=False, if_exists="append")
+
     def from_pandas(
         self,
         df: pandas.DataFrame,
@@ -110,7 +113,7 @@ class SQLAlchemyConnection(BaseConnection):
             LOGGER.info(
                 f"Writing chunk {chunk} to table {table}. Mode {sync_mode}. Job: {job_id}"
             )
-            df.to_sql(table, con=self.connection, index=False, if_exists="append")
+            self.to_sql(df, table)
 
             job_result.rows = len(df)
             job_result.size = df.memory_usage().sum()
