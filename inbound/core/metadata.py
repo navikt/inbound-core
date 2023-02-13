@@ -51,24 +51,24 @@ def enriched_with_metadata(
 
             if spec.row_id:
                 if type(spec.row_id) is str:
-                    df_out["row_id"] = df[spec.row_id]
+                    df_out["row_id".upper()] = df[spec.row_id]
                 elif all(isinstance(s, str) for s in spec.row_id):
-                    df_out["row_id"] = (
+                    df_out["row_id".upper()] = (
                         df[[x for x in df.columns if x in spec.row_id]]
                         .apply(lambda x: "_".join(x.astype(str)), axis=1)
                         .replace(" ", "_")
                     )
-            df_out["raw"] = df.to_json(
+            df_out["raw".upper()] = df.to_json(
                 orient="records", lines=True, force_ascii=False, date_format="iso"
             ).splitlines()
 
-            df_out["source"] = spec.source
-            df_out["interface"] = spec.interface
-            df_out["loader"] = get_pacage_name() + "-" + get_package_version()
-            df_out["job_id"] = job_id
-            df_out["load_time"] = datetime.datetime.now().timestamp()
-            df_out["hash"] = [
-                hashlib.md5(data.encode("utf-8")).hexdigest() for data in df_out["raw"]
+            df_out["source".upper()] = spec.source
+            df_out["interface".upper()] = spec.interface
+            df_out["loader".upper()] = get_pacage_name() + "-" + get_package_version()
+            df_out["job_id".upper()] = job_id
+            df_out["load_time".upper()] = datetime.datetime.now().timestamp()
+            df_out["hash".upper()] = [
+                hashlib.md5(data.encode("utf-8")).hexdigest() for data in df_out["raw".upper()]
             ]
 
             job_res.duration_ns = time.monotonic_ns() - start_time
