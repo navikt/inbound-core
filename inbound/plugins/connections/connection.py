@@ -16,7 +16,6 @@ class BaseConnection(ABC):
     @abstractmethod
     def __init__(self, profile: Profile, file: str):
         self.profile = profile
-        print(self.profile)
         name = Path(file).stem
         if self.profile.type is None:
             self.profile.type = name
