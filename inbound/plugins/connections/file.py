@@ -56,7 +56,7 @@ class FileConnection(BaseConnection):
         self, job_id: str = None
     ) -> Iterator[Tuple[pandas.DataFrame, JobResult]]:
 
-        start_time = time.monotonic_ns()
+        start_time = time.monotonic()
 
         if _isExcel(self.path):
             try:
@@ -67,9 +67,9 @@ class FileConnection(BaseConnection):
                 )
                 total_length = len(df)
                 batch_number = 0
-                duration_ns = time.monotonic_ns() - start_time
+                duration_seconds = time.monotonic() - start_time
                 LOGGER.info(
-                    f"Batch number {batch_number} of length {total_length} returned after {duration_ns} nanoseconds"
+                    f"Batch number {batch_number} of length {total_length} returned after {duration_seconds} nanoseconds"
                 )
                 yield df, JobResult(result="DONE")
             except Exception as e:
@@ -92,9 +92,9 @@ class FileConnection(BaseConnection):
                 for chunk in file_reader:
                     total_length += len(chunk)
                     batch_number += 1
-                    duration_ns = time.monotonic_ns() - start_time
+                    duration_seconds = time.monotonic() - start_time
                     LOGGER.info(
-                        f"Batch number {batch_number} of length {len(chunk)} returned after {duration_ns} nanoseconds"
+                        f"Batch number {batch_number} of length {len(chunk)} returned after {duration_seconds} nanoseconds"
                     )
                     yield chunk, JobResult(result="DONE")
             except Exception as e:

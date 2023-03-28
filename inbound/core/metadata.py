@@ -18,7 +18,7 @@ def enriched_with_metadata(
 ) -> Tuple[pandas.DataFrame, JobResult]:
 
     start_date_time = datetime.datetime.now()
-    start_time = time.monotonic_ns()
+    start_time = time.monotonic()
     job_res = JobResult(job_id=job_id, start_date_time=start_date_time)
 
     if spec.format == "meta+json" and type(spec.meta) == defaultdict:
@@ -28,7 +28,7 @@ def enriched_with_metadata(
         df_out["loaded"] = start_date_time
         df_out["data"] = df.to_dict("records")
 
-        job_res.duration_ns = time.monotonic_ns() - start_time
+        job_res.duration_seconds = time.monotonic() - start_time
         job_res.result = "DONE"
 
         return df_out, job_res
@@ -39,7 +39,7 @@ def enriched_with_metadata(
             df_out[key] = value
         df_out["loaded"] = start_date_time
 
-        job_res.duration_ns = time.monotonic_ns() - start_time
+        job_res.duration_seconds = time.monotonic() - start_time
         job_res.result = "DONE"
 
         return df_out.concat(df), job_res
@@ -71,7 +71,7 @@ def enriched_with_metadata(
                 hashlib.md5(data.encode("utf-8")).hexdigest() for data in df_out["raw".upper()]
             ]
 
-            job_res.duration_ns = time.monotonic_ns() - start_time
+            job_res.duration_seconds = time.monotonic() - start_time
             job_res.result = "DONE"
 
             return df_out, job_res
@@ -81,6 +81,6 @@ def enriched_with_metadata(
             return pandas.DataFrame, JobResult("FAILED")
 
     else:
-        job_res.duration_ns = time.monotonic_ns() - start_time
+        job_res.duration_seconds = time.monotonic() - start_time
         job_res.result = "DONE"
         return df, job_res

@@ -19,8 +19,9 @@ class JobResult(BaseModel):
     size: Optional[int] = 0
     start_date_time: Optional[datetime.datetime] = datetime.datetime.now()
     end_date_time: Optional[datetime.datetime] = datetime.datetime.now()
-    duration_ns: Optional[int] = 0
+    duration_seconds: Optional[int] = 0
     batches: Optional[List[JobResult]] = []
+    memory: Optional[int] = 0
 
     @property
     def success(self):
@@ -28,11 +29,11 @@ class JobResult(BaseModel):
 
     @property
     def duration_seconds(self):
-        if self.duration_ns:
-            return "{:.3f}".format(self.duration_ns // 1000000)
+        if self.duration_seconds:
+            return self.duration_seconds
         else:
             duration = self.end_date_time - self.start_date_time
-            return duration.microseconds // 1000
+            return duration.total_seconds()
 
     @property
     def timezone(self):
@@ -51,8 +52,9 @@ class JobResult(BaseModel):
         self.result = res.result
         self.rows += res.rows
         self.size += res.size
-        self.duration_ns += res.duration_ns
+        self.duration_seconds += res.duration_seconds
         self.batches.append(res)
+        self.memory = max(self.memory, res.memory)
 
     def __str__(self):
         return f"Finished in {self.duration_seconds} seconds. Result: {json.dumps(self.to_json())}"

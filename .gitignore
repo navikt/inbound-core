@@ -162,4 +162,12 @@ data/dbt/target/*.msgpack
 data/dbt/target/run_results.*
 data/dbt/target/index.html
 
+#testing
+inbound/utils/
+examples/notebook/test_out.csv
+
+#poetry
+poetry.lock
+
+
 

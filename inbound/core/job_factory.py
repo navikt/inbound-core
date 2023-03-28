@@ -19,7 +19,7 @@ class Job:
 
     def run(self) -> JobResult:
         job_id = self.config.job_id
-        start_time_job_ns = time.monotonic_ns()
+        start_time_job = time.monotonic()
         job_result = JobResult(job_id=job_id, start_date_time=datetime.datetime.now())
 
         try:
@@ -28,7 +28,7 @@ class Job:
                     iterator = source.to_pandas(job_id)
                     for index, tuple_res in enumerate(iterator):
                         df = tuple_res[0]
-                        start_time_batch = time.monotonic_ns()
+                        start_time_batch = time.monotonic()
 
                         # transform dataframe if specified
                         df, transform_job_result = transform(
@@ -49,8 +49,8 @@ class Job:
                             mode=self.sink.profile.spec.mode,
                             job_id=job_id,
                         )
-                        batch_job_result.duration_ns = (
-                            time.monotonic_ns() - start_time_batch
+                        batch_job_result.duration_seconds = (
+                            time.monotonic() - start_time_batch
                         )
                         job_result.append(batch_job_result)
 
@@ -60,7 +60,7 @@ class Job:
             job_result.result = "FAILED"
 
         finally:
-            job_result.duration_ns = time.monotonic_ns() - start_time_job_ns
+            job_result.duration_seconds = time.monotonic() - start_time_job
             job_result.end_date_time = datetime.datetime.now()
             return job_result
 

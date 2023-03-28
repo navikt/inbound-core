@@ -117,7 +117,7 @@ def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
     ret = JobResult()
     for job in jobs:
         job.job_id = generate_id()
-        start_time = time.monotonic_ns()
+        start_time = time.monotonic()
         LOGGER.info(
             f"Starting job: {job.name} ({job.job_id}). Source: {job.source.name or job.source.type}. Target: {job.target.name or job.target.type}"
         )
@@ -126,14 +126,14 @@ def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
         job_instance = JobFactory(source_connector, sink_connector, job)()
         try:
             res = job_instance.run()
-            res.duration_ns = time.monotonic_ns() - start_time
+            res.duration_seconds = time.monotonic() - start_time
             ret.result = res.result
             ret.append(res)
             LOGGER.info(
-                f"Job {job.name} ({job.job_id}) completed in {str(res.duration_ns)} nanoseconds. Result: {str(res)}"
+                f"Job {job.name} ({job.job_id}) completed in {str(res.duration_seconds)} nanoseconds. Result: {str(res)}"
             )
         except Exception as e:
-            duration = (time.monotonic_ns() - start_time) // 1000000
+            duration = (time.monotonic() - start_time) // 1000000
             LOGGER.info(
                 f"Job {job.name} ({job.job_id}) failed after {str(duration)} nanoseconds. Exception {str(e)}"
             )

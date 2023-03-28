@@ -13,21 +13,21 @@ def transform(
     spec: Spec, df: pandas.DataFrame, job_id: str = None
 ) -> Tuple[pandas.DataFrame, JobResult]:
 
-    start_time = time.monotonic_ns()
+    start_time = time.monotonic()
     job_result = JobResult(job_id=job_id)
 
     if spec.transformer is None:
-        job_result.duration_ns = time.monotonic_ns() - start_time
+        job_result.duration_seconds = time.monotonic() - start_time
         job_result.result = "DONE"
         return df, job_result
     else:
         try:
             transformer = _get_transformer(spec.transformer)
-            job_result.duration_ns = time.monotonic_ns() - start_time
+            job_result.duration_seconds = time.monotonic() - start_time
             job_result.result = "DONE"
             return transformer.transform(df), job_result
         except Exception as e:
-            job_result.duration_ns = time.monotonic_ns() - start_time
+            job_result.duration_seconds = time.monotonic() - start_time
             job_result.result = "FAILED"
             LOGGER.info(f"Error transforming dataframe. {e}")
             return df, job_result

@@ -129,7 +129,7 @@ class SQLAlchemyConnection(BaseConnection):
             return "FAILED", JobResult()
 
     def execute(self, sql):
-        self.engine.execute(sql)
+        return self.engine.execute(sql)
 
     def drop(self, table_name: str) -> JobResult():
         try:
