@@ -3,7 +3,7 @@ from typing import Any, DefaultDict, Dict, List, Optional, Protocol, Union
 
 from pydantic import BaseModel, Field, create_model
 
-from inbound.core.job_id import generate_id
+from inbound.core.utils import generate_id
 
 
 class CsvWriter(Protocol):
@@ -121,7 +121,7 @@ class ACLModel(BaseModel):
 
 
 class JobModel(BaseModel):
-    name: str
+    name: Optional[str]
     job_id: Optional[str] = generate_id()
     acl: Optional[ACLModel] = None
     meta: Optional[Dict] = None

@@ -72,7 +72,7 @@ class BigQueryConnection(BaseConnection):
         self,
         df: pandas.DataFrame,
         job_id: str = None,
-        chunk: int = 0,
+        chunk_number: int = 0,
         mode: str = "append",
     ) -> Tuple[Any, JobResult]:
         temp_table = self.spec.table + "_NEW"
@@ -86,7 +86,7 @@ class BigQueryConnection(BaseConnection):
         job_config = bigquery.LoadJobConfig(
             schema=self.spec.table_schema,
             write_disposition="WRITE_TRUNCATE"
-            if (chunk == 0 and mode == "replace")
+            if (chunk_number == 0 and mode == "replace")
             else "WRITE_APPEND",
         )
 
@@ -95,7 +95,7 @@ class BigQueryConnection(BaseConnection):
                 df, temp_table, job_config=job_config
             )
             LOGGER.debug(
-                f"Writing dataframe {df.size} rows in chunk number {chunk} to {temp_table} in BigQuery."
+                f"Writing dataframe {df.size} rows in chunk {chunk_number} to {temp_table} in BigQuery."
             )
             return "DONE", JobResult(
                 job.result().state, len(df), df.memory_usage(index=True).sum()
@@ -103,7 +103,7 @@ class BigQueryConnection(BaseConnection):
 
         except Exception as e:
             LOGGER.debug(
-                f"Error writing dataframe chunk {chunk} to {temp_table} in BigQuery. {str(e)}"
+                f"Error writing dataframe chunk {chunk_number} to {temp_table} in BigQuery. {str(e)}"
             )
             return "DONE", JobResult("FAILED")
 

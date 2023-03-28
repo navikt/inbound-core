@@ -1,13 +1,18 @@
 import datetime
+import tempfile
 import time
+import tracemalloc
 from dataclasses import dataclass
 
-from inbound.core.job_id import generate_id
+import pandas as pd
+
+import inbound.core.profiler as profiler
 from inbound.core.job_result import JobResult
 from inbound.core.logging import LOGGER
 from inbound.core.metadata import enriched_with_metadata
 from inbound.core.models import JobModel
 from inbound.core.transformer import transform
+from inbound.core.utils import generate_id
 from inbound.plugins.connections.connection import Connection
 
 
@@ -18,41 +23,53 @@ class Job:
     config: JobModel
 
     def run(self) -> JobResult:
+
         job_id = self.config.job_id
-        start_time_job = time.monotonic()
-        job_result = JobResult(job_id=job_id, start_date_time=datetime.datetime.now())
+        job_name = self.config.name
+        job_result = JobResult(
+            job_id=job_id,
+            job_name=job_name,
+            start_date_time=datetime.datetime.now(),
+            task_name="Job",
+        )
+
+        tracemalloc.start()
 
         try:
             with self.source as source:
                 with self.sink as sink:
                     iterator = source.to_pandas(job_id)
-                    for index, tuple_res in enumerate(iterator):
-                        df = tuple_res[0]
-                        start_time_batch = time.monotonic()
+                    for index, (df, read_res) in enumerate(iterator):
+                        # log result of data loading
+                        read_res.task_name = "to pandas"
+                        read_res.log()
 
                         # transform dataframe if specified
-                        df, transform_job_result = transform(
-                            source.profile.spec, df, job_id
-                        )
-                        job_result.append(transform_job_result)
+                        if source.profile.spec.transformer is not None:
+                            df, transform_job_result = transform(
+                                source.profile.spec, df, job_id
+                            )
+                            # log result of data transformation
+                            transform_job_result.log()
 
                         # add metadata if specified
-                        df, metadata_job_result = enriched_with_metadata(
-                            source.profile.spec, df, job_id
-                        )
-                        job_result.append(metadata_job_result)
+                        if source.profile.spec.format is not None:
+                            df, metadata_job_result = enriched_with_metadata(
+                                source.profile.spec, df, job_id
+                            )
+                            # log result of data enrichments
+                            metadata_job_result.log()
 
                         # write to sink
                         result, batch_job_result = sink.from_pandas(
                             df,
-                            chunk=index,
+                            chunk_number=index,
                             mode=self.sink.profile.spec.mode,
                             job_id=job_id,
                         )
-                        batch_job_result.duration_seconds = (
-                            time.monotonic() - start_time_batch
-                        )
-                        job_result.append(batch_job_result)
+                        # log result persisting data
+                        profiler.snapshot()
+                        batch_job_result.log()
 
             job_result.result = "DONE"
         except Exception as e:
@@ -60,8 +77,13 @@ class Job:
             job_result.result = "FAILED"
 
         finally:
-            job_result.duration_seconds = time.monotonic() - start_time_job
+            profiler.display_stats()
+            profiler.compare()
+            profiler.print_trace()
             job_result.end_date_time = datetime.datetime.now()
+            job_result.memory = tracemalloc.get_traced_memory()
+            tracemalloc.stop()
+            job_result.log()
             return job_result
 
 

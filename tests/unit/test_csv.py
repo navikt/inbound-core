@@ -21,7 +21,7 @@ def test_write_pandas_append(profile):
     chunks = np.array_split(df, 4)
     with FileConnection(profile=profile) as db:
         for index in range(len(chunks)):
-            res, job_res = db.from_pandas(chunks[index], chunk=index)
+            res, job_res = db.from_pandas(chunks[index], chunk_number=index)
 
         assert job_res.result == "DONE"
 

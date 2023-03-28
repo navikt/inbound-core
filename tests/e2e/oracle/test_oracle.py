@@ -28,7 +28,7 @@ def test_write_pandas_append():
     chunks = np.array_split(df, 4)
     with OracleConnection(profile=sa_profile) as db:
         for index in range(len(chunks)):
-            ret, job_res = db.from_pandas(chunks[index], chunk=index)
+            ret, job_res = db.from_pandas(chunks[index], chunk_number=index)
 
         assert job_res.success
 

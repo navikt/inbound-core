@@ -1,5 +1,5 @@
+import datetime
 import importlib
-import time
 from typing import Tuple
 
 import pandas
@@ -13,23 +13,29 @@ def transform(
     spec: Spec, df: pandas.DataFrame, job_id: str = None
 ) -> Tuple[pandas.DataFrame, JobResult]:
 
-    start_time = time.monotonic()
-    job_result = JobResult(job_id=job_id)
+    job_result = JobResult(
+        job_id=job_id,
+        start_date_time=datetime.datetime.now(),
+        size=df.memory_usage(deep=True).sum(),
+        rows=len(df),
+        chunk_number=1,
+    )
 
     if spec.transformer is None:
-        job_result.duration_seconds = time.monotonic() - start_time
+        job_result.end_date_time = datetime.datetime.now()
         job_result.result = "DONE"
+
         return df, job_result
     else:
         try:
             transformer = _get_transformer(spec.transformer)
-            job_result.duration_seconds = time.monotonic() - start_time
+            df_transformed = transformer.transform(df)
+            job_result.end_date_time = datetime.datetime.now()
             job_result.result = "DONE"
-            return transformer.transform(df), job_result
+            return df_transformed, job_result
         except Exception as e:
-            job_result.duration_seconds = time.monotonic() - start_time
+            job_result.end_date_time = datetime.datetime.now()
             job_result.result = "FAILED"
-            LOGGER.info(f"Error transforming dataframe. {e}")
             return df, job_result
 
 

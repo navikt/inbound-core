@@ -11,10 +11,10 @@ from jinja2 import Template
 from inbound.core import connection_factory, connection_loader
 from inbound.core.environment import get_env
 from inbound.core.job_factory import JobFactory
-from inbound.core.job_id import generate_id
 from inbound.core.job_result import JobResult
 from inbound.core.logging import LOGGER
 from inbound.core.models import *
+from inbound.core.utils import generate_id
 
 
 def run_all_job_in_directory(path: str = "./jobs", profiles_dir: Path = None):
@@ -130,12 +130,12 @@ def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
             ret.result = res.result
             ret.append(res)
             LOGGER.info(
-                f"Job {job.name} ({job.job_id}) completed in {str(res.duration_seconds)} nanoseconds. Result: {str(res)}"
+                f"Job {job.name} ({job.job_id}) completed in {str(res.duration_rounded)} seconds. Result: {str(res)}"
             )
         except Exception as e:
             duration = (time.monotonic() - start_time) // 1000000
             LOGGER.info(
-                f"Job {job.name} ({job.job_id}) failed after {str(duration)} nanoseconds. Exception {str(e)}"
+                f"Job {job.name} ({job.job_id}) failed after {str(duration)} seconds. Exception {str(e)}"
             )
             pass
 

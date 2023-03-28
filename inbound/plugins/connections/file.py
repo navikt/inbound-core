@@ -1,5 +1,6 @@
+import datetime
 import os
-import time
+import tracemalloc
 from pathlib import Path
 from typing import Any, Iterator, Tuple
 
@@ -56,29 +57,26 @@ class FileConnection(BaseConnection):
         self, job_id: str = None
     ) -> Iterator[Tuple[pandas.DataFrame, JobResult]]:
 
-        start_time = time.monotonic()
+        job_res = JobResult(
+            result="NO RUN",
+            job_id=job_id,
+            start_date_time=datetime.datetime.now(),
+        )
+        chunk_number = 0
 
-        if _isExcel(self.path):
-            try:
+        try:
+            if _isExcel(self.path):
                 df = pandas.read_excel(
                     self.path,
                     sheet_name=self.sheet_name,
                     header=self.header,
                 )
                 total_length = len(df)
-                batch_number = 0
-                duration_seconds = time.monotonic() - start_time
-                LOGGER.info(
-                    f"Batch number {batch_number} of length {total_length} returned after {duration_seconds} nanoseconds"
-                )
-                yield df, JobResult(result="DONE")
-            except Exception as e:
-                LOGGER.error(
-                    f"Error reading excel file {self.path}. {self.encoding}. {e}"
-                )
-                return [(pandas.DataFrame, JobResult())]
-        else:  # default to csv
-            try:
+
+                job_res.end_date_time = datetime.datetime.now()
+                job_res.memory = tracemalloc.get_traced_memory()
+                yield df, job_res
+            else:  # default to csv
                 file_reader = pandas.read_csv(
                     self.path,
                     sep=self.sep,
@@ -88,31 +86,51 @@ class FileConnection(BaseConnection):
                 )
 
                 total_length = 0
-                batch_number = 0
+                chunk_start_date_time = datetime.datetime.now()
                 for chunk in file_reader:
-                    total_length += len(chunk)
-                    batch_number += 1
-                    duration_seconds = time.monotonic() - start_time
-                    LOGGER.info(
-                        f"Batch number {batch_number} of length {len(chunk)} returned after {duration_seconds} nanoseconds"
-                    )
-                    yield chunk, JobResult(result="DONE")
-            except Exception as e:
-                LOGGER.error(
-                    f"Error reading csv file  {self.path}. {self.encoding} {e}"
-                )
-                return [(pandas.DataFrame, JobResult())]
+                    job_res.result = "DONE"
+                    job_res.start_date_time = chunk_start_date_time
+                    job_res.end_date_time = datetime.datetime.now()
+                    job_res.memory = tracemalloc.get_traced_memory()
+                    job_res.chunk_number = chunk_number
+                    job_res.task_name = f"Read chunk number {chunk_number} from file"
+                    job_res.size = chunk.memory_usage(deep=True).sum()
+                    job_res.rows = len(chunk)
+                    chunk_number += 1
+                    chunk_start_date_time = datetime.datetime.now()
+                    yield chunk, job_res
+
+        except Exception as e:
+            job_res.result = "FAILED"
+            job_res.start_date_time = chunk_start_date_time
+            job_res.end_date_time = datetime.datetime.now()
+            job_res.memory = tracemalloc.get_traced_memory()
+            job_res.chunk_number = chunk_number
+            job_res.task_name = f"Read from file"
+            return pandas.DataFrame, job_res
 
     def from_pandas(
         self,
         df: pandas.DataFrame,
         job_id: str = None,
-        chunk: int = 0,
+        chunk_number: int = 0,
         mode: str = "append",
     ) -> Tuple[Any, JobResult]:
 
         mode = (
-            SyncMode.REPLACE if (chunk == 0 and mode == "replace") else SyncMode.APPEND
+            SyncMode.REPLACE
+            if (chunk_number == 0 and mode == "replace")
+            else SyncMode.APPEND
+        )
+
+        job_res = JobResult(
+            result="NO RUN",
+            job_id=job_id,
+            start_date_time=datetime.datetime.now(),
+            chunk_number=chunk_number,
+            task_name=f"Persist chunk number {chunk_number}",
+            size=df.memory_usage(deep=True).sum(),
+            rows=len(df),
         )
 
         try:
@@ -153,12 +171,16 @@ class FileConnection(BaseConnection):
                         header=header,
                         index=False,
                     )
-            return "DONE", JobResult(
-                result="DONE", rows=len(df), size=df.memory_usage(index=True).sum()
-            )
+
+            job_res.result = "DONE"
+            job_res.memory = tracemalloc.get_traced_memory()
+            job_res.end_date_time = datetime.datetime.now()
+            return "DONE", job_res
         except Exception as e:
-            LOGGER.info(f"Error writing dataframe to file {self.path}. {str(e)}")
-            return "FAILED", JobResult()
+            job_res.result = "FAILED"
+            job_res.memory = tracemalloc.get_traced_memory()
+            job_res.end_date_time = datetime.datetime.now()
+            return "FAILED", job_res
 
     def drop(self) -> JobResult():
         try:

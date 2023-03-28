@@ -2,6 +2,8 @@ import datetime
 import os
 import shutil
 import tempfile
+import time
+import tracemalloc
 from pathlib import Path
 from typing import Any, Iterator, Tuple
 
@@ -63,32 +65,37 @@ class DuckDBConnection(BaseConnection):
         if not query:
             raise ValueError("Please provide an SQL query string or table name.")
 
-        batch_number = 1
+        chunk_number = 1
         total_rows = 0
         try:
-            LOGGER.info(
-                f"Excuting query {query} in database {self.type}:{self.name} with chunksize: {chunk_size}"
-            )
             batch_reader = self.connection.execute(query).fetch_record_batch(
                 chunk_size=chunk_size
             )
             while True:
+                job_res = JobResult(
+                    result="NOT RUN",
+                    job_id=job_id,
+                    task_name=f"duckbd to pandas. Chunk number {chunk_number}",
+                    start_date_time=datetime.datetime.now(),
+                )
                 try:
-                    chunk = batch_reader.read_next_batch()
-                    length = len(chunk)
-                    LOGGER.info(
-                        f"Returning batch number {batch_number} of length {length} for chunk size: {chunk_size}"
-                    )
-                    batch_number += 1
-                    total_rows += length
-                    yield chunk.to_pandas(), JobResult(result="DONE")
+                    df = batch_reader.read_next_batch().to_pandas()
+                    row_count = len(df)
+                    job_res.result = "DONE"
+                    job_res.end_date_time = (datetime.datetime.now(),)
+                    job_res.memory = tracemalloc.get_traced_memory()
+                    job_res.size = df.memory_usage(deep=True).sum()
+                    job_res.rows = len(df)
+                    chunk_number += 1
+                    total_rows += row_count
+                    yield df, job_res
                 except StopIteration:
                     break
         except Exception as e:
-            LOGGER.info(
-                f"Error excuting query {query} in database {self.name} with chunksize: {chunk_size}"
-            )
-            return [], JobResult(result="DONE")
+            job_res.result = "FAILED"
+            job_res.end_date_time = (datetime.datetime.now(),)
+            job_res.memory = tracemalloc.get_traced_memory()
+            return None, job_res
 
     def to_dir(self, format: str = "csv") -> Tuple[str, JobResult]:
         query = self.profile.spec.query or f"SELECT * FROM {self.profile.spec.table}"
@@ -123,14 +130,25 @@ class DuckDBConnection(BaseConnection):
         self,
         df: pandas.DataFrame,
         job_id: str = None,
-        chunk: int = 0,
+        chunk_number: int = 0,
         mode: str = "append",
     ) -> Tuple[Any, JobResult]:
         mode = (
-            SyncMode.REPLACE if (chunk == 0 and mode == "replace") else SyncMode.APPEND
+            SyncMode.REPLACE
+            if (chunk_number == 0 and mode == "replace")
+            else SyncMode.APPEND
         )
 
         table = self.profile.spec.table
+
+        job_res = JobResult(
+            result="NOT RUN",
+            job_id=job_id,
+            task_name=f"To duckbd from pandas. Chunk number {chunk_number}",
+            size=df.memory_usage(deep=True).sum(),
+            rows=len(df),
+            start_date_time=datetime.datetime.now(),
+        )
 
         try:
             if mode == SyncMode.REPLACE:
@@ -140,15 +158,16 @@ class DuckDBConnection(BaseConnection):
                 self.connection.execute(
                     f"CREATE TABLE IF NOT EXISTS {table} AS SELECT * from df"
                 )
-                self.connection.append(table_name=table, df=df)
-            return "DONE", JobResult(
-                result="DONE", rows=len(df), size=df.memory_usage().sum()
-            )
+
+            job_res.memory = tracemalloc.get_traced_memory()
+            job_res.end_date_time = datetime.datetime.now()
+            job_res.result = "DONE"
+            return self.name, job_res
         except Exception as e:
-            LOGGER.info(
-                f"Error writing dataframe to table {table} in SQL database {self.name}. {str(e)}"
-            )
-            return "FAILED", JobResult()
+            job_res.memory = tracemalloc.get_traced_memory()
+            job_res.end_date_time = datetime.datetime.now()
+            job_res.result = "FAILED"
+            return self.name, job_res
 
     def from_parquet(self, file_name: str, mode: SyncMode) -> JobResult:
         table = self.profile.spec.table

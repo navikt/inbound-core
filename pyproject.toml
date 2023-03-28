@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "inbound-core"
-version = "0.0.0"
+version = "0.0.1"
 description = ""
 authors = ["Virksomhetsdatalaget"]
 readme = "README.md"
@@ -13,56 +13,20 @@ style = "semver"
 
 [tool.poetry.dependencies]
 python = "^3.8.1,<3.11"
-click = "^8.1.3"
-coloredlogs = "^15.0.1"
-google-cloud-bigquery = "^2.34.0"
-google-cloud-bigquery-storage = "^2.16.2"
-google-cloud-storage = "^2.6.0"
-google-auth = "^2.15.0"
-google-api-core = "^2.11.0"
-google-cloud-core = "^2.3.2"
-google-cloud-secret-manager = "^2.12.6"
-pandas = "^1.5.2"
-pydantic = "^1.10.2"
-pyyaml = "^6.0"
-python-json-logger = "^2.0.4"
-requests = "^2.28.1"
-schema = "^0.7.5"
-sqlalchemy = "^1.4.44"
-sqlalchemy-bigquery = "^1.5.0"
-snowflake-sqlalchemy = "^1.4.4"
-types-click = "^7.1.8"
-loguru = "^0.6.0"
-snowflake-connector-python = "2.7.12"
-duckdb = "^0.6.0"
-oracledb = "^1.2.1"
-psycopg2 = "^2.9.5"
-openpyxl = "^3.0.10"
-pygit2 = "^1.11.1"
-
+pandas = "^1.5.3"
+jupyter = "1.0.0"
 
 [tool.poetry.group.dev.dependencies]
-faker = "^15.3.4"
-coverage = "^6.5.0"
-pytest-cov = "^4.0.0"
-pytest-mock = "^3.10.0"
 isort = "^5.10.1"
 black = "^22.10.0"
 mypy = "^0.991"
-flake8 = "^6.0.0"
-flake8-docstrings = "^1.6.0"
-flake8-black = "^0.3.5"
-twine = "^4.0.2"
-sqlfluff = "^1.4.2"
-dunamai = "^1.15.0"
-ipykernel = "^6.21.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
 build-backend = "poetry_dynamic_versioning.backend"
 
 [tool.pytest.ini_options]
-pythonpath = [".", "inbound"]
+pythonpath = [".", "src"]
 
 [tool.black]
 line-length = 88
@@ -86,15 +50,15 @@ include_trailing_comma = true
 force_grid_wrap = 0
 use_parentheses = true
 line_length = 88
-known_first_party = ["inbound", "tests"]
+known_first_party = ["src", "tests"]
 default_section = "THIRDPARTY"
 
 [tool.coverage.paths]
-source = ["inbound", "*/site-packages"]
+source = ["src", "*/site-packages"]
 
 [tool.coverage.run]
 branch = true
-source = ["inbound"]
+source = ["src"]
 
 [tool.coverage.report]
 fail_under = 100
@@ -103,4 +67,4 @@ omit = []
 exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
 
 [tool.poetry.scripts]
-inbound = 'inbound.framework.cli:inbound'
+inbound = 'inbound.client.cli:inbound'

@@ -4,8 +4,8 @@ import os
 import numpy
 import pandas
 
-from inbound.core.job_id import generate_id
 from inbound.core.models import Profile, Spec
+from inbound.core.utils import generate_id
 from inbound.plugins.connections.duckdb import DuckDBConnection
 from inbound.plugins.connections.snowflake import SnowflakeConnection
 from inbound.plugins.utils import df

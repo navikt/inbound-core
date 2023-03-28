@@ -1,7 +1,8 @@
+import datetime
 import json
 import os
 import tempfile
-import time
+import tracemalloc
 from pathlib import Path
 from typing import Union
 
@@ -11,44 +12,56 @@ from jinja2 import Template
 from inbound.core import connection_factory, connection_loader
 from inbound.core.environment import get_env
 from inbound.core.job_factory import JobFactory
-from inbound.core.job_id import generate_id
-from inbound.core.job_result import JobResult
+from inbound.core.jobs_result import JobsResult
 from inbound.core.logging import LOGGER
 from inbound.core.models import *
+from inbound.core.utils import generate_id
 
 
-def run_all_job_in_directory(path: str = "./jobs", profiles_dir: Path = None):
+def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobsResult:
 
-    """Set run metadata"""
-    os.environ["INBOUND_RUN_ID"] = str(round(time.time() * 1000))
+    jobs_spec = _get_json_config(source)
 
-    with tempfile.TemporaryDirectory() as tmpdirname:
-        os.environ["INBOUND_SECRET_DIR"] = tmpdirname
-        try:
-            jobs = [
-                os.path.join(d, x)
-                for d, dirs, files in os.walk(path)
-                for x in files
-                if x.endswith(".yml")
-            ]
-        except Exception as e:
-            LOGGER.info(
-                f"Error in searching for job .yml files i path: {path}. {str(e)}"
-            )
-            return JobResult()
+    # Replace 'env_var's in template
+    temp = Template(json.dumps(jobs_spec)).render(env_var=get_env)
+    jobs_config = json.loads(temp, strict=False)
 
-        ret = JobResult()
-        for job in jobs:
-            res = run_job(job)
+    # Get list of jobs to run
+    try:
+        jobs = JobsModel(**jobs_config).jobs
+    except Exception as e:
+        LOGGER.info(f"Invalid jobs configuration: {str(e)}")
+        return JobsResult()
+
+    return _run_jobs_in_list(jobs=jobs)
+
+
+def run_jobs(path: str = "./jobs", profiles_dir: Path = None):
+
+    try:
+        job_definition_files = [
+            os.path.join(d, x)
+            for d, dirs, files in os.walk(path)
+            for x in files
+            if x.endswith(".yml")
+        ]
+    except Exception as e:
+        LOGGER.info(f"Error in searching for job .yml files i path: {path}. {str(e)}")
+        return JobsResult()
+
+    try:
+        for job_definition_file in job_definition_files:
+            res = run_job(job_definition_file)
             if res.result != "DONE":
-                LOGGER.info(f"Error running job: {job}. Result: {str(ret)}")
-            ret.result = res.result
-            ret.append(res.to_json())
+                LOGGER.info(
+                    f"Error running job: {job_definition_file}. Result: {str(res)}"
+                )
+        return JobsResult(result="DONE")
+    except:
+        return JobsResult()
 
-        return ret
 
-
-def get_json_config(source: Union[str, dict]):
+def _get_json_config(source: Union[str, dict]):
 
     if type(source) == dict:
         return source
@@ -82,7 +95,7 @@ def get_json_config(source: Union[str, dict]):
         LOGGER.info(f"Error loading jobs configuration from {source}. {e}")
 
 
-def run_jobs_list(jobs: List) -> JobResult:
+def _run_jobs_in_list(jobs: List) -> JobsResult:
 
     # Load plugins for source og target
     source_types = [job.source.type for job in jobs]
@@ -91,10 +104,10 @@ def run_jobs_list(jobs: List) -> JobResult:
     connection_loader.load_plugins(types)
 
     # Run E(T)L jobs
-    ret = JobResult()
+    jobs_result = JobsResult(start_date_time=datetime.datetime.now())
+    jobs_result.job_name = "Run jobs"
     for job in jobs:
-        job.job_id = generate_id()
-        start_time = time.monotonic()
+        tracemalloc.start(10)
         LOGGER.info(
             f"Starting job: {job.name} ({job.job_id}). Source: {job.source.name or job.source.type}. Target: {job.target.name or job.target.type}"
         )
@@ -103,35 +116,19 @@ def run_jobs_list(jobs: List) -> JobResult:
         job_instance = JobFactory(source_connector, sink_connector, job)()
         try:
             res = job_instance.run()
-            res.duration_seconds = time.monotonic() - start_time
-            ret.result = res.result
-            ret.append(res)
-            LOGGER.info(
-                f"Job {job.name} ({job.job_id}) completed in {str(res.duration_seconds)} nanoseconds. Result: {str(res)}"
-            )
+            jobs_result.end_date_time = datetime.datetime.now()
+            jobs_result.memory = tracemalloc.get_traced_memory()
+            jobs_result.append(res)
+            jobs_result.result = "DONE"
+            jobs_result.log()
         except Exception as e:
-            duration = (time.monotonic() - start_time) // 1000000
-            ret.result = "FAILED"
+            jobs_result.end_date_time = datetime.datetime.now()
+            jobs_result.memory = tracemalloc.get_traced_memory()
+            jobs_result.result = "FAILED"
+            jobs_result.log()
+        finally:
+            tracemalloc.stop()
             LOGGER.info(
-                f"Job {job.name} ({job.job_id}) failed after {str(duration)} nanoseconds. Exception {str(e)}"
+                f"Finished job: {job.name} ({job.job_id}). Source: {job.source.name or job.source.type}. Target: {job.target.name or job.target.type}"
             )
-            pass
-    return ret
-
-
-def run_job(source: Union[str, dict], profiles_dir: Path = None) -> JobResult:
-
-    jobs_spec = get_json_config(source)
-
-    # Replace 'env_var's in template
-    temp = Template(json.dumps(jobs_spec)).render(env_var=get_env)
-    jobs_config = json.loads(temp, strict=False)
-
-    # Parse json
-    try:
-        jobs = JobsModel(**jobs_config).jobs
-    except Exception as e:
-        LOGGER.info(f"Invalid jobs configuration: {str(e)}")
-        return JobResult()
-
-    return run_jobs_list(jobs=jobs)
+    return jobs_result

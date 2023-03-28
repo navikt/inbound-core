@@ -30,7 +30,7 @@ def test_write_pandas_append():
     chunks = np.array_split(df, 4)
     with SnowflakeConnection(profile=profile) as db:
         for index in range(len(chunks)):
-            _, job_res = db.from_pandas(chunks[index], chunk=index)
+            _, job_res = db.from_pandas(chunks[index], chunk_number=index)
 
         assert job_res.result == "DONE"
 

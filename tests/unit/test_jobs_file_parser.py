@@ -3,7 +3,7 @@ from typing import Dict, Union
 
 import pytest
 
-from inbound.core.jobs import get_json_config
+from inbound.core.jobs import _get_json_config
 from inbound.core.logging import LOGGER
 from inbound.core.models import JobsModel
 
@@ -51,7 +51,7 @@ def test_yml_config(data_path: Union[str, Dict]):
 
     yml_file = data_path + "/csv_duckdb_gcs.yml"
 
-    json_spec = get_json_config(yml_file)
+    json_spec = _get_json_config(yml_file)
 
     spec = JobsModel(**json_spec)
 
@@ -60,7 +60,7 @@ def test_yml_config(data_path: Union[str, Dict]):
 
 def test_json_string_config(get_spec_string):
 
-    json_spec = get_json_config(get_spec_string)
+    json_spec = _get_json_config(get_spec_string)
 
     spec = JobsModel(**json_spec)
 
@@ -69,7 +69,7 @@ def test_json_string_config(get_spec_string):
 
 def test_json_dict_config(get_spec_json):
 
-    json_spec = get_json_config(get_spec_json)
+    json_spec = _get_json_config(get_spec_json)
 
     spec = JobsModel(**json_spec)
 

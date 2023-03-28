@@ -41,7 +41,7 @@ class BaseConnection(ABC):
 
     @abstractmethod
     def from_pandas(
-        self, job_id: str = None, chunk: int = 0, mode: str = "append"
+        self, job_id: str = None, chunk_number: int = 0, mode: str = "append"
     ) -> Tuple[Any, JobResult]:
         pass
 

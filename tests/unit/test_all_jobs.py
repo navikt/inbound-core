@@ -1,4 +1,4 @@
-from inbound.core.jobs import run_all_job_in_directory
+from inbound.core.jobs import run_jobs
 
 
 def test_run_all_jobs():

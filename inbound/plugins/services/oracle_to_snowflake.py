@@ -8,10 +8,10 @@ from typing import List
 
 from google.cloud import storage
 
-from inbound.core.job_id import generate_id
 from inbound.core.logging import LOGGER
 from inbound.core.models import ColumnModel, Profile, SyncMode
 from inbound.core.settings import Settings
+from inbound.core.utils import generate_id
 from inbound.plugins.connections.oracle import OracleConnection
 from inbound.plugins.connections.snowflake import SnowflakeConnection
 

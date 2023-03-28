@@ -17,6 +17,10 @@ class PostgresConnection(SQLAlchemyConnection):
         # Tip: These operations are not as efficient as the SQL COPY command with a file or program data source or destination,
         # because all data must pass through the client/server connection. For large amounts of data the SQL command might be preferable.
 
+        # TODO: check alternative approach
+        # https://github.com/scottpersinger/pgwarehouse/blob/main/pgwarehouse/pgwarehouse.py line 264
+        # Copy to stdout -> csv -> stage -> import
+
         try:
             with tempfile.NamedTemporaryFile(suffix=".csv") as tf:
                 os.environ["PGPASSWORD"] = "postgres"

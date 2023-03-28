@@ -112,11 +112,13 @@ class GCSConnection(BaseConnection):
         self,
         df: pandas.DataFrame,
         job_id: str = None,
-        chunk: int = 0,
+        chunk_number: int = 0,
         mode: str = "append",
     ) -> Tuple[Any, JobResult]:
         mode = (
-            SyncMode.REPLACE if (chunk == 0 and mode == "replace") else SyncMode.APPEND
+            SyncMode.REPLACE
+            if (chunk_number == 0 and mode == "replace")
+            else SyncMode.APPEND
         )
 
         with tempfile.NamedTemporaryFile(suffix=None) as tf:

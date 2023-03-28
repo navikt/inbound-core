@@ -1,6 +1,6 @@
 from click.testing import CliRunner
 
-from inbound.framework.cli import inbound
+from inbound.client.cli import inbound
 
 
 def test_inbound_info():
