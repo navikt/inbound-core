@@ -61,31 +61,32 @@ class DuckDBConnection(BaseConnection):
     ) -> Iterator[Tuple[pandas.DataFrame, JobResult]]:
         query = self.profile.spec.query or f"SELECT * FROM {self.profile.spec.table}"
         chunk_size = self.profile.spec.chunksize
+        df = pandas.DataFrame()
+
+        job_res = JobResult(
+            result="NOT RUN", job_id=job_id, task_name=f"duckbd to pandas"
+        )
 
         if not query:
             raise ValueError("Please provide an SQL query string or table name.")
 
-        chunk_number = 1
+        chunk_number = 0
         total_rows = 0
         try:
             batch_reader = self.connection.execute(query).fetch_record_batch(
                 chunk_size=chunk_size
             )
             while True:
-                job_res = JobResult(
-                    result="NOT RUN",
-                    job_id=job_id,
-                    task_name=f"duckbd to pandas. Chunk number {chunk_number}",
-                    start_date_time=datetime.datetime.now(),
-                )
+                job_res.start_date_time = datetime.datetime.now()
                 try:
                     df = batch_reader.read_next_batch().to_pandas()
                     row_count = len(df)
                     job_res.result = "DONE"
-                    job_res.end_date_time = (datetime.datetime.now(),)
+                    job_res.end_date_time = datetime.datetime.now()
                     job_res.memory = tracemalloc.get_traced_memory()
                     job_res.size = df.memory_usage(deep=True).sum()
                     job_res.rows = len(df)
+                    job_res.chunk_number = chunk_number
                     chunk_number += 1
                     total_rows += row_count
                     yield df, job_res
@@ -93,7 +94,7 @@ class DuckDBConnection(BaseConnection):
                     break
         except Exception as e:
             job_res.result = "FAILED"
-            job_res.end_date_time = (datetime.datetime.now(),)
+            job_res.end_date_time = datetime.datetime.now()
             job_res.memory = tracemalloc.get_traced_memory()
             return None, job_res
 
@@ -144,10 +145,11 @@ class DuckDBConnection(BaseConnection):
         job_res = JobResult(
             result="NOT RUN",
             job_id=job_id,
-            task_name=f"To duckbd from pandas. Chunk number {chunk_number}",
+            task_name=f"pandas to duckbd",
             size=df.memory_usage(deep=True).sum(),
             rows=len(df),
             start_date_time=datetime.datetime.now(),
+            chunk_number=chunk_number,
         )
 
         try:

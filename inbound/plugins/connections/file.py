@@ -61,6 +61,7 @@ class FileConnection(BaseConnection):
             result="NO RUN",
             job_id=job_id,
             start_date_time=datetime.datetime.now(),
+            task_name=f"file to pandas",
         )
         chunk_number = 0
 
@@ -71,8 +72,6 @@ class FileConnection(BaseConnection):
                     sheet_name=self.sheet_name,
                     header=self.header,
                 )
-                total_length = len(df)
-
                 job_res.end_date_time = datetime.datetime.now()
                 job_res.memory = tracemalloc.get_traced_memory()
                 yield df, job_res
@@ -93,7 +92,6 @@ class FileConnection(BaseConnection):
                     job_res.end_date_time = datetime.datetime.now()
                     job_res.memory = tracemalloc.get_traced_memory()
                     job_res.chunk_number = chunk_number
-                    job_res.task_name = f"Read chunk number {chunk_number} from file"
                     job_res.size = chunk.memory_usage(deep=True).sum()
                     job_res.rows = len(chunk)
                     chunk_number += 1
@@ -106,7 +104,6 @@ class FileConnection(BaseConnection):
             job_res.end_date_time = datetime.datetime.now()
             job_res.memory = tracemalloc.get_traced_memory()
             job_res.chunk_number = chunk_number
-            job_res.task_name = f"Read from file"
             return pandas.DataFrame, job_res
 
     def from_pandas(

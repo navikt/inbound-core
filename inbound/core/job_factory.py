@@ -1,10 +1,7 @@
 import datetime
-import tempfile
-import time
+import os
 import tracemalloc
 from dataclasses import dataclass
-
-import pandas as pd
 
 import inbound.core.profiler as profiler
 from inbound.core.job_result import JobResult
@@ -12,7 +9,6 @@ from inbound.core.logging import LOGGER
 from inbound.core.metadata import enriched_with_metadata
 from inbound.core.models import JobModel
 from inbound.core.transformer import transform
-from inbound.core.utils import generate_id
 from inbound.plugins.connections.connection import Connection
 
 
@@ -41,7 +37,6 @@ class Job:
                     iterator = source.to_pandas(job_id)
                     for index, (df, read_res) in enumerate(iterator):
                         # log result of data loading
-                        read_res.task_name = "to pandas"
                         read_res.log()
 
                         # transform dataframe if specified
@@ -67,8 +62,9 @@ class Job:
                             mode=self.sink.profile.spec.mode,
                             job_id=job_id,
                         )
+                        if os.getenv("INBOUND_PROFILING") is not None:
+                            profiler.snapshot()
                         # log result persisting data
-                        profiler.snapshot()
                         batch_job_result.log()
 
             job_result.result = "DONE"
@@ -77,9 +73,10 @@ class Job:
             job_result.result = "FAILED"
 
         finally:
-            profiler.display_stats()
-            profiler.compare()
-            profiler.print_trace()
+            if os.getenv("INBOUND_PROFILING") is not None:
+                profiler.display_stats()
+                profiler.compare()
+                profiler.print_trace()
             job_result.end_date_time = datetime.datetime.now()
             job_result.memory = tracemalloc.get_traced_memory()
             tracemalloc.stop()

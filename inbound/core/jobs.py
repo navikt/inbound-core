@@ -107,7 +107,7 @@ def _run_jobs_in_list(jobs: List) -> JobsResult:
     jobs_result = JobsResult(start_date_time=datetime.datetime.now())
     jobs_result.job_name = "Run jobs"
     for job in jobs:
-        tracemalloc.start(10)
+        tracemalloc.start()
         LOGGER.info(
             f"Starting job: {job.name} ({job.job_id}). Source: {job.source.name or job.source.type}. Target: {job.target.name or job.target.type}"
         )

@@ -39,6 +39,7 @@ class SQLAlchemyConnection(BaseConnection):
             self.connection.close()
 
         if self.engine:
+            LOGGER.info(f"SQLAlchemy engine dispose")
             self.engine.dispose()
 
     def __str__(self) -> str:
@@ -47,6 +48,7 @@ class SQLAlchemyConnection(BaseConnection):
     @retry_with_backoff()
     def get_connection(self) -> Connection:
         try:
+            LOGGER.info(f"SQLAlchemy connect")
             conn = self.engine.connect()
             return conn
         except Exception as e:
@@ -70,12 +72,14 @@ class SQLAlchemyConnection(BaseConnection):
             result="NO RUN",
             job_id=job_id,
             start_date_time=datetime.datetime.now(),
+            task_name=f"chunk to pandas",
         )
 
         chunk_number = 0
         length = 1
         total_rows = 1
         chunk_start_date_time = datetime.datetime.now()
+        df = pandas.DataFrame()
 
         try:
             iterator = pandas.read_sql(query, self.engine, chunksize=chunk_size)
@@ -90,7 +94,6 @@ class SQLAlchemyConnection(BaseConnection):
                     job_res.end_date_time = datetime.datetime.now()
                     job_res.memory = tracemalloc.get_traced_memory()
                     job_res.chunk_number = chunk_number
-                    job_res.task_name = f"Read chunk number {chunk_number} from db with chunksize {chunk_size}"
                     job_res.size = df.memory_usage(deep=True).sum()
                     job_res.rows = len(df)
                     chunk_number += 1
@@ -99,6 +102,7 @@ class SQLAlchemyConnection(BaseConnection):
                     total_rows += length
                     yield df, job_res
                 except StopIteration:
+                    LOGGER.info("Last chunk read")
                     break
 
         except Exception as e:
@@ -108,7 +112,6 @@ class SQLAlchemyConnection(BaseConnection):
             job_res.end_date_time = datetime.datetime.now()
             job_res.memory = tracemalloc.get_traced_memory()
             job_res.chunk_number = chunk_number
-            job_res.task_name = f"Read chunk from db with chunksize {chunk_size}"
             job_res.rows = len(df)
             return [], job_res
 
@@ -136,6 +139,7 @@ class SQLAlchemyConnection(BaseConnection):
         job_res = JobResult(
             result="NO RUN",
             job_id=job_id,
+            task_name=f"from pandas",
             start_date_time=datetime.datetime.now(),
             chunk_number=chunk_number,
             size=df.memory_usage(deep=True).sum(),
@@ -146,32 +150,32 @@ class SQLAlchemyConnection(BaseConnection):
 
         try:
             if sync_mode == SyncMode.REPLACE:
-                job_res = self.drop(table, job_res, job_id)
+                job_res = self.drop(table, job_res)
                 job_res.log()
 
             self.to_sql(df, table)
 
             job_res.memory = tracemalloc.get_traced_memory()
             job_res.end_date_time = datetime.datetime.now()
-            job_res.task_name = f"from pandas"
             job_res.result = "DONE"
             return None, job_res
 
         except Exception as e:
-            job_res.result = "FAILED"
             job_res.memory = tracemalloc.get_traced_memory()
             job_res.end_date_time = datetime.datetime.now()
+            job_res.result = "FAILED"
             return None, job_res
 
     def execute(self, sql):
         return self.engine.execute(sql)
 
-    def drop(
-        self, table_name: str, job_res: JobResult, job_id: str = None
-    ) -> JobResult():
+    def drop(self, table_name: str, job_res: JobResult = None) -> JobResult():
+
+        if job_res is None:
+            job_res = JobResult()
 
         job_res.start_date_time = datetime.datetime.now()
-        job_res.task_name = f"SQLAlchemy drop table {table_name}"
+        job_res.task_name = f"drop table {table_name}"
         try:
             metadata = sqlalchemy.MetaData()
             table = sqlalchemy.Table(table_name, metadata)

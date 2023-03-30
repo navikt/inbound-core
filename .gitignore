@@ -166,7 +166,9 @@ data/dbt/target/index.html
 inbound/utils/
 examples/notebook/test_out.csv
 test.py
-source.csv
+**/source.csv
+**/source_processed.csv
+target/
 
 #poetry
 poetry.lock

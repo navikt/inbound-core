@@ -49,6 +49,10 @@ class JobsResult(BaseModel):
 
     def append(self, res: JobResult):
         self.jobs.append(res)
+        self.memory = (
+            max(self.memory_size, res.memory_size),
+            max(self.memory_size, res.memory_size),
+        )
 
     def to_json(self):
         jobs = []
@@ -67,7 +71,7 @@ class JobsResult(BaseModel):
         }
 
     def __str__(self):
-        res = f"""Jobs: {self.result}. Id: {self.job_id}. Name: {self.job_name}. Start: {self.start_date_time.strftime('%Y-%m-%d %H:%M:%S')}. Duration: {str(self.duration_rounded)}. Memory: {str(self.memory_size)}/{str(self.memory_peak)}. Job_count: {len(self.jobs)}"""
+        res = f"""Jobs: {self.result}. Id: {self.job_id}. Name: {self.job_name}. Start: {self.start_date_time.strftime('%Y-%m-%d %H:%M:%S')}. Duration: {str(self.duration_rounded)}. Memory: {str(self.memory_size)}/{str(self.memory_peak)}. Job count: {len(self.jobs)}"""
 
         return res
 
