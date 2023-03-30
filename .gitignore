@@ -170,6 +170,10 @@ test.py
 **/source_processed.csv
 target/
 
+#profiling
+fil-result/
+
+
 #poetry
 poetry.lock
 

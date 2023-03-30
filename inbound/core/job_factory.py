@@ -56,12 +56,13 @@ class Job:
                             metadata_job_result.log()
 
                         # write to sink
-                        result, batch_job_result = sink.from_pandas(
+                        _, batch_job_result = sink.from_pandas(
                             df,
                             chunk_number=index,
-                            mode=self.sink.profile.spec.mode,
+                            mode=sink.profile.spec.mode,
                             job_id=job_id,
                         )
+
                         if os.getenv("INBOUND_PROFILING") is not None:
                             profiler.snapshot()
                         # log result persisting data

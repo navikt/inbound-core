@@ -120,7 +120,9 @@ class SQLAlchemyConnection(BaseConnection):
         df: pandas.DataFrame,
         table: str,
     ) -> None:
-        df.to_sql(table, con=self.connection, index=False, if_exists="append")
+        df.to_sql(
+            table, con=self.connection, index=False, if_exists="append", method="multi"
+        )
 
     def from_pandas(
         self,
