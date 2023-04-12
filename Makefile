@@ -10,7 +10,7 @@ else
 endif
 
 VENV = ./.venv/$(BIN)/activate
-PY = ./.venv/$(BIN)/python -m  
+PY = ./.venv/$(BIN)/python -m
 
 isort = $(PY) isort -rc $(pkg_src) $(tests_src)
 black = $(PY) black $(pkg_src) $(tests_src)
@@ -27,7 +27,7 @@ build:
 
 .PHONY: install ## install requirements in virtal env 
 install:
-	python3.9 -m venv .venv && \
+	python3.11 -m venv .venv && \
 		${PY} pip install --upgrade pip && \
 		poetry env use ./.venv/bin/python
 		poetry install
