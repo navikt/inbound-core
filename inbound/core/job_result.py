@@ -98,9 +98,9 @@ class JobResult(BaseModel):
     def log(self):
         LOGGER.info(str(self))
 
-        json_str = json.dumps(self.to_json(), default=str)
-        with open(str(Path(get_target_dir() / "job_result.json")), "a+") as log_file:
-            log_file.write(json_str)
+        #json_str = json.dumps(self.to_json(), default=str)
+        #with open(str(Path(get_target_dir() / "job_result.json")), "a+") as log_file:
+            #log_file.write(json_str)
 
 
 JobResult.update_forward_refs()
