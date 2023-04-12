@@ -15,6 +15,7 @@ style = "semver"
 python = "^3.8.1"
 pandas = "^1.5.3"
 jupyter = "1.0.0"
+loguru = "^0.6.0"
 
 [tool.poetry.group.dev.dependencies]
 isort = "^5.10.1"
