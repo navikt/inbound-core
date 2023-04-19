@@ -105,7 +105,7 @@ class SnowflakeConnection(SQLAlchemyConnection):
         return JobResult()
     
     def to_sql(self, df: pandas.DataFrame, table:str,) -> None: 
-        df.to_sql(table, con=self.connection, index=False, if_exists="append", method=pd_writer)
+        df.to_sql(table, con=self.connection, index=False, if_exists="append")
         self.connection.execute("COMMIT") 
         
         # TODO: Dette ser ikke bra ut, burde finnet ut hvorfor vi tryner her
