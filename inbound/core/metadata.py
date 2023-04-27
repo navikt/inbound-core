@@ -20,6 +20,8 @@ def enriched_with_metadata(
 
     start_date_time = datetime.datetime.now()
     job_res = JobResult(job_id=job_id, start_date_time=start_date_time)
+    if df.empty:
+        return df, job_res
 
     if spec.format == "meta+json" and type(spec.meta) == defaultdict:
         df_out = pandas.DataFrame(index=range(len(df)))
